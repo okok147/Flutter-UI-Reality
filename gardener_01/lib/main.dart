@@ -30,16 +30,16 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Color(0xffD2ECF8),
+        backgroundColor: Color(0xffE3F6FF),
         body: Column(
           children: <Widget>[
             Expanded(
               flex: 5,
               child: Padding(
-                padding:
-                    const EdgeInsets.only(top: 30.0, right: 40.0, left: 40.0),
+                padding: const EdgeInsets.only(
+                    top: 30.0, right: 40.0, left: 35.0, bottom: 10.0),
                 child: Container(
-                  color: Color(0xffD2ECF8),
+                  color: Color(0xffE3F6FF),
                   foregroundDecoration: BoxDecoration(
                       image: DecorationImage(
                     image: AssetImage("images/gardener.png"),
