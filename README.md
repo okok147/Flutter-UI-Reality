@@ -4,8 +4,7 @@
 
 # Project
    
-  # Gardener_01
-  <img src="gardener_01/process/day1.png" width="400">   
+  Gardener_01 <img src="gardener_01/process/day1.png" width="400">   
 
 
 
