@@ -34,35 +34,32 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
         backgroundColor: Color(0xffE3F6FF),
         body: ListView(
-        dragStartBehavior: DragStartBehavior.start,
-        children: <Widget>[
-        Container(
-        color: Color(0xffE3F6FF),
-    alignment: Alignment.topCenter,
-    height: 450.0,
-    width: 1000.0,
-    child: Stack(
-    children: <Widget>[
-    Padding(
-    padding: const EdgeInsets.all(20.0),
-    child: Container(
-    alignment: Alignment.center,
-    decoration: new BoxDecoration(
-    image: DecorationImage(
-    image: AssetImage('assets/gardener.png'))),
-    ),
-    ),
-    ],
-    ),
-    ),
-    Container(
-    height: 450.0,
-    color: Colors.white60,
-    ),
-
-    ]
-    ,
-    )
-    );
+          dragStartBehavior: DragStartBehavior.start,
+          children: <Widget>[
+            Container(
+              color: Color(0xffE3F6FF),
+              alignment: Alignment.topCenter,
+              height: 450.0,
+              width: 1000.0,
+              child: Stack(
+                children: <Widget>[
+                  Padding(
+                    padding: const EdgeInsets.all(20.0),
+                    child: Container(
+                      alignment: Alignment.center,
+                      decoration: new BoxDecoration(
+                          image: DecorationImage(
+                              image: AssetImage('assets/gardener.png'))),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Container(
+              height: 450.0,
+              color: Colors.white60,
+            ),
+          ],
+        ));
   }
 }
