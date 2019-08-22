@@ -1,5 +1,7 @@
 # Flutter_UI_Reality
 
+  <img src="gardener_01/process/day1.png" width="400">   
+
 
 
 
