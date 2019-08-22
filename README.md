@@ -6,7 +6,7 @@
    
   Gardener_01 
   
-  <img src="gardener_01/process/day1.png" width="400">   
+  <img src="gardener_01" width="400">   
 
 
 
