@@ -3,4 +3,4 @@
 A new Flutter application.
 
 ## Getting Started
-  <img src="process/day1.png" width="400"> 
+  <img src="process/day1.png" width="1000"> 
