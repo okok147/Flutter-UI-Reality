@@ -1,6 +1,6 @@
 # gardener_01
 
-A new Flutter application.
+Water your seed.
 
 ## Getting Started
 
