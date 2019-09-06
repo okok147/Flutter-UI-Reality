@@ -119,17 +119,17 @@ class _MyHomePageState extends State<MyHomePage> {
                               decoration: myBoxDecoration(),
                               height: 62.0,
                               width: 250.0,
-                              child: MaterialButton(child: Text('Search for gardeners'),
-                              onPressed: (){},),
+                              child: MaterialButton(
+                                child: Text('Search for gardeners'),
+                                onPressed: () {},
+                              ),
                             ),
                             Padding(
-                              padding: const EdgeInsets.only(left:8.0),
+                              padding: const EdgeInsets.only(left: 8.0),
                               child: IconButton(
                                 icon: Icon(Icons.filter_list),
                                 tooltip: 'what is that ? ',
-                                onPressed: () {
-
-                                },
+                                onPressed: () {},
                               ),
                             ),
                             Text('Fliters')
