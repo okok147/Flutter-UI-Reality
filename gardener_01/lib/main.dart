@@ -29,6 +29,16 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  BoxDecoration myBoxDecoration() {
+    return BoxDecoration(
+      border: Border.all(
+        width: 1,
+        color: Color(0xff5F40D4).withOpacity(0.19),
+      ),
+      borderRadius: BorderRadius.all(Radius.circular(20.0)),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -64,31 +74,67 @@ class _MyHomePageState extends State<MyHomePage> {
                     topRight: const Radius.circular(20.0),
                   )),
               child: Padding(
-                padding: const EdgeInsets.only(left: 30.0, right: 25.0),
+                padding: const EdgeInsets.only(left: 20.0, right: 20.0),
                 child: Padding(
-                  padding: const EdgeInsets.only(left: 8.0, right: 8.0),
+                  padding: const EdgeInsets.only(left: 8.0, right: 0.0),
                   child: Column(
                     children: <Widget>[
                       Spacer(flex: 2),
                       Container(
-                          height: 90.0,
-                          color: Colors.blue,
+                          height: 120.0,
                           width: 1000.0,
                           child: Padding(
                             padding: const EdgeInsets.all(0.0),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: <Widget>[
-                                Text('Find a'),
-                                Spacer(),
-                                Text('Gardener')
+                                Padding(
+                                  padding: const EdgeInsets.only(top: 16.0),
+                                  child: Text(
+                                    'Find a',
+                                    style: new TextStyle(
+                                      fontSize: 40.0,
+                                      color:
+                                          Color(0xffFFA800).withOpacity(0.85),
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                ),
+                                Text(
+                                  'Gardener',
+                                  style: TextStyle(
+                                    fontSize: 40.0,
+                                    fontWeight: FontWeight.bold,
+                                    color: Color(0xff5F40D4).withOpacity(0.85),
+                                  ),
+                                )
                               ],
                             ),
                           )),
                       Padding(
-                        padding: const EdgeInsets.only(top: 50.0),
-                        child:
-                            Container(height: 100.0, color: Colors.redAccent),
+                        padding: const EdgeInsets.only(top: 55.0),
+                        child: Row(
+                          children: <Widget>[
+                            Container(
+                              decoration: myBoxDecoration(),
+                              height: 62.0,
+                              width: 250.0,
+                              child: MaterialButton(child: Text('Search for gardeners'),
+                              onPressed: (){},),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(left:8.0),
+                              child: IconButton(
+                                icon: Icon(Icons.filter_list),
+                                tooltip: 'what is that ? ',
+                                onPressed: () {
+
+                                },
+                              ),
+                            ),
+                            Text('Fliters')
+                          ],
+                        ),
                       ),
                       Spacer(flex: 11),
                     ],
