@@ -14,6 +14,10 @@ Water your seed.
   # DAY 3
   <img src="process/day3.png" width="1000" height="500"> 
   
+  # DAY 4
+  <img src="process/day4.png" width="1000" height="500"> 
+  
+  
 
 
 
