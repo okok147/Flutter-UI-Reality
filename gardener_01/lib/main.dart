@@ -1,5 +1,6 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 void main() => runApp(MyApp());
 
@@ -120,19 +121,37 @@ class _MyHomePageState extends State<MyHomePage> {
                               height: 62.0,
                               width: 250.0,
                               child: MaterialButton(
-                                child: Text('Search for gardeners'),
+                                child: Padding(
+                                  padding: const EdgeInsets.only(right: 50.0),
+                                  child: Text(
+                                    'Search for gardeners',
+                                    style: TextStyle(
+                                      fontSize: 14.0,
+                                      fontWeight: FontWeight.w500,
+                                      color: Color(0xff5F40D4).withOpacity(0.5),
+                                    ),
+                                  ),
+                                ),
                                 onPressed: () {},
                               ),
                             ),
                             Padding(
-                              padding: const EdgeInsets.only(left: 8.0),
+                              padding: const EdgeInsets.only(left: 10.0),
                               child: IconButton(
-                                icon: Icon(Icons.filter_list),
+                                color: Color(0xffFFA800),
+                                icon: Icon(
+                                  FontAwesomeIcons.slidersH,
+                                  size: 18.0,
+                                ),
                                 tooltip: 'what is that ? ',
                                 onPressed: () {},
                               ),
                             ),
-                            Text('Fliters')
+                            Container(
+                                child: Text(
+                              'Fliters',
+                              style: TextStyle(color: Color(0xffFFA800)),
+                            ))
                           ],
                         ),
                       ),
