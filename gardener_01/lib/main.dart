@@ -136,7 +136,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               ),
                             ),
                             Padding(
-                              padding: const EdgeInsets.only(left: 10.0),
+                              padding: const EdgeInsets.only(left: 15.0),
                               child: IconButton(
                                 color: Color(0xffFFA800),
                                 icon: Icon(
@@ -147,11 +147,14 @@ class _MyHomePageState extends State<MyHomePage> {
                                 onPressed: () {},
                               ),
                             ),
-                            Container(
-                                child: Text(
-                              'Fliters',
-                              style: TextStyle(color: Color(0xffFFA800)),
-                            ))
+                            Padding(
+                              padding: const EdgeInsets.only(left: 0.0),
+                              child: Container(
+                                  child: Text(
+                                'Fliters',
+                                style: TextStyle(color: Color(0xffFFA800)),
+                              )),
+                            )
                           ],
                         ),
                       ),
