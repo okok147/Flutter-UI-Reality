@@ -65,11 +65,7 @@ class _SearchPageState extends State<SearchPage> {
                       ),
                     ),
                     onPressed: () {
-                      Navigator.push(
-                          context,
-                          new MaterialPageRoute(
-                              builder: (BuildContext context) =>
-                                  new SearchPage()));
+                     //need to find out how to direct to certain area in current page
                     },
                   ),
                 ),
@@ -81,7 +77,7 @@ class _SearchPageState extends State<SearchPage> {
                       FontAwesomeIcons.slidersH,
                       size: 18.0,
                     ),
-                    tooltip: 'Fliter',
+                    tooltip: 'Fliters',
                     onPressed: () {},
                   ),
                 ),
@@ -97,7 +93,7 @@ class _SearchPageState extends State<SearchPage> {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.fromLTRB(27.0,16.0,0,0),
+            padding: const EdgeInsets.fromLTRB(27.0, 16.0, 0, 0),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[

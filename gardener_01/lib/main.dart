@@ -154,7 +154,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                   FontAwesomeIcons.slidersH,
                                   size: 18.0,
                                 ),
-                                tooltip: ' Fliter ',
+                                tooltip: 'Fliters',
                                 onPressed: () {
                                   Navigator.push(
                                       context,
