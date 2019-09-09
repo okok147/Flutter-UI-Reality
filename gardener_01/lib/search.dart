@@ -36,6 +36,12 @@ class _SearchPageState extends State<SearchPage> {
                 size: 30.0,
                 color: Color(0xff5F40D4),
               ),
+              onPressed: () {
+                Navigator.pop(
+                    context,
+                    new MaterialPageRoute(
+                        builder: (BuildContext context) => new MyHomePage()));
+              },
             ),
           ),
           Padding(
@@ -75,7 +81,7 @@ class _SearchPageState extends State<SearchPage> {
                       FontAwesomeIcons.slidersH,
                       size: 18.0,
                     ),
-                    tooltip: 'what is that ? ',
+                    tooltip: 'Fliter',
                     onPressed: () {},
                   ),
                 ),
@@ -86,6 +92,33 @@ class _SearchPageState extends State<SearchPage> {
                     'Fliters',
                     style: TextStyle(color: Color(0xffFFA800)),
                   )),
+                )
+              ],
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.fromLTRB(27.0,16.0,0,0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Padding(
+                  padding: const EdgeInsets.only(top: 16.0),
+                  child: Text(
+                    'Search',
+                    style: new TextStyle(
+                      fontSize: 40.0,
+                      color: Color(0xffFFA800).withOpacity(0.85),
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+                Text(
+                  'Results',
+                  style: TextStyle(
+                    fontSize: 40.0,
+                    fontWeight: FontWeight.bold,
+                    color: Color(0xff5F40D4).withOpacity(0.85),
+                  ),
                 )
               ],
             ),

@@ -112,6 +112,10 @@ class _MyHomePageState extends State<MyHomePage> {
                                 )
                               ],
                             ),
+
+
+
+
                           )),
                       Padding(
                         padding: const EdgeInsets.only(top: 55.0),
@@ -138,7 +142,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                       context,
                                       new MaterialPageRoute(
                                           builder: (BuildContext context) =>
-                                          new SearchPage()));
+                                              new SearchPage()));
                                 },
                               ),
                             ),
@@ -150,8 +154,14 @@ class _MyHomePageState extends State<MyHomePage> {
                                   FontAwesomeIcons.slidersH,
                                   size: 18.0,
                                 ),
-                                tooltip: 'what is that ? ',
-                                onPressed: () {},
+                                tooltip: ' Fliter ',
+                                onPressed: () {
+                                  Navigator.push(
+                                      context,
+                                      new MaterialPageRoute(
+                                          builder: (BuildContext context) =>
+                                              new SearchPage()));
+                                },
                               ),
                             ),
                             Padding(
