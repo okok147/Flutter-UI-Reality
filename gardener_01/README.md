@@ -3,7 +3,7 @@
 Water your seed.
 
 # Suggestions
-Very hard coding,would improve the coding skils in next project.
+Very hard coding,would improve the coding skill in next project.
 
 ## Getting Started
 
