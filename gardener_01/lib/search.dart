@@ -71,7 +71,7 @@ class _SearchPageState extends State<SearchPage> {
                         'Gardeners around me',
                         style: TextStyle(
                           fontSize: 16.0,
-                          fontWeight: FontWeight.w500,
+                          fontWeight: FontWeight.w400,
                           color: Color(0xff5F40D4),
                         ),
                       ),
@@ -162,7 +162,7 @@ class _SearchPageState extends State<SearchPage> {
                               'Megan Watkins',
                               style: TextStyle(
                                 fontSize: 24.0,
-                                fontWeight: FontWeight.w500,
+                                fontWeight: FontWeight.w400,
                                 color: Color(0xff5F40D4).withOpacity(1),
                               ),
                             ),
@@ -260,7 +260,7 @@ class _SearchPageState extends State<SearchPage> {
                               'Megan Watkins',
                               style: TextStyle(
                                 fontSize: 24.0,
-                                fontWeight: FontWeight.w500,
+                                fontWeight: FontWeight.w400,
                                 color: Color(0xff5F40D4).withOpacity(1),
                               ),
                             ),
@@ -344,7 +344,7 @@ class _SearchPageState extends State<SearchPage> {
                               'Megan Watkins',
                               style: TextStyle(
                                 fontSize: 24.0,
-                                fontWeight: FontWeight.w500,
+                                fontWeight: FontWeight.w400,
                                 color: Color(0xff5F40D4).withOpacity(1),
                               ),
                             ),
@@ -451,7 +451,7 @@ class _SearchPageState extends State<SearchPage> {
                               'Megan Watkins',
                               style: TextStyle(
                                 fontSize: 24.0,
-                                fontWeight: FontWeight.w500,
+                                fontWeight: FontWeight.w400,
                                 color: Color(0xff5F40D4).withOpacity(1),
                               ),
                             ),
