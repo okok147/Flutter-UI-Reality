@@ -2,6 +2,7 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:gardener_01/search.dart';
+import 'package:gardener_01/utils.dart';
 
 void main() => runApp(MyApp());
 
@@ -9,6 +10,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
@@ -112,19 +114,15 @@ class _MyHomePageState extends State<MyHomePage> {
                                 )
                               ],
                             ),
-
-
-
-
                           )),
                       Padding(
-                        padding: const EdgeInsets.only(top: 55.0),
+                        padding: const EdgeInsets.only(top: 55.0, bottom: 50.0),
                         child: Row(
                           children: <Widget>[
                             Container(
                               decoration: myBoxDecoration(),
                               height: 62.0,
-                              width: 250.0,
+                              width: 230.0,
                               child: MaterialButton(
                                 child: Padding(
                                   padding: const EdgeInsets.only(right: 50.0),
@@ -155,13 +153,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                   size: 18.0,
                                 ),
                                 tooltip: 'Fliters',
-                                onPressed: () {
-                                  Navigator.push(
-                                      context,
-                                      new MaterialPageRoute(
-                                          builder: (BuildContext context) =>
-                                              new SearchPage()));
-                                },
+                                onPressed: () {},
                               ),
                             ),
                             Padding(
