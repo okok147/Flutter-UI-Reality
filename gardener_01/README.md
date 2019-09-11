@@ -2,7 +2,7 @@
 
 Water your seed.
 
-#Suggestions
+# Suggestions
 Very hard coding,would improve the coding skils in next project.
 
 ## Getting Started
