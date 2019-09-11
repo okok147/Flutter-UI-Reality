@@ -23,6 +23,9 @@ Water your seed.
   # DAY 6
   <img src="process/day6.png" width="1000" height="500"> 
   
+  # DAY 7
+  <img src="process/day7.png" width="1000" height="500"> 
+  
   
   
   
