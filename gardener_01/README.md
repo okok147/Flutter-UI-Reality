@@ -1,6 +1,6 @@
 # gardener_01
 
-Water your seed.
+Water your seed.Very hard coding,would improve the coding skils in next project.
 
 ## Getting Started
 
