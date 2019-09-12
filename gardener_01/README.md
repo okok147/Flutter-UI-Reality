@@ -2,6 +2,9 @@
 
 Water your seed.
 
+# Suggestions
+Very hard coding,would improve the coding skill in next project.
+
 ## Getting Started
 
 
