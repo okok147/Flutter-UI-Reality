@@ -6,12 +6,9 @@ const String homeViewRoute = '/';
 const String infoViewRoute = '/info';
 
 Route<dynamic> generateRoute(RouteSettings settings) {
-
-  switch(settings.name) {
+  switch (settings.name) {
     case homeViewRoute:
       return MaterialPageRoute(builder: (_) => HomePage());
-
-
 
     case infoViewRoute:
       return MaterialPageRoute(builder: (_) => InfoPage());
@@ -19,13 +16,6 @@ Route<dynamic> generateRoute(RouteSettings settings) {
       break;
 
     default:
-
       return MaterialPageRoute(builder: (_) => InfoPage());
-
-
-
   }
-
-
 }
-

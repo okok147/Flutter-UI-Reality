@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:friendly_forest_02/router.dart';
 
-
 class HomePage extends StatefulWidget {
   HomePage({Key key, this.title}) : super(key: key);
 
@@ -13,17 +12,11 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
-    return Scaffold (
-
-      body: Center(
-        child: SafeArea(
-
-          child: Text('This is the home page'),
-
-        ),
-      )
-
-
-    );
+    return Scaffold(
+        body: Center(
+      child: SafeArea(
+        child: Text('Charity Campaign'),
+      ),
+    ));
   }
 }
