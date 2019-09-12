@@ -3,4 +3,4 @@
 That would be amazing.
 
 # Day 1
-<img src ="process/day.png width="500>
+<img src="process/day1.png" width="1000" height="500"> 
