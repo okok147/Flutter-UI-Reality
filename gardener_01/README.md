@@ -2,9 +2,6 @@
 
 Water your seed.
 
-# Suggestions
-Very hard coding,would improve the coding skill in next project.
-
 ## Getting Started
 
 
@@ -29,6 +26,8 @@ Very hard coding,would improve the coding skill in next project.
   # DAY 7
   <img src="process/day7.png" width="1000" height="500"> 
   
+  # Suggestions
+Very hard coding,would improve the coding skill in next project.
   
   
   
