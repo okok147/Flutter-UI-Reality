@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:flutter/gestures.dart';
 import 'package:gardener_01/main.dart';
 import 'package:gardener_01/utils.dart';
 import 'package:gardener_01/notification.dart';
-import 'package:outline_material_icons/outline_material_icons.dart';
 
 class SearchPage extends StatefulWidget {
   SearchPage({Key key, this.notification}) : super(key: key);
@@ -185,24 +183,24 @@ class _SearchPageState extends State<SearchPage> {
                                   color: Color(0xffFFA800).withOpacity(1),
                                 ),
                               ),
-
                               Padding(
-                                padding: const EdgeInsets.only(left:24.0),
+                                padding: const EdgeInsets.only(left: 24.0),
                                 child: Icon(
                                   Icons.access_time,
                                   size: 18.0,
                                   color: Color(0xffFF505C),
-
                                 ),
                               ),
                               Padding(
-                                padding: const EdgeInsets.only(left:8.0),
-                                child: Text('10 -12 am',style: TextStyle(
-                                  fontSize: 16.0,
-                                  fontWeight: FontWeight.w400,
-                                  color: Color(0xffFF505C).withOpacity(1),
-
-                                ),),
+                                padding: const EdgeInsets.only(left: 8.0),
+                                child: Text(
+                                  '10 -12 am',
+                                  style: TextStyle(
+                                    fontSize: 16.0,
+                                    fontWeight: FontWeight.w400,
+                                    color: Color(0xffFF505C).withOpacity(1),
+                                  ),
+                                ),
                               ),
                             ],
                           ),
@@ -214,21 +212,172 @@ class _SearchPageState extends State<SearchPage> {
               ],
             ),
           ),
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+          Padding(
+            padding: const EdgeInsets.fromLTRB(8, 8, 0, 0),
+            child: Row(
+              children: <Widget>[
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(16, 16, 0, 0),
+                  child: Container(
+                    height: 100.0,
+                    width: 100.0,
+                    decoration: new BoxDecoration(
+                      image: DecorationImage(
+                          image: AssetImage(AvailableImages.men)),
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(left: 8, top: 16.0),
+                  child: Container(
+                    width: 200.0,
+                    height: 100.0,
+                    child: Column(
+                      children: <Widget>[
+                        Container(
+                          alignment: Alignment.topLeft,
+                          child: Padding(
+                            padding:
+                                const EdgeInsets.only(top: 16.0, left: 0.0),
+                            child: Text(
+                              'Bobby Vargas',
+                              style: TextStyle(
+                                fontSize: 24.0,
+                                fontWeight: FontWeight.w400,
+                                color: Color(0xff5F40D4).withOpacity(1),
+                              ),
+                            ),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(top: 16.0),
+                          child: Row(
+                            children: <Widget>[
+                              Icon(
+                                Icons.location_on,
+                                size: 20.0,
+                                color: Color(0xffFFA800),
+                              ),
+                              Text(
+                                '2.5 km',
+                                style: TextStyle(
+                                  fontSize: 16.0,
+                                  fontWeight: FontWeight.w400,
+                                  color: Color(0xffFFA800).withOpacity(1),
+                                ),
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.only(left: 24.0),
+                                child: Icon(
+                                  Icons.access_time,
+                                  size: 18.0,
+                                  color: Color(0xffFF505C),
+                                ),
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.only(left: 8.0),
+                                child: Text(
+                                  '12 -03 pm',
+                                  style: TextStyle(
+                                    fontSize: 16.0,
+                                    fontWeight: FontWeight.w400,
+                                    color: Color(0xffFF505C).withOpacity(1),
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.fromLTRB(8, 8, 0, 0),
+            child: Row(
+              children: <Widget>[
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(16, 16, 0, 0),
+                  child: Container(
+                    height: 100.0,
+                    width: 100.0,
+                    decoration: new BoxDecoration(
+                      image: DecorationImage(
+                          image: AssetImage(AvailableImages.men)),
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(left: 8, top: 16.0),
+                  child: Container(
+                    width: 200.0,
+                    height: 100.0,
+                    child: Column(
+                      children: <Widget>[
+                        Container(
+                          alignment: Alignment.topLeft,
+                          child: Padding(
+                            padding:
+                                const EdgeInsets.only(top: 16.0, left: 0.0),
+                            child: Text(
+                              'Lori Freeman',
+                              style: TextStyle(
+                                fontSize: 24.0,
+                                fontWeight: FontWeight.w400,
+                                color: Color(0xff5F40D4).withOpacity(1),
+                              ),
+                            ),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(top: 16.0),
+                          child: Row(
+                            children: <Widget>[
+                              Icon(
+                                Icons.location_on,
+                                size: 20.0,
+                                color: Color(0xffFFA800),
+                              ),
+                              Text(
+                                '4 km',
+                                style: TextStyle(
+                                  fontSize: 16.0,
+                                  fontWeight: FontWeight.w400,
+                                  color: Color(0xffFFA800).withOpacity(1),
+                                ),
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.only(left: 24.0),
+                                child: Icon(
+                                  Icons.access_time,
+                                  size: 18.0,
+                                  color: Color(0xffFF505C),
+                                ),
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.only(left: 8.0),
+                                child: Text(
+                                  '03 -06 pm',
+                                  style: TextStyle(
+                                    fontSize: 16.0,
+                                    fontWeight: FontWeight.w400,
+                                    color: Color(0xffFF505C).withOpacity(1),
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
           Padding(
             padding: const EdgeInsets.fromLTRB(8, 8, 0, 0),
             child: Row(
@@ -255,9 +404,9 @@ class _SearchPageState extends State<SearchPage> {
                           alignment: Alignment.topLeft,
                           child: Padding(
                             padding:
-                            const EdgeInsets.only(top: 16.0, left: 0.0),
+                                const EdgeInsets.only(top: 16.0, left: 0.0),
                             child: Text(
-                              'Megan Watkins',
+                              'Pamela Holmes',
                               style: TextStyle(
                                 fontSize: 24.0,
                                 fontWeight: FontWeight.w400,
@@ -276,31 +425,31 @@ class _SearchPageState extends State<SearchPage> {
                                 color: Color(0xffFFA800),
                               ),
                               Text(
-                                '2 km',
+                                '4 km',
                                 style: TextStyle(
                                   fontSize: 16.0,
                                   fontWeight: FontWeight.w400,
                                   color: Color(0xffFFA800).withOpacity(1),
                                 ),
                               ),
-
                               Padding(
-                                padding: const EdgeInsets.only(left:24.0),
+                                padding: const EdgeInsets.only(left: 24.0),
                                 child: Icon(
                                   Icons.access_time,
                                   size: 18.0,
                                   color: Color(0xffFF505C),
-
                                 ),
                               ),
                               Padding(
-                                padding: const EdgeInsets.only(left:8.0),
-                                child: Text('10 -12 am',style: TextStyle(
-                                  fontSize: 16.0,
-                                  fontWeight: FontWeight.w400,
-                                  color: Color(0xffFF505C).withOpacity(1),
-
-                                ),),
+                                padding: const EdgeInsets.only(left: 8.0),
+                                child: Text(
+                                  '06 -09 pm',
+                                  style: TextStyle(
+                                    fontSize: 16.0,
+                                    fontWeight: FontWeight.w400,
+                                    color: Color(0xffFF505C).withOpacity(1),
+                                  ),
+                                ),
                               ),
                             ],
                           ),
@@ -312,201 +461,6 @@ class _SearchPageState extends State<SearchPage> {
               ],
             ),
           ),
-
-          Padding(
-            padding: const EdgeInsets.fromLTRB(8, 8, 0, 0),
-            child: Row(
-              children: <Widget>[
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(16, 16, 0, 0),
-                  child: Container(
-                    height: 100.0,
-                    width: 100.0,
-                    decoration: new BoxDecoration(
-                      image: DecorationImage(
-                          image: AssetImage(AvailableImages.girl)),
-                    ),
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(left: 8, top: 16.0),
-                  child: Container(
-                    width: 200.0,
-                    height: 100.0,
-                    child: Column(
-                      children: <Widget>[
-                        Container(
-                          alignment: Alignment.topLeft,
-                          child: Padding(
-                            padding:
-                            const EdgeInsets.only(top: 16.0, left: 0.0),
-                            child: Text(
-                              'Megan Watkins',
-                              style: TextStyle(
-                                fontSize: 24.0,
-                                fontWeight: FontWeight.w400,
-                                color: Color(0xff5F40D4).withOpacity(1),
-                              ),
-                            ),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(top: 16.0),
-                          child: Row(
-                            children: <Widget>[
-                              Icon(
-                                Icons.location_on,
-                                size: 20.0,
-                                color: Color(0xffFFA800),
-                              ),
-                              Text(
-                                '2 km',
-                                style: TextStyle(
-                                  fontSize: 16.0,
-                                  fontWeight: FontWeight.w400,
-                                  color: Color(0xffFFA800).withOpacity(1),
-                                ),
-                              ),
-
-                              Padding(
-                                padding: const EdgeInsets.only(left:24.0),
-                                child: Icon(
-                                  Icons.access_time,
-                                  size: 18.0,
-                                  color: Color(0xffFF505C),
-
-                                ),
-                              ),
-                              Padding(
-                                padding: const EdgeInsets.only(left:8.0),
-                                child: Text('10 -12 am',style: TextStyle(
-                                  fontSize: 16.0,
-                                  fontWeight: FontWeight.w400,
-                                  color: Color(0xffFF505C).withOpacity(1),
-
-                                ),),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-              ],
-            ),
-          ),
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          Padding(
-            padding: const EdgeInsets.fromLTRB(8, 8, 0, 0),
-            child: Row(
-              children: <Widget>[
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(16, 16, 0, 0),
-                  child: Container(
-                    height: 100.0,
-                    width: 100.0,
-                    decoration: new BoxDecoration(
-                      image: DecorationImage(
-                          image: AssetImage(AvailableImages.girl)),
-                    ),
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(left: 8, top: 16.0),
-                  child: Container(
-                    width: 200.0,
-                    height: 100.0,
-                    child: Column(
-                      children: <Widget>[
-                        Container(
-                          alignment: Alignment.topLeft,
-                          child: Padding(
-                            padding:
-                            const EdgeInsets.only(top: 16.0, left: 0.0),
-                            child: Text(
-                              'Megan Watkins',
-                              style: TextStyle(
-                                fontSize: 24.0,
-                                fontWeight: FontWeight.w400,
-                                color: Color(0xff5F40D4).withOpacity(1),
-                              ),
-                            ),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(top: 16.0),
-                          child: Row(
-                            children: <Widget>[
-                              Icon(
-                                Icons.location_on,
-                                size: 20.0,
-                                color: Color(0xffFFA800),
-                              ),
-                              Text(
-                                '2 km',
-                                style: TextStyle(
-                                  fontSize: 16.0,
-                                  fontWeight: FontWeight.w400,
-                                  color: Color(0xffFFA800).withOpacity(1),
-                                ),
-                              ),
-
-                              Padding(
-                                padding: const EdgeInsets.only(left:24.0),
-                                child: Icon(
-                                  Icons.access_time,
-                                  size: 18.0,
-                                  color: Color(0xffFF505C),
-
-                                ),
-                              ),
-                              Padding(
-                                padding: const EdgeInsets.only(left:8.0),
-                                child: Text('10 -12 am',style: TextStyle(
-                                  fontSize: 16.0,
-                                  fontWeight: FontWeight.w400,
-                                  color: Color(0xffFF505C).withOpacity(1),
-
-                                ),),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-              ],
-            ),
-          ),
-
-
-
-
         ],
       ),
     );
