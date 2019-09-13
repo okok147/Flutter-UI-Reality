@@ -32,7 +32,7 @@ class _InfoPageState extends State<InfoPage> {
                     ),
                   ),
                   AspectRatio(
-                    aspectRatio: 1.9,
+                    aspectRatio: 2.0,
                     child: Center(
                         child: Text('Daily Life',
                             style: new TextStyle(
@@ -86,14 +86,14 @@ class _InfoPageState extends State<InfoPage> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(top: 32.0),
+              padding: const EdgeInsets.only(top: 25.0),
               child: AspectRatio(
                   aspectRatio: 6.8,
                   child: Center(
                     child: Padding(
                       padding: const EdgeInsets.only(top: 0.0),
                       child: Container(
-                        width: 290.0,
+                        width: 280.0,
                         height: 80.0,
                         child: RaisedButton(
                           color: Color(0xff2B55A8).withOpacity(0.95),
@@ -106,7 +106,7 @@ class _InfoPageState extends State<InfoPage> {
                             ),
                           ),
                           shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(10),
+                            borderRadius: BorderRadius.circular(12),
                           ),
                         ),
                       ),
