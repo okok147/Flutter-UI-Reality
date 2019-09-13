@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:friendly_forest_02/router.dart';
 import 'package:friendly_forest_02/utils.dart';
 import 'package:flutter/widgets.dart';
+import 'package:friendly_forest_02/utils.dart';
 
 class InfoPage extends StatefulWidget {
   InfoPage({Key key, this.title}) : super(key: key);
@@ -54,33 +55,19 @@ class _InfoPageState extends State<InfoPage> {
                         Padding(
                           padding: const EdgeInsets.all(4.0),
                           child: Text(
-                            //define a class for text style to avoid repeat coding
-                            ' "You have the freedom,ability,and authority ',
-                            style: TextStyle(
-                              fontSize: 12.5,
-                              fontWeight: FontWeight.w500,
-                            ),
-                          ),
+                              //define a class for text style to avoid repeat coding
+                              ' " You have the freedom,ability , and authority ',
+                              style: infoTextStyle),
                         ),
                         Padding(
                           padding: const EdgeInsets.only(bottom: 4.0),
                           child: Text(
-                            ' to love your life.Just be you,then wait. " ',
-                            style: TextStyle(
-                              fontSize: 12.5,
-                              fontWeight: FontWeight.w500,
-                            ),
-                          ),
+                              ' to love your life . Just be you , then wait. " ',
+                              style: infoTextStyle),
                         ),
                         Padding(
                           padding: const EdgeInsets.only(bottom: 0.0),
-                          child: Text(
-                            '~Gangaji',
-                            style: TextStyle(
-                              fontSize: 12.5,
-                              fontWeight: FontWeight.w500,
-                            ),
-                          ),
+                          child: Text(' ~ Gangaji ', style: infoTextStyle),
                         )
                       ],
                     ),

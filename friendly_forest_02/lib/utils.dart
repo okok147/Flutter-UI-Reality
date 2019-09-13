@@ -29,3 +29,11 @@ class SizeConfig {
     safeBlockVertical = (screenHeight - _safeAreaVertical) / 100;
   }
 }
+
+const infoTextStyle = const TextStyle(
+  fontSize: 13.5,
+  fontWeight: FontWeight.w500,
+  color: Color(0xff000000),
+  fontFamily: 'Manjari',
+
+);
