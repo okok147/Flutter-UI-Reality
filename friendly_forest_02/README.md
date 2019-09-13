@@ -4,3 +4,6 @@ That would be amazing.<a href ="https://dribbble.com/shots/7080175-Mobile-app-Fr
 
 # Day 1
 <img src="process/day1.png" width="1000" height="500"> 
+
+# Day 2
+<img src="process/day2.png" width="1000" height="500"> 
