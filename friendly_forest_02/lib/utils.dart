@@ -35,5 +35,4 @@ const infoTextStyle = const TextStyle(
   fontWeight: FontWeight.w500,
   color: Color(0xff000000),
   fontFamily: 'Manjari',
-
 );
