@@ -8,4 +8,4 @@ That would be amazing.<a href ="https://dribbble.com/shots/7080175-Mobile-app-Fr
 # Day 2
 <img src="process/day2.png" width="1000" height="500"> 
 
-    The style of font needs to be changed.(Family,Align) *updated
+    The style of font needs to be changed.(Family,Align) *Updated
