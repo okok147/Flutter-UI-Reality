@@ -54,6 +54,7 @@ class _InfoPageState extends State<InfoPage> {
                         Padding(
                           padding: const EdgeInsets.all(4.0),
                           child: Text(
+                            //define a class for textstyle to avoid repeat coding
                             ' "You have the freedom,ability,and authority ',
                             style: TextStyle(
                               fontSize: 12.5,
