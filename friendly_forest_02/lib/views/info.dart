@@ -37,8 +37,7 @@ class _InfoPageState extends State<InfoPage> {
                         child: Text('Daily Life',
                             style: new TextStyle(
                               fontSize: 35.0,
-                              fontWeight: FontWeight.w600,
-                              fontFamily: 'Manjari',
+                              fontFamily: 'Manjari Bold',
                               color: Color(0xffde5e841).withOpacity(0.85),
                             ))),
                   ),

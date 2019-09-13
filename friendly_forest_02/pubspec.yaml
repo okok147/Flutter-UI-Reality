@@ -64,6 +64,13 @@ flutter:
       fonts:
         - asset: fonts/Manjari/Manjari-Regular.ttf
 
+    - family: Manjari Bold
+      fonts:
+        - asset: fonts/Manjari/Manjari-Bold.ttf
+          weight: 600
+
+
+
 
   #         style: italic
   #   - family: Trajan Pro
