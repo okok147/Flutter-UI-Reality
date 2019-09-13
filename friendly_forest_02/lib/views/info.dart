@@ -38,7 +38,7 @@ class _InfoPageState extends State<InfoPage> {
                             style: new TextStyle(
                               fontSize: 35.0,
                               fontFamily: 'Manjari',
-                              color: Color(0xffde5e841).withOpacity(0.88),
+                              color: Color(0xffde5e841).withOpacity(0.85),
                             ))),
                   ),
                 ],
@@ -65,10 +65,7 @@ class _InfoPageState extends State<InfoPage> {
                               ' to love your life . Just be you , then wait. " ',
                               style: infoTextStyle),
                         ),
-                        Padding(
-                          padding: const EdgeInsets.only(bottom: 0.0),
-                          child: Text(' ~ Gangaji ', style: infoTextStyle),
-                        )
+                        Text(' ~ Gangaji ', style: infoTextStyle),
                       ],
                     ),
                   ),
