@@ -48,25 +48,27 @@ class _InfoPageState extends State<InfoPage> {
               child: Container(
                 child: Center(
                   child: Padding(
-                    padding: const EdgeInsets.fromLTRB(0, 65, 0, 0),
+                    padding: const EdgeInsets.fromLTRB(0, 50, 0, 0),
                     child: Column(
                       children: <Widget>[
                         Padding(
                           padding: const EdgeInsets.all(4.0),
                           child: Text(
-                            //define a class for textstyle to avoid repeat coding
+                            //define a class for text style to avoid repeat coding
                             ' "You have the freedom,ability,and authority ',
                             style: TextStyle(
                               fontSize: 12.5,
+                              fontWeight: FontWeight.w500,
                             ),
                           ),
                         ),
                         Padding(
-                          padding: const EdgeInsets.only(bottom: 5.0),
+                          padding: const EdgeInsets.only(bottom: 4.0),
                           child: Text(
                             ' to love your life.Just be you,then wait. " ',
                             style: TextStyle(
                               fontSize: 12.5,
+                              fontWeight: FontWeight.w500,
                             ),
                           ),
                         ),
@@ -76,6 +78,7 @@ class _InfoPageState extends State<InfoPage> {
                             '~Gangaji',
                             style: TextStyle(
                               fontSize: 12.5,
+                              fontWeight: FontWeight.w500,
                             ),
                           ),
                         )
