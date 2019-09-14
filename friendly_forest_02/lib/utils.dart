@@ -37,6 +37,13 @@ const infoTextStyle = const TextStyle(
   fontFamily: 'Manjari',
 );
 
+const tabTextStyle = const TextStyle(
+  fontSize: 13.5,
+  fontWeight: FontWeight.w200,
+  color: Color(0xff000000),
+  fontFamily: 'Manjari',
+);
+
 const headerTextStyle = const TextStyle(
   fontSize: 30.0,
   fontWeight: FontWeight.w400,

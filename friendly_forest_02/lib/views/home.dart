@@ -85,7 +85,7 @@ class _HomePageState extends State<HomePage>
                           initialIndex: 1,
                           length: 4,
                           child: TabBar(
-                            labelStyle: infoTextStyle,
+                            labelStyle: tabTextStyle,
                             indicatorSize: TabBarIndicatorSize.tab,
                             indicator: CircleTabIndicator(
                                 color: Colors.black, radius: 4),
