@@ -1,5 +1,4 @@
 import 'package:flutter/widgets.dart';
-import 'package:friendly_forest_02/views/home.dart';
 
 class SizeConfig {
   static MediaQueryData _mediaQueryData;
@@ -47,5 +46,6 @@ const headerTextStyle = const TextStyle(
 const AllAlign = const EdgeInsets.fromLTRB(16, 16, 16, 16);
 const HomePageAlign = const EdgeInsets.only(left: 16.0);
 
-
 double SizeBoxSize = 33.0;
+
+const roundedcorner = 12.0;

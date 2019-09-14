@@ -2,11 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:friendly_forest_02/router.dart';
 import 'package:friendly_forest_02/utils.dart';
 import 'package:flutter/widgets.dart';
-import 'package:friendly_forest_02/views/home.dart';
-
-
-
-
 
 class InfoPage extends StatefulWidget {
   InfoPage({Key key, this.title}) : super(key: key);
@@ -82,26 +77,23 @@ class _InfoPageState extends State<InfoPage> {
               child: AspectRatio(
                   aspectRatio: 6.8,
                   child: Center(
-                    child: Padding(
-                      padding: const EdgeInsets.only(top: 0.0),
-                      child: Container(
-                        width: 280.0,
-                        height: 80.0,
-                        child: RaisedButton(
-                          color: Color(0xff2B55A8).withOpacity(0.95),
-                          onPressed: () {
-                            Navigator.pushNamed(context, homeViewRoute);
-                          },
-                          child: const Text(
-                            'GET STARTED',
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 16.5,
-                            ),
+                    child: Container(
+                      width: 280.0,
+                      height: 80.0,
+                      child: RaisedButton(
+                        color: Color(0xff2B55A8).withOpacity(0.95),
+                        onPressed: () {
+                          Navigator.pushNamed(context, homeViewRoute);
+                        },
+                        child: const Text(
+                          'GET STARTED',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 16.5,
                           ),
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(12),
-                          ),
+                        ),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(roundedcorner),
                         ),
                       ),
                     ),
