@@ -14,3 +14,5 @@ That would be amazing.<a href ="https://dribbble.com/shots/7080175-Mobile-app-Fr
 <img src="process/day3.png" width="1000" height="500"> 
 
     Objectives: Input Decoration + TabController
+    TabController
+    https://stackoverflow.com/questions/57889326/how-to-add-a-circular-dot-as-an-indicator-in-flutter-tabs
