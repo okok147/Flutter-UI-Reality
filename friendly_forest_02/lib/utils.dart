@@ -52,8 +52,10 @@ const headerTextStyle = const TextStyle(
 );
 const AllAlign = const EdgeInsets.fromLTRB(16, 16, 16, 16);
 const HomePageAlign = const EdgeInsets.only(left: 16.0);
+const TopBottomAlign = const EdgeInsets.fromLTRB(0, 8, 0, 8);
 
-double SizeBoxSize = 33.0;
+double SeparateSize = 33.0;
+double SmallSeparateSize = 15.0;
 
 const roundedcorner = 12.0;
 
@@ -84,3 +86,5 @@ class _CirclePainter extends BoxPainter {
     canvas.drawCircle(circleOffset, radius, _paint);
   }
 }
+
+

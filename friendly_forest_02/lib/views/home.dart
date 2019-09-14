@@ -77,7 +77,7 @@ class _HomePageState extends State<HomePage>
                   ],
                 ),
                 SizedBox(
-                  height: SizeBoxSize,
+                  height: SeparateSize,
                 ),
                 Padding(
                   padding: HomePageAlign,
@@ -90,10 +90,14 @@ class _HomePageState extends State<HomePage>
                   ),
                 ),
                 SizedBox(
-                  height: SizeBoxSize,
+                  height: SeparateSize,
                 ),
-                SizedBox(
-                  height: 50.0,
+                Padding(
+                  padding: TopBottomAlign,
+                  child: SizedBox(
+                    //For Input Decoration(Search Bar)
+                    height: 50.0,
+                  ),
                 ),
                 Row(
                   children: <Widget>[
@@ -121,10 +125,10 @@ class _HomePageState extends State<HomePage>
                   ],
                 ),
                 SizedBox(
-                  height: SizeBoxSize,
+                  height: SmallSeparateSize,
                 ),
                 Container(
-                  height: 200,
+                  height: 300,
                   width: 500,
                   child: Center(
                     child: TabBarView(
@@ -133,6 +137,7 @@ class _HomePageState extends State<HomePage>
                         Container(
                           height: 100,
                           color: Colors.redAccent,
+                          child: Center(child: Text('All')),
                         ),
                         Container(
                           height: 100,

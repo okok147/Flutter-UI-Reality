@@ -16,11 +16,11 @@ class _InfoPageState extends State<InfoPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: AspectRatio(
-        aspectRatio: 0.5,
+        aspectRatio: 0.52,
         child: Column(
           children: <Widget>[
             AspectRatio(
-              aspectRatio: 0.7,
+              aspectRatio: 0.71,
               child: Stack(
                 children: <Widget>[
                   Container(
@@ -49,7 +49,7 @@ class _InfoPageState extends State<InfoPage> {
               child: Container(
                 child: Center(
                   child: Padding(
-                    padding: const EdgeInsets.fromLTRB(0, 50, 0, 0),
+                    padding: const EdgeInsets.fromLTRB(0, 40, 0, 0),
                     child: Column(
                       children: <Widget>[
                         Padding(
@@ -73,7 +73,7 @@ class _InfoPageState extends State<InfoPage> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(top: 25.0),
+              padding: const EdgeInsets.only(bottom: 0.0),
               child: AspectRatio(
                   aspectRatio: 6.8,
                   child: Center(
