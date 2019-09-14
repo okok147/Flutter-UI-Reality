@@ -13,6 +13,8 @@ class App extends StatelessWidget {
       onGenerateRoute: router.generateRoute,
       initialRoute: router.infoViewRoute,
 
+
+
     );
   }
 }
