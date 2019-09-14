@@ -15,21 +15,39 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage>
     with SingleTickerProviderStateMixin {
-  TabController controller;
+  final List<Tab> myTabs = <Tab>[
+    new Tab(
+      text: 'All',
+    ),
+    new Tab(
+      text: 'Digest',
+    ),
+    new Tab(
+      text: 'News',
+    ),
+    new Tab(
+      text: 'Contact',
+    ),
+  ];
+  TabController _tabController;
 
   @override
   void initState() {
     super.initState();
-    controller = new TabController(length: 4, vsync: this);
+    _tabController = new TabController(
+      length: 4,
+      vsync: this,
+    );
   }
 
   @override
   void dispose() {
-    controller.dispose();
+    _tabController.dispose();
     super.dispose();
   }
 
   Widget build(BuildContext context) {
+    int _selectedIndex = 1;
     return Scaffold(
       body: Padding(
         padding: AllAlign,
@@ -77,47 +95,51 @@ class _HomePageState extends State<HomePage>
                 SizedBox(
                   height: 50.0,
                 ),
-                Column(
+                Row(
                   children: <Widget>[
-                    Row(
-                      children: <Widget>[
-                        DefaultTabController(
-                          initialIndex: 1,
-                          length: 4,
-                          child: TabBar(
-                            labelStyle: tabTextStyle,
-                            indicatorSize: TabBarIndicatorSize.tab,
-                            indicator: CircleTabIndicator(
-                                color: Colors.black, radius: 4),
-                            isScrollable: true,
-                            labelColor: Colors.black,
-                            tabs: <Widget>[
-                              Tab(
-                                text: 'All',
-                              ),
-                              Tab(
-                                text: 'Digest',
-                              ),
-                              Tab(
-                                text: 'News',
-                              ),
-                              Tab(
-                                text: 'Contact',
-                              ),
-                            ],
-                          ),
-                        ),
-                        Spacer(),
-                        IconButton(
-                          icon: new Icon(
-                            Icons.tune,
-                            size: 20.0,
-                          ),
-                          onPressed: () {},
-                        ),
-                      ],
+                    DefaultTabController(
+                      initialIndex: 1,
+                      length: 4,
+                      child: TabBar(
+                        controller: _tabController,
+                        labelStyle: tabTextStyle,
+                        indicatorSize: TabBarIndicatorSize.tab,
+                        indicator:
+                            CircleTabIndicator(color: Colors.black, radius: 2),
+                        isScrollable: true,
+                        labelColor: Colors.black,
+                        tabs: myTabs,
+                      ),
+                    ),
+                    Spacer(),
+                    IconButton(
+                      icon: new Icon(
+                        Icons.tune,
+                        size: 20.0,
+                      ),
+                      onPressed: () {},
                     ),
                   ],
+                ),
+                SizedBox(
+                  height: SizeBoxSize,
+                ),
+                Container(
+                  height: 200,
+                  width: 500,
+                  child: Center(
+                    child: TabBarView(
+                      controller: _tabController,
+                      children: <Widget>[
+                        Container(height: 100,color: Colors.redAccent,),
+                        Container(height: 100,color: Colors.blueAccent,),
+                        Container(height: 100,color: Colors.greenAccent,),
+                        Container(height: 100,color: Colors.purpleAccent,),
+
+                      ],
+
+                    ),
+                  ),
                 ),
               ],
             ),
