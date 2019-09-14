@@ -13,4 +13,4 @@ That would be amazing.<a href ="https://dribbble.com/shots/7080175-Mobile-app-Fr
 # Day 3
 <img src="process/day3.png" width="1000" height="500"> 
 
-    Next Obejct: Input Decoration + TabController
+    Objectives: Input Decoration + TabController
