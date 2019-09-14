@@ -9,3 +9,8 @@ That would be amazing.<a href ="https://dribbble.com/shots/7080175-Mobile-app-Fr
 <img src="process/day2.png" width="1000" height="500"> 
 
     The style of font needs to be changed.(Family,Align) *Updated
+    
+# Day 3
+<img src="process/day3.png" width="1000" height="500"> 
+
+    Next Obejct: Input Decoration + TabController
