@@ -35,6 +35,7 @@ class _HomePageState extends State<HomePage>
   void initState() {
     super.initState();
     _tabController = new TabController(
+      initialIndex: 1,
       length: 4,
       vsync: this,
     );
@@ -47,7 +48,6 @@ class _HomePageState extends State<HomePage>
   }
 
   Widget build(BuildContext context) {
-    int _selectedIndex = 1;
     return Scaffold(
       body: Padding(
         padding: AllAlign,
@@ -98,7 +98,6 @@ class _HomePageState extends State<HomePage>
                 Row(
                   children: <Widget>[
                     DefaultTabController(
-                      initialIndex: 1,
                       length: 4,
                       child: TabBar(
                         controller: _tabController,
@@ -131,13 +130,23 @@ class _HomePageState extends State<HomePage>
                     child: TabBarView(
                       controller: _tabController,
                       children: <Widget>[
-                        Container(height: 100,color: Colors.redAccent,),
-                        Container(height: 100,color: Colors.blueAccent,),
-                        Container(height: 100,color: Colors.greenAccent,),
-                        Container(height: 100,color: Colors.purpleAccent,),
-
+                        Container(
+                          height: 100,
+                          color: Colors.redAccent,
+                        ),
+                        Container(
+                          height: 100,
+                          color: Colors.blueAccent,
+                        ),
+                        Container(
+                          height: 100,
+                          color: Colors.greenAccent,
+                        ),
+                        Container(
+                          height: 100,
+                          color: Colors.purpleAccent,
+                        ),
                       ],
-
                     ),
                   ),
                 ),
