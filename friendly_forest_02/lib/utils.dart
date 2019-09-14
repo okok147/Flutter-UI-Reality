@@ -1,4 +1,5 @@
 import 'package:flutter/widgets.dart';
+import 'package:friendly_forest_02/views/home.dart';
 
 class SizeConfig {
   static MediaQueryData _mediaQueryData;
@@ -36,3 +37,15 @@ const infoTextStyle = const TextStyle(
   color: Color(0xff000000),
   fontFamily: 'Manjari',
 );
+
+const headerTextStyle = const TextStyle(
+  fontSize: 30.0,
+  fontWeight: FontWeight.w400,
+  color: Color(0xff000000),
+  fontFamily: 'Manjari',
+);
+const AllAlign = const EdgeInsets.fromLTRB(16, 16, 16, 16);
+const HomePageAlign = const EdgeInsets.only(left: 16.0);
+
+
+double SizeBoxSize = 33.0;

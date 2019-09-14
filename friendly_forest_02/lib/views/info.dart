@@ -2,6 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:friendly_forest_02/router.dart';
 import 'package:friendly_forest_02/utils.dart';
 import 'package:flutter/widgets.dart';
+import 'package:friendly_forest_02/views/home.dart';
+
+
+
+
 
 class InfoPage extends StatefulWidget {
   InfoPage({Key key, this.title}) : super(key: key);
@@ -84,7 +89,9 @@ class _InfoPageState extends State<InfoPage> {
                         height: 80.0,
                         child: RaisedButton(
                           color: Color(0xff2B55A8).withOpacity(0.95),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.pushNamed(context, homeViewRoute);
+                          },
                           child: const Text(
                             'GET STARTED',
                             style: TextStyle(

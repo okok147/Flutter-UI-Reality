@@ -69,6 +69,10 @@ flutter:
         - asset: fonts/Manjari/Manjari-Bold.ttf
           weight: 600
 
+    - family: Menu Dot
+      fonts:
+        - asset: fonts/MenuDot.ttf
+
 
 
 
