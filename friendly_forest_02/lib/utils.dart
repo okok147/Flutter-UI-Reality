@@ -57,12 +57,12 @@ double SizeBoxSize = 33.0;
 
 const roundedcorner = 12.0;
 
-
 //this is an aliens language for me right now, but I would figure it out later on ^_^
 class CircleTabIndicator extends Decoration {
   final BoxPainter _painter;
 
-  CircleTabIndicator({@required Color color, @required double radius}) : _painter = _CirclePainter(color, radius);
+  CircleTabIndicator({@required Color color, @required double radius})
+      : _painter = _CirclePainter(color, radius);
 
   @override
   BoxPainter createBoxPainter([onChanged]) => _painter;
@@ -74,17 +74,13 @@ class _CirclePainter extends BoxPainter {
 
   _CirclePainter(Color color, this.radius)
       : _paint = Paint()
-    ..color = color
-    ..isAntiAlias = true;
+          ..color = color
+          ..isAntiAlias = true;
 
   @override
   void paint(Canvas canvas, Offset offset, ImageConfiguration cfg) {
-    final Offset circleOffset = offset + Offset(cfg.size.width / 2, cfg.size.height - radius);
+    final Offset circleOffset =
+        offset + Offset(cfg.size.width / 2, cfg.size.height - radius);
     canvas.drawCircle(circleOffset, radius, _paint);
   }
 }
-
-
-
-
-
