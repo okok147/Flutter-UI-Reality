@@ -18,7 +18,7 @@ That would be amazing.<a href ="https://dribbble.com/shots/7080175-Mobile-app-Fr
     - Declare a variable at first at first and change its value with setState and and 
     - use that variable later on and build Widgets according to that variable using if else or switch case.
     @ Solution: TabBarView
-  <a href ="https://stackoverflow.com/questions/57889326/how-to-add-a-circular-dot-as-an-indicator-in-flutter-tabs">Dot Circle Tab Indicator </a>
+  <a href ="https://stackoverflow.com/questions/57889326/how-to-add-a-circular-dot-as-an-indicator-in-flutter-tabs">Dot Circle Useful Resource: Tab Indicator </a>
   
   
          
