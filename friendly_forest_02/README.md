@@ -11,7 +11,7 @@ That would be amazing.<a href ="https://dribbble.com/shots/7080175-Mobile-app-Fr
     The style of font needs to be changed.(Family,Align) *Updated
     
 # Day 3
-<img src="process/day2.png" width="1000" height="500"> 
+<img src="process/day3.png" width="1000" height="500"> 
 
     - Objectives: Input Decoration + TabController
     - Probably try IndexedStack to switch the page with index later on *Waiting to test
