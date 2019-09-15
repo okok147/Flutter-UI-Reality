@@ -27,8 +27,8 @@ That would be amazing.<a href ="https://dribbble.com/shots/7080175-Mobile-app-Fr
 
      - Finished TabBarView
      - Dig into some listener,good article for textfield
-     - Next Objectives:Card with Row :
-     -Container(Row contains Row + Column) , Container(IconButton,Press>dismis +animation if okay)
+     - Next Objectives:Card with Row (Or ListView) :
+     - Use Dismissible to dimiss the object
      -(build a widget to avoid hard coding)
      - Class for storing different data(pic + name + description)
      * Problem: The info page is overflowed by keyboard when restarting the app without dismissing the keyboard.
