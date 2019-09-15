@@ -162,31 +162,33 @@ class _HomePageState extends State<HomePage>
                 SizedBox(
                   height: SmallSeparateSize,
                 ),
-                Container(
-                  height: 300,
-                  width: 500,
-                  child: Center(
-                    child: TabBarView(
-                      controller: _tabController,
-                      children: <Widget>[
-                        Container(
-                          height: 100,
-                          color: Colors.redAccent,
-                          child: Center(child: Text('All')),
-                        ),
-                        Container(
-                          height: 100,
-                          color: Colors.blueAccent,
-                        ),
-                        Container(
-                          height: 100,
-                          color: Colors.greenAccent,
-                        ),
-                        Container(
-                          height: 100,
-                          color: Colors.purpleAccent,
-                        ),
-                      ],
+                Padding(
+                  padding: AllAlign,
+                  child: Container(
+                    height: 200,
+                    child: Center(
+                      child: TabBarView(
+                        controller: _tabController,
+                        children: <Widget>[
+                          Container(
+                            height: 100,
+                            color: Colors.redAccent,
+                            child: Center(child: Text('All')),
+                          ),
+                          Container(
+                            height: 100,
+                            color: Colors.blueAccent,
+                          ),
+                          Container(
+                            height: 100,
+                            color: Colors.greenAccent,
+                          ),
+                          Container(
+                            height: 100,
+                            color: Colors.purpleAccent,
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ),
