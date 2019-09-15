@@ -27,7 +27,12 @@ That would be amazing.<a href ="https://dribbble.com/shots/7080175-Mobile-app-Fr
 
      -Finished TabBarView
      -Dig into some listener,good article for textfield
-      https://medium.com/flutter-community/a-deep-dive-into-flutter-textfields-f0e676aaab7a
+     -Next Objectives:Card with Content
+     
+     
+     
+  <a href ="https://medium.com/flutter-community/a-deep-dive-into-flutter-textfields-f0e676aaab7a">
+    A deep dive into Flutter Textfields</a>
   
   
          
