@@ -50,7 +50,7 @@ That would be amazing.<a href ="https://dribbble.com/shots/7080175-Mobile-app-Fr
      
      
      
-  <a href ="https://medium.com/flutter-community/a-deep-dive-into-flutter-textfields-f0e676aaab7a">
+  <a href ="https://github.com/kelvin147789/flutter-ui-resources/tree/master/Example/flutter_ghana_ui_challenge_week-1_master">
     A deep dive into Flutter Textfields</a>
   
   
