@@ -31,7 +31,7 @@ That would be amazing.<a href ="https://dribbble.com/shots/7080175-Mobile-app-Fr
      -Container(Row contains Row + Column) , Container(IconButton,Press>dismis +animation if okay)
      -(build a widget to avoid hard coding)
      - Class for storing different data
-   <a href="https://github.com/kelvin147789/flutter-ui-resources/tree/master/Example/flutter-ghana-ui-challenge-week-1-master"># Reference:</A>
+   <a href="https://github.com/kelvin147789/flutter-ui-resources/tree/master/Example/flutter-ghana-ui-challenge-week-1-master"># Reference for Widget and Class</A>
      
      
      
