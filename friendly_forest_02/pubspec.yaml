@@ -74,6 +74,10 @@ flutter:
       fonts:
         - asset: fonts/MenuDot.ttf
 
+    - family:  SearchIcon
+      fonts:
+        - asset: fonts/SearchIcon.ttf
+
 
 
 

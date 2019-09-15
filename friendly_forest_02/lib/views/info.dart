@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:friendly_forest_02/router.dart';
 import 'package:friendly_forest_02/utils.dart';
 import 'package:flutter/widgets.dart';
+import 'package:flutter/services.dart' show SystemChannels;
 
 class InfoPage extends StatefulWidget {
   InfoPage({Key key, this.title}) : super(key: key);
@@ -72,33 +74,32 @@ class _InfoPageState extends State<InfoPage> {
                 ),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.only(bottom: 0.0),
-              child: AspectRatio(
-                  aspectRatio: 6.8,
-                  child: Center(
-                    child: Container(
-                      width: 280.0,
-                      height: 80.0,
-                      child: RaisedButton(
-                        color: Color(0xff2B55A8).withOpacity(0.95),
-                        onPressed: () {
-                          Navigator.pushNamed(context, homeViewRoute);
-                        },
-                        child: const Text(
-                          'GET STARTED',
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 16.5,
-                          ),
-                        ),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(roundedcorner),
+            AspectRatio(
+                aspectRatio: 7.0,
+                child: Center(
+                  child: Container(
+                    width: 280.0,
+                    height: 80.0,
+                    child: RaisedButton(
+                      color: Color(0xff2B55A8).withOpacity(0.95),
+                      onPressed: () {
+                        Navigator.pushNamed(context, homeViewRoute);
+                        SystemChannels.textInput
+                            .invokeMethod('TextInput.reload');
+                      },
+                      child: const Text(
+                        'GET STARTED',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 16.5,
                         ),
                       ),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(roundedcorner),
+                      ),
                     ),
-                  )),
-            ),
+                  ),
+                )),
           ],
         ),
       ),

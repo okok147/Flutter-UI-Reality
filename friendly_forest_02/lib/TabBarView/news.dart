@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:friendly_forest_02/views/home.dart';
 import 'package:flutter/widgets.dart';
 
 class InfoPage extends StatefulWidget {

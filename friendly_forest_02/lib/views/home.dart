@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:friendly_forest_02/router.dart';
 import 'package:friendly_forest_02/utils.dart';
-import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
+import 'package:async/async.dart';
+import 'package:flutter/services.dart' show SystemChannels;
 
 class HomePage extends StatefulWidget {
   HomePage({Key key, this.title}) : super(key: key);
@@ -30,6 +31,8 @@ class _HomePageState extends State<HomePage>
     ),
   ];
   TabController _tabController;
+  String value = "";
+  TextEditingController _textEditingController = TextEditingController();
 
   @override
   void initState() {
@@ -90,14 +93,46 @@ class _HomePageState extends State<HomePage>
                   ),
                 ),
                 SizedBox(
-                  height: SeparateSize,
+                  height: 10,
                 ),
                 Padding(
-                  padding: TopBottomAlign,
-                  child: SizedBox(
-                    //For Input Decoration(Search Bar)
-                    height: 50.0,
+                  padding: const EdgeInsets.fromLTRB(16, 16, 16, 16),
+                  child: Container(
+                    height: 55,
+                    decoration: BoxDecoration(
+                      color: Colors.grey.withOpacity(0.08),
+                      borderRadius: BorderRadius.circular(15),
+                    ),
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: TextField(
+                        controller: _textEditingController,
+                        onSubmitted: (text) {
+                          value = text;
+
+                          //_textEditingController.addListener(() {
+                          //it adds value to listener when doing certain action
+                          // });
+
+                          print(_textEditingController.text);
+                          _textEditingController.text = "";
+
+                          //Do something
+                        },
+                        textInputAction: TextInputAction.search,
+                        decoration: InputDecoration(
+                          prefixIcon: SearchIconData,
+                          prefixStyle: PreFixTextStyle,
+                          border: InputBorder.none,
+                          hintText: 'Search',
+                          hintStyle: HintTextStyle,
+                        ),
+                      ),
+                    ),
                   ),
+                ),
+                SizedBox(
+                  height: 10.0,
                 ),
                 Row(
                   children: <Widget>[

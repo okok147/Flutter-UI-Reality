@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 class SizeConfig {
@@ -44,15 +45,27 @@ const tabTextStyle = const TextStyle(
   fontFamily: 'Manjari',
 );
 
+const HintTextStyle = const TextStyle(
+  fontSize: 15.5,
+  fontWeight: FontWeight.w200,
+  fontFamily: 'Manjari',
+);
+
 const headerTextStyle = const TextStyle(
-  fontSize: 30.0,
-  fontWeight: FontWeight.w400,
+  fontSize: 28.0,
+  fontWeight: FontWeight.w200,
+  color: Color(0xff202020),
+  fontFamily: 'Manjari',
+);
+
+const PreFixTextStyle = const TextStyle(
+  fontSize: 13.5,
+  fontWeight: FontWeight.w200,
   color: Color(0xff000000),
   fontFamily: 'Manjari',
 );
 const AllAlign = const EdgeInsets.fromLTRB(16, 16, 16, 16);
 const HomePageAlign = const EdgeInsets.only(left: 16.0);
-const TopBottomAlign = const EdgeInsets.fromLTRB(0, 8, 0, 8);
 
 double SeparateSize = 33.0;
 double SmallSeparateSize = 15.0;
@@ -87,4 +100,10 @@ class _CirclePainter extends BoxPainter {
   }
 }
 
+const SearchIconData = Icon(
+  const IconData(0xe800, fontFamily: 'SearchIcon'),
+  size: 15.8,
+  color: Color(0xff454545),
 
+
+);
