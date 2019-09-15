@@ -11,6 +11,7 @@ class HomePage extends StatefulWidget {
 
   final String title;
 
+
   @override
   _HomePageState createState() => _HomePageState();
 }
@@ -32,38 +33,31 @@ class _HomePageState extends State<HomePage>
     ),
   ];
   TabController _tabController;
+
   String value = "";
-
-
-
-
-
-
-
 
   TextEditingController _textEditingController = TextEditingController();
 
   @override
   void initState() {
+
     super.initState();
     _tabController = new TabController(
       initialIndex: 1,
       length: 4,
       vsync: this,
-
     );
   }
-
-
 
   @override
   void dispose() {
     _tabController.dispose();
     super.dispose();
-
   }
 
   Widget build(BuildContext context) {
+    // Inside the widget to get index !
+    var tabPageIndex = _tabController.index;
     return Scaffold(
       body: Padding(
         padding: AllAlign,
@@ -129,9 +123,10 @@ class _HomePageState extends State<HomePage>
                             // });
 
                             print(_textEditingController.text);
-                            print(_tabController.index);
+
                             //yeah,get the index of page successfully!
-                            var tabPageIndex = _tabController.index;
+
+
                             print(tabPageIndex);
                             _textEditingController.text = "";
 
@@ -150,7 +145,6 @@ class _HomePageState extends State<HomePage>
                     DefaultTabController(
                       length: 4,
                       child: TabBar(
-
                         controller: _tabController,
                         labelStyle: tabTextStyle,
                         indicatorSize: TabBarIndicatorSize.tab,
