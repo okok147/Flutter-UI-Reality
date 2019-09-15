@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:friendly_forest_02/router.dart';
 import 'package:friendly_forest_02/utils.dart';
 import 'package:async/async.dart';
@@ -32,6 +33,14 @@ class _HomePageState extends State<HomePage>
   ];
   TabController _tabController;
   String value = "";
+
+
+
+
+
+
+
+
   TextEditingController _textEditingController = TextEditingController();
 
   @override
@@ -41,13 +50,17 @@ class _HomePageState extends State<HomePage>
       initialIndex: 1,
       length: 4,
       vsync: this,
+
     );
   }
+
+
 
   @override
   void dispose() {
     _tabController.dispose();
     super.dispose();
+
   }
 
   Widget build(BuildContext context) {
@@ -87,7 +100,8 @@ class _HomePageState extends State<HomePage>
                   child: Container(
                     alignment: Alignment.topLeft,
                     child: Text(
-                      'Charity Campaign',
+                      '\nCharity Campaign',
+                      //$ can get data and use it !
                       style: headerTextStyle,
                     ),
                   ),
@@ -115,6 +129,7 @@ class _HomePageState extends State<HomePage>
                             // });
 
                             print(_textEditingController.text);
+                            print(pageIndex);
                             _textEditingController.text = "";
 
                             //Do something
@@ -132,6 +147,7 @@ class _HomePageState extends State<HomePage>
                     DefaultTabController(
                       length: 4,
                       child: TabBar(
+
                         controller: _tabController,
                         labelStyle: tabTextStyle,
                         indicatorSize: TabBarIndicatorSize.tab,
