@@ -34,6 +34,16 @@ That would be amazing.<a href ="https://dribbble.com/shots/7080175-Mobile-app-Fr
      * Problem: The info page is overflowed by keyboard when restarting the app without dismissing the keyboard.
      * Solution: (Challenge)to dismiss the keyboard when launch the app,but still usable in TextField
      
+     To support flutter web:
+     -  flutter channel master
+        flutter upgrade
+        flutter config --enable-web
+        cd <into project directory>
+     *  flutter create .
+        flutter run -d chrome
+        To generate a release build:
+     *  flutter build web
+     
    Useful Resources:
 
    <a href="https://github.com/kelvin147789/flutter-ui-resources/tree/master/Example/flutter-ghana-ui-challenge-week-1-master"> Reference for Widget and Class</A>
