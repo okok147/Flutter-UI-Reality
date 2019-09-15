@@ -25,9 +25,23 @@ That would be amazing.<a href ="https://dribbble.com/shots/7080175-Mobile-app-Fr
 # Day 4
 <img src="process/day4.gif" width="500" height="500"> 
 
-     -Finished TabBarView
-     -Dig into some listener,good article for textfield
-      https://medium.com/flutter-community/a-deep-dive-into-flutter-textfields-f0e676aaab7a
+     - Finished TabBarView and SearchBar(Input Decoration)
+     - Dig into some listener,good article for textfield
+     - Next Objectives:Card with Row (Or ListView) :
+     - Use Dismissible to dimiss the object
+     -(build a widget to avoid hard coding)
+     - Class for storing different data(pic + name + description)
+     * Problem: The info page is overflowed by keyboard when restarting the app without dismissing the keyboard.
+     * Solution: (Challenge)to dismiss the keyboard when launch the app,but still usable in TextField
+     
+   Useful Resources:
+
+   <a href="https://github.com/kelvin147789/flutter-ui-resources/tree/master/Example/flutter-ghana-ui-challenge-week-1-master"> Reference for Widget and Class</A>
+     
+     
+     
+  <a href ="https://medium.com/flutter-community/a-deep-dive-into-flutter-textfields-f0e676aaab7a">
+    A deep dive into Flutter Textfields</a>
   
   
          
