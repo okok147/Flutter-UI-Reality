@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:friendly_forest_02/views/home.dart';
+
 class SizeConfig {
   static MediaQueryData _mediaQueryData;
   static double screenWidth;
@@ -149,5 +150,4 @@ var dismissListView = ListView(
   ],
 );
 
-
-var pageIndex =  1;
+var pageIndex = 1;
