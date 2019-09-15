@@ -31,6 +31,7 @@ That would be amazing.<a href ="https://dribbble.com/shots/7080175-Mobile-app-Fr
      -Container(Row contains Row + Column) , Container(IconButton,Press>dismis +animation if okay)
      -(build a widget to avoid hard coding)
      - Class for storing different data
+     * Challenge: to dismiss the keyboard when launch the app,but still usable in TextField
      
    Useful Resources:
 
