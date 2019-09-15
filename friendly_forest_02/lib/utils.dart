@@ -104,6 +104,47 @@ const SearchIconData = Icon(
   const IconData(0xe800, fontFamily: 'SearchIcon'),
   size: 15.8,
   color: Color(0xff454545),
+);
 
+var GreenBackgroundContainer = Container(
+  child: Icon(Icons.check),
+  color: Colors.green,
+);
 
+const SearchBarDecoration = const InputDecoration(
+  prefixIcon: SearchIconData,
+  prefixStyle: PreFixTextStyle,
+  border: InputBorder.none,
+  hintText: 'Search',
+  hintStyle: HintTextStyle,
+);
+
+var dismissListView = ListView(
+  children: <Widget>[
+    Container(
+      height: 100,
+      color: Colors.blue,
+    ),
+    SizedBox(
+      height: 30,
+    ),
+    Dismissible(
+      child: Container(
+        height: 70,
+        color: Colors.purpleAccent,
+      ),
+      background: GreenBackgroundContainer,
+      secondaryBackground: Container(
+        child: Padding(
+          padding: const EdgeInsets.fromLTRB(0, 0, 16, 0),
+          child: Icon(
+            Icons.cancel,
+          ),
+        ),
+        alignment: Alignment.centerRight,
+        color: Colors.red,
+      ),
+      key: ValueKey('1vv'),
+    ),
+  ],
 );

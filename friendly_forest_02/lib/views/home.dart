@@ -106,28 +106,21 @@ class _HomePageState extends State<HomePage>
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: TextField(
-                        controller: _textEditingController,
-                        onSubmitted: (text) {
-                          value = text;
+                          controller: _textEditingController,
+                          onSubmitted: (text) {
+                            value = text;
 
-                          //_textEditingController.addListener(() {
-                          //it adds value to listener when doing certain action
-                          // });
+                            //_textEditingController.addListener(() {
+                            //it adds value to listener when doing certain action
+                            // });
 
-                          print(_textEditingController.text);
-                          _textEditingController.text = "";
+                            print(_textEditingController.text);
+                            _textEditingController.text = "";
 
-                          //Do something
-                        },
-                        textInputAction: TextInputAction.search,
-                        decoration: InputDecoration(
-                          prefixIcon: SearchIconData,
-                          prefixStyle: PreFixTextStyle,
-                          border: InputBorder.none,
-                          hintText: 'Search',
-                          hintStyle: HintTextStyle,
-                        ),
-                      ),
+                            //Do something
+                          },
+                          textInputAction: TextInputAction.search,
+                          decoration: SearchBarDecoration),
                     ),
                   ),
                 ),
@@ -170,11 +163,7 @@ class _HomePageState extends State<HomePage>
                       child: TabBarView(
                         controller: _tabController,
                         children: <Widget>[
-                          Container(
-                            height: 100,
-                            color: Colors.redAccent,
-                            child: Center(child: Text('All')),
-                          ),
+                          dismissListView,
                           Container(
                             height: 100,
                             color: Colors.blueAccent,
