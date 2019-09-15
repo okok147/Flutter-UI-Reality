@@ -25,11 +25,13 @@ That would be amazing.<a href ="https://dribbble.com/shots/7080175-Mobile-app-Fr
 # Day 4
 <img src="process/day4.gif" width="500" height="500"> 
 
-     -Finished TabBarView
-     -Dig into some listener,good article for textfield
-     -Next Objectives:Card with Row :
-     -( Container(Row-Pic-Column>Text-Text) , Container(IconButton,onPress with dismiss and animation if possible)
+     - Finished TabBarView
+     - Dig into some listener,good article for textfield
+     - Next Objectives:Card with Row :
+     -Container(Row contains Row + Column) , Container(IconButton,Press>dismis +animation if okay)
      -(build a widget to avoid hard coding)
+     - Class for storing different data
+   <a href="https://github.com/kelvin147789/flutter-ui-resources/tree/master/Example/flutter-ghana-ui-challenge-week-1-master"># Reference:</A>
      
      
      
