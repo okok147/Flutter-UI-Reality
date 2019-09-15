@@ -28,7 +28,7 @@ Water your seed.
   <img src="process/day7.png" width="1000" height="500"> 
   
   # DAY 8
-  <img src="process/day8.gif" width="800" height="500"> 
+  <img src="process/day8.gif" width="1000" height="500"> 
   
   # Suggestions
 Very hard coding,would improve the coding skill in next project.
