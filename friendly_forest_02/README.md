@@ -22,5 +22,12 @@ That would be amazing.<a href ="https://dribbble.com/shots/7080175-Mobile-app-Fr
   Useful Resource:
   <a href ="https://stackoverflow.com/questions/57889326/how-to-add-a-circular-dot-as-an-indicator-in-flutter-tabs">Dot Circle  Tab Indicator </a>
   
+# Day 4
+<img src="process/day4.gif" width="500" height="500"> 
+
+     -Finished TabBarView
+     -Dig into some listener,good article for textfield
+      https://medium.com/flutter-community/a-deep-dive-into-flutter-textfields-f0e676aaab7a
+  
   
          
