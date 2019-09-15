@@ -30,7 +30,7 @@ That would be amazing.<a href ="https://dribbble.com/shots/7080175-Mobile-app-Fr
      - Next Objectives:Card with Row :
      -Container(Row contains Row + Column) , Container(IconButton,Press>dismis +animation if okay)
      -(build a widget to avoid hard coding)
-     - Class for storing different data
+     - Class for storing different data(pic + description)
      * Problem: The info page is overflowed by keyboard when restarting the app without dismissing the keyboard.
      * Solution: (Challenge)to dismiss the keyboard when launch the app,but still usable in TextField
      
