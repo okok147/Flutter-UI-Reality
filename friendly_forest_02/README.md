@@ -46,11 +46,11 @@ That would be amazing.<a href ="https://dribbble.com/shots/7080175-Mobile-app-Fr
      
    Useful Resources:
 
-   <a href="https://github.com/kelvin147789/flutter-ui-resources/tree/master/Example/flutter-ghana-ui-challenge-week-1-master"> Reference for Widget and Class</A>
+   <a href="https://github.com/kelvin147789/flutter-ui-resources/tree/master/Example/flutter_ghana_ui_challenge_week-1_master"> Reference for Widget and Class</A>
      
      
      
-  <a href ="https://github.com/kelvin147789/flutter-ui-resources/tree/master/Example/flutter_ghana_ui_challenge_week-1_master">
+  <a href ="https://medium.com/flutter-community/a-deep-dive-into-flutter-textfields-f0e676aaab7a">
     A deep dive into Flutter Textfields</a>
   
   
