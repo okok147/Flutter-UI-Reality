@@ -11,7 +11,6 @@ class HomePage extends StatefulWidget {
 
   final String title;
 
-
   @override
   _HomePageState createState() => _HomePageState();
 }
@@ -40,7 +39,6 @@ class _HomePageState extends State<HomePage>
 
   @override
   void initState() {
-
     super.initState();
     _tabController = new TabController(
       initialIndex: 1,
@@ -125,7 +123,6 @@ class _HomePageState extends State<HomePage>
                             print(_textEditingController.text);
 
                             //yeah,get the index of page successfully!
-
 
                             print(tabPageIndex);
                             _textEditingController.text = "";
