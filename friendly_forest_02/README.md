@@ -27,7 +27,7 @@ That would be amazing.<a href ="https://dribbble.com/shots/7080175-Mobile-app-Fr
 
      -Finished TabBarView
      -Dig into some listener,good article for textfield
-     -Next Objectives:Card with Content
+     -Next Objectives:Card with Row (avoid hard coding,to build a widget)
      
      
      
