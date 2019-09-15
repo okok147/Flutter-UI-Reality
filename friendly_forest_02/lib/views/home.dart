@@ -131,8 +131,8 @@ class _HomePageState extends State<HomePage>
                             print(_textEditingController.text);
                             print(_tabController.index);
                             //yeah,get the index of page successfully!
-                            var pageindex = _tabController.index;
-                            print(pageindex);
+                            var tabPageIndex = _tabController.index;
+                            print(tabPageIndex);
                             _textEditingController.text = "";
 
                             //Do something
