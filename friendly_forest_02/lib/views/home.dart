@@ -7,7 +7,6 @@ import 'package:friendly_forest_02/DismissCardView/Contact.dart';
 import 'package:friendly_forest_02/router.dart';
 import 'package:friendly_forest_02/utils.dart';
 
-
 class HomePage extends StatefulWidget {
   HomePage({Key key, this.title}) : super(key: key);
 
