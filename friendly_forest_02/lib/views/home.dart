@@ -6,7 +6,7 @@ import 'package:friendly_forest_02/DismissCardView/News.dart';
 import 'package:friendly_forest_02/DismissCardView/Contact.dart';
 import 'package:friendly_forest_02/router.dart';
 import 'package:friendly_forest_02/utils.dart';
-import 'dart:math' as math;
+
 
 class HomePage extends StatefulWidget {
   HomePage({Key key, this.title}) : super(key: key);
@@ -177,10 +177,10 @@ class _HomePageState extends State<HomePage>
                       child: TabBarView(
                         controller: _tabController,
                         children: <Widget>[
-                          AllCardView,
-                          DigestCardView,
-                          NewsCardView,
-                          ContactCardView,
+                          allCardView,
+                          digestCardView,
+                          newsCardView,
+                          contactCardView,
                         ],
                       ),
                     ),

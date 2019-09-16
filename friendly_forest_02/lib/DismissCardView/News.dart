@@ -2,18 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:friendly_forest_02/utils.dart';
 
-final NewsCardView = ListView(
+final newsCardView = ListView(
   // Inside the widget to get index !
 
   children: <Widget>[
-    Container(height: 100, color: NewsCardBackgroundColor),
+    Container(height: 100, color: newsCardBackgroundColor),
     SizedBox(
       height: 30,
     ),
     Dismissible(
       child: Container(
         height: 70,
-        color: NewsCardBackgroundColor,
+        color: newsCardBackgroundColor,
       ),
       background: greenBackgroundContainer,
       secondaryBackground: Container(
@@ -24,7 +24,7 @@ final NewsCardView = ListView(
             ),
           ),
           alignment: Alignment.centerRight,
-          color: NewsCardBackgroundColor),
+          color: newsCardBackgroundColor),
       key: ValueKey('3'),
     ),
   ],

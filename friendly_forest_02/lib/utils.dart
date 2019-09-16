@@ -122,7 +122,7 @@ var greenBackgroundContainer = Container(
   color: Colors.green,
 );
 
-var AllCardBackgroundColor = Colors.redAccent.withOpacity(0.8);
-var DigestCardBackgroundColor = Colors.blueAccent.withOpacity(0.8);
-var NewsCardBackgroundColor = Colors.greenAccent.withOpacity(0.8);
-var ContactCardBackgroundColor = Colors.purpleAccent.withOpacity(0.8);
+var allCardBackgroundColor = Colors.redAccent.withOpacity(0.8);
+var digestCardBackgroundColor = Colors.blueAccent.withOpacity(0.8);
+var newsCardBackgroundColor = Colors.greenAccent.withOpacity(0.8);
+var contactCardBackgroundColor = Colors.purpleAccent.withOpacity(0.8);
