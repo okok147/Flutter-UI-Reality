@@ -61,7 +61,7 @@ That would be amazing.<a href ="https://dribbble.com/shots/7080175-Mobile-app-Fr
 
         - Hard Coding mode,as can't push the index to change the colour when clicking the tab 
         - Would finish this project as soon as possible.And learn how to use setState and BloC to change state
-        - Those remaining part is not hard,as data is the most difficult part in this project.
+        - Those remaining part are not hard,as data is the most difficult part in this project.
       
 
         
