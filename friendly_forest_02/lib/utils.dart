@@ -1,6 +1,7 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:friendly_forest_02/views/home.dart';
+
 
 class SizeConfig {
   static MediaQueryData _mediaQueryData;
@@ -68,8 +69,8 @@ const PreFixTextStyle = const TextStyle(
 const AllAlign = const EdgeInsets.fromLTRB(16, 16, 16, 16);
 const HomePageAlign = const EdgeInsets.only(left: 16.0);
 
-double SeparateSize = 33.0;
-double SmallSeparateSize = 15.0;
+double separateSize = 33.0;
+double smallSeparateSize = 15.0;
 
 const roundedcorner = 12.0;
 
@@ -107,10 +108,6 @@ const SearchIconData = Icon(
   color: Color(0xff454545),
 );
 
-var GreenBackgroundContainer = Container(
-  child: Icon(Icons.check),
-  color: Colors.green,
-);
 
 const SearchBarDecoration = const InputDecoration(
   prefixIcon: SearchIconData,
@@ -120,34 +117,16 @@ const SearchBarDecoration = const InputDecoration(
   hintStyle: HintTextStyle,
 );
 
-var dismissListView = ListView(
-  children: <Widget>[
-    Container(
-      height: 100,
-      color: Colors.blue,
-    ),
-    SizedBox(
-      height: 30,
-    ),
-    Dismissible(
-      child: Container(
-        height: 70,
-        color: Colors.purpleAccent,
-      ),
-      background: GreenBackgroundContainer,
-      secondaryBackground: Container(
-        child: Padding(
-          padding: const EdgeInsets.fromLTRB(0, 0, 16, 0),
-          child: Icon(
-            Icons.cancel,
-          ),
-        ),
-        alignment: Alignment.centerRight,
-        color: Colors.red,
-      ),
-      key: ValueKey('1vv'),
-    ),
-  ],
-);
+
 
 var pageIndex = 1;
+
+var greenBackgroundContainer = Container(
+  child: Icon(Icons.check),
+  color: Colors.green,
+);
+
+var AllCardBackgroundColor = Colors.redAccent.withOpacity(0.8);
+var DigestCardBackgroundColor = Colors.blueAccent.withOpacity(0.8);
+var NewsCardBackgroundColor = Colors.greenAccent.withOpacity(0.8);
+var ContactCardBackgroundColor = Colors.purpleAccent.withOpacity(0.8);

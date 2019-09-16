@@ -21,76 +21,75 @@ class _InfoPageState extends State<InfoPage> {
         aspectRatio: 0.52,
         child: Column(
           children: <Widget>[
-          AspectRatio(
-          aspectRatio: 0.71,
-          child: Stack(
-            children: <Widget>[
-              Container(
-                decoration: BoxDecoration(
-                  image: DecorationImage(
-                    image: ExactAssetImage('assets/daily_life.jpg'),
-                    fit: BoxFit.cover,
+            AspectRatio(
+              aspectRatio: 0.71,
+              child: Stack(
+                children: <Widget>[
+                  Container(
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                        image: ExactAssetImage('assets/daily_life.jpg'),
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                  ),
+                  AspectRatio(
+                    aspectRatio: 2.0,
+                    child: Center(
+                        child: Text('Daily Life',
+                            style: new TextStyle(
+                              fontSize: 35.0,
+                              fontFamily: 'Manjari Bold',
+                              color: Color(0xffde5e841).withOpacity(0.85),
+                            ))),
+                  ),
+                ],
+              ),
+            ),
+            AspectRatio(
+              aspectRatio: 5.8 / 2,
+              child: Container(
+                child: Center(
+                  child: Padding(
+                    padding: const EdgeInsets.fromLTRB(0, 40, 0, 0),
+                    child: Column(
+                      children: <Widget>[
+                        Padding(
+                          padding: const EdgeInsets.all(4.0),
+                          child: Text(
+                              //define a class for text style to avoid repeat coding
+                              ' " You have the freedom , ability , and authority ',
+                              style: infoTextStyle),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(bottom: 4.0),
+                          child: Text(
+                              ' to love your life . Just be you , then wait. " ',
+                              style: infoTextStyle),
+                        ),
+                        Text(' ~ Gangaji ', style: infoTextStyle),
+                      ],
+                    ),
                   ),
                 ),
               ),
-              AspectRatio(
-                aspectRatio: 2.0,
-                child: Center(
-                    child: Text('Daily Life',
-                        style: new TextStyle(
-                          fontSize: 35.0,
-                          fontFamily: 'Manjari Bold',
-                          color: Color(0xffde5e841).withOpacity(0.85),
-                        ))),
-              ),
-            ],
-          ),
-        ),
-        AspectRatio(
-          aspectRatio: 5.8 / 2,
-          child: Container(
-            child: Center(
-              child: Padding(
-                padding: const EdgeInsets.fromLTRB(0, 40, 0, 0),
-                child: Column(
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.all(4.0),
-                      child: Text(
-                        //define a class for text style to avoid repeat coding
-                          ' " You have the freedom , ability , and authority ',
-                          style: infoTextStyle),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(bottom: 4.0),
-                      child: Text(
-                          ' to love your life . Just be you , then wait. " ',
-                          style: infoTextStyle),
-                    ),
-                    Text(' ~ Gangaji ', style: infoTextStyle),
-                  ],
-                ),
-              ),
             ),
-          ),
-        ),
-        AspectRatio(
-          aspectRatio: 7.0,
-          child: Center(
-              child: Container(
+            AspectRatio(
+              aspectRatio: 7.0,
+              child: Center(
+                  child: Container(
                 width: 280.0,
                 height: 80.0,
 
                 //
                 child:
 
-                //here is the button
-                RaisedButton(
+                    //here is the button
+                    RaisedButton(
                   color: Color(0xff2B55A8).withOpacity(0.95),
                   onPressed: () {
                     Navigator.pushNamed(context, homeViewRoute);
-                    SystemChannels.textInput
-                        .invokeMethod('TextInput.reload');
+                    SystemChannels.textInput.invokeMethod('TextInput.reload');
                   },
                   child: const Text(
                     'GET STARTED',
@@ -102,13 +101,12 @@ class _InfoPageState extends State<InfoPage> {
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(
                         roundedcorner //replace with 12 is available
-                    ),
+                        ),
                   ),
                   // the end of the button
-
-
                 ),
               )),
+            ),
           ],
         ),
       ),

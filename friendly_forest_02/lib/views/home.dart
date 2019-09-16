@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
+import 'package:friendly_forest_02/DismissCardView/All.dart';
+import 'package:friendly_forest_02/DismissCardView/Digest.dart';
+import 'package:friendly_forest_02/DismissCardView/News.dart';
+import 'package:friendly_forest_02/DismissCardView/Contact.dart';
 import 'package:friendly_forest_02/router.dart';
 import 'package:friendly_forest_02/utils.dart';
-import 'package:async/async.dart';
-import 'package:flutter/services.dart' show SystemChannels;
+import 'dart:math' as math;
 
 class HomePage extends StatefulWidget {
   HomePage({Key key, this.title}) : super(key: key);
@@ -31,6 +33,7 @@ class _HomePageState extends State<HomePage>
       text: 'Contact',
     ),
   ];
+
   TabController _tabController;
 
   String value = "";
@@ -54,8 +57,9 @@ class _HomePageState extends State<HomePage>
   }
 
   Widget build(BuildContext context) {
-    // Inside the widget to get index !
     var tabPageIndex = _tabController.index;
+    print(tabPageIndex);
+
     return Scaffold(
       body: Padding(
         padding: AllAlign,
@@ -85,7 +89,7 @@ class _HomePageState extends State<HomePage>
                   ],
                 ),
                 SizedBox(
-                  height: SeparateSize,
+                  height: smallSeparateSize,
                 ),
                 Padding(
                   padding: HomePageAlign,
@@ -104,7 +108,7 @@ class _HomePageState extends State<HomePage>
                 Padding(
                   padding: const EdgeInsets.fromLTRB(16, 16, 16, 16),
                   child: Container(
-                    height: 55,
+                    height: 50,
                     decoration: BoxDecoration(
                       color: Colors.grey.withOpacity(0.08),
                       borderRadius: BorderRadius.circular(15),
@@ -124,7 +128,7 @@ class _HomePageState extends State<HomePage>
 
                             //yeah,get the index of page successfully!
 
-                            print(tabPageIndex);
+                            print('$pageIndex');
                             _textEditingController.text = "";
 
                             //Do something
@@ -163,29 +167,20 @@ class _HomePageState extends State<HomePage>
                   ],
                 ),
                 SizedBox(
-                  height: SmallSeparateSize,
+                  height: 5,
                 ),
                 Padding(
                   padding: AllAlign,
                   child: Container(
-                    height: 200,
+                    height: 300,
                     child: Center(
                       child: TabBarView(
                         controller: _tabController,
                         children: <Widget>[
-                          dismissListView,
-                          Container(
-                            height: 100,
-                            color: Colors.blueAccent,
-                          ),
-                          Container(
-                            height: 100,
-                            color: Colors.greenAccent,
-                          ),
-                          Container(
-                            height: 100,
-                            color: Colors.purpleAccent,
-                          ),
+                          AllCardView,
+                          DigestCardView,
+                          NewsCardView,
+                          ContactCardView,
                         ],
                       ),
                     ),
