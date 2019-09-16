@@ -131,8 +131,6 @@ class _HomePageState extends State<HomePage>
                             print('$pageIndex');
                             _textEditingController.text = "";
 
-
-                            
                             //Do something
                           },
                           textInputAction: TextInputAction.search,
