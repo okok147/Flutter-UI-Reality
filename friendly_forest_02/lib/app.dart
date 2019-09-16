@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-
-
 import 'router.dart' as router;
 
 class App extends StatelessWidget {
@@ -13,12 +11,6 @@ class App extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       onGenerateRoute: router.generateRoute,
       initialRoute: router.infoViewRoute,
-
-
-
-
-
-
     );
   }
 }

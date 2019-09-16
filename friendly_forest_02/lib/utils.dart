@@ -2,7 +2,6 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
-
 class SizeConfig {
   static MediaQueryData _mediaQueryData;
   static double screenWidth;
@@ -108,7 +107,6 @@ const SearchIconData = Icon(
   color: Color(0xff454545),
 );
 
-
 const SearchBarDecoration = const InputDecoration(
   prefixIcon: SearchIconData,
   prefixStyle: PreFixTextStyle,
@@ -116,8 +114,6 @@ const SearchBarDecoration = const InputDecoration(
   hintText: 'Search',
   hintStyle: HintTextStyle,
 );
-
-
 
 var pageIndex = 1;
 
