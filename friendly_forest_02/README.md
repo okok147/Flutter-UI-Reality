@@ -59,9 +59,9 @@ That would be amazing.<a href ="https://dribbble.com/shots/7080175-Mobile-app-Fr
  # Day 5
 <img src="process/day5.gif" width="500" height="500">  
 
-        - Hard Coding mode,as can't push the index to change the colour when clicking the tab 
-        - Would finish this project as soon as possible.And learn how to use setState and BloC to change state
-        - Those remaining part are not hard,as data is the most difficult part in this project.
+    - Hard Coding mode,as can't push the index to change the colour when clicking the tab 
+    - Would finish this project as soon as possible.And learn how to use setState and BloC to change state
+    - Those remaining part are not hard,as data is the most difficult part in this project.
       
 
         
