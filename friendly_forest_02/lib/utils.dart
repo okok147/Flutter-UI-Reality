@@ -46,6 +46,20 @@ const tabTextStyle = const TextStyle(
   fontFamily: 'Manjari',
 );
 
+const cardContextTextStyle = const TextStyle(
+  fontSize: 14.5,
+  fontWeight: FontWeight.w400,
+  color: Color(0xff767474),
+  fontFamily: 'Manjari',
+);
+
+const cardTextStyle = const TextStyle(
+  fontSize: 17.5,
+  fontWeight: FontWeight.w300,
+  color: Color(0xff000000),
+  fontFamily: 'Manjari',
+);
+
 const HintTextStyle = const TextStyle(
   fontSize: 15.5,
   fontWeight: FontWeight.w200,
@@ -62,7 +76,7 @@ const headerTextStyle = const TextStyle(
 const PreFixTextStyle = const TextStyle(
   fontSize: 13.5,
   fontWeight: FontWeight.w200,
-  color: Color(0xff000000),
+  color: Color(0xFF000000),
   fontFamily: 'Manjari',
 );
 const AllAlign = const EdgeInsets.fromLTRB(16, 16, 16, 16);
@@ -147,34 +161,55 @@ var rightBlueBackgroundContainer = Container(
   ),
 );
 
-var blueDismissable = Dismissible(
+var digestDismissable = Dismissible(
   child: Container(
     height: 130,
-    width: 500,
     child: Container(
       decoration: new BoxDecoration(
         borderRadius: BorderRadius.only(
-            topLeft: Radius.circular(20), bottomLeft: Radius.circular(20)),
-        color: Color(0xffBADEFF).withOpacity(0.9),
+            topLeft: Radius.circular(15), bottomLeft: Radius.circular(15)),
+        color: digestCardContextBackgroundColor,
       ),
-      padding: EdgeInsets.fromLTRB(30, 30, 20, 30),
+      padding: EdgeInsets.fromLTRB(0, 20, 0, 30),
       child: Row(
         children: <Widget>[
-          Text('This is a bird'),
-          Spacer(),
           Container(
-            color: Colors.redAccent,
+            height: 130,
+            width: 130,
+            decoration: BoxDecoration(
+                image: DecorationImage(
+                    image: ExactAssetImage('assets/peacock.png'))),
+          ),
+          SizedBox(
+            width: 10,
+          ),
+          Container(
             height: 120,
             width: 200,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-                Text('Birds'),
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(0, 15, 0, 0),
+                  child: Text(
+                    'Birds',
+                    style: cardTextStyle,
+                  ),
+                ),
+                SizedBox(
+                  height: 8,
+                ),
+                Text(
+                  'Vulnerable to extinction due ',
+                  style: cardContextTextStyle,
+                ),
                 SizedBox(
                   height: 5,
                 ),
-                Text('Vulnerable to extinction due to'
-                    ' habitat loss & hunting')
+                Text(
+                  'to habitat loss & hunting',
+                  style: cardContextTextStyle,
+                )
               ],
             ),
           ),
@@ -191,7 +226,79 @@ var blueDismissable = Dismissible(
   key: ValueKey('1'),
 );
 
-var allCardBackgroundColor = Color(0xffEBAD53).withOpacity(0.5);
-var digestCardBackgroundColor = Colors.blueAccent.withOpacity(0.99);
+
+var allDismissable = Dismissible(
+  child: Container(
+    height: 130,
+    child: Container(
+      decoration: new BoxDecoration(
+        borderRadius: BorderRadius.only(
+            topLeft: Radius.circular(15), bottomLeft: Radius.circular(15)),
+        color: allCardBackgroundColor,
+      ),
+      padding: EdgeInsets.fromLTRB(0, 20, 0, 30),
+      child: Row(
+        children: <Widget>[
+          Container(
+            height: 130,
+            width: 130,
+            decoration: BoxDecoration(
+                image: DecorationImage(
+                    image: ExactAssetImage('assets/peacock.png'))),
+          ),
+          SizedBox(
+            width: 10,
+          ),
+          Container(
+            height: 120,
+            width: 200,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(0, 15, 0, 0),
+                  child: Text(
+                    'Birds',
+                    style: cardTextStyle,
+                  ),
+                ),
+                SizedBox(
+                  height: 8,
+                ),
+                Text(
+                  'Vulnerable to extinction due ',
+                  style: cardContextTextStyle,
+                ),
+                SizedBox(
+                  height: 5,
+                ),
+                Text(
+                  'to habitat loss & hunting',
+                  style: cardContextTextStyle,
+                )
+              ],
+            ),
+          ),
+        ],
+      ),
+    ),
+  ),
+
+  //left side
+  background: leftBackgroundContainer,
+  //right side
+  secondaryBackground: rightBlueBackgroundContainer,
+
+  key: ValueKey('1'),
+);
+
+
+
+
+
+
+var allCardBackgroundColor = Color(0xffFF8D08).withOpacity(0.5);
+var digestCardBackgroundColor = Colors.blueAccent.withOpacity(0.9);
 var newsCardBackgroundColor = Colors.greenAccent.withOpacity(0.8);
 var contactCardBackgroundColor = Colors.purpleAccent.withOpacity(0.8);
+var digestCardContextBackgroundColor = Color(0xffBADEFF).withOpacity(0.5);

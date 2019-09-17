@@ -6,9 +6,10 @@ final digestCardView = ListView(
   // Inside the widget to get index !
 
   children: <Widget>[
-    blueDismissable,
+    digestDismissable,
     SizedBox(
-      height: 20,
+      height: 18,
     ),
+    digestDismissable,
   ],
 );
