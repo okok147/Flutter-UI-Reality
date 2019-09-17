@@ -122,7 +122,18 @@ var greenBackgroundContainer = Container(
   color: Colors.green,
 );
 
-var allCardBackgroundColor = Colors.redAccent.withOpacity(0.8);
-var digestCardBackgroundColor = Colors.blueAccent.withOpacity(0.8);
+var blueBackgroundContainer = Container(
+    decoration: new BoxDecoration(
+        borderRadius: BorderRadius.circular(20.0),
+        color: digestCardBackgroundColor),
+    alignment: Alignment.centerRight,
+    padding: EdgeInsets.fromLTRB(0, 0, 12, 0),
+    child: Icon(
+      Icons.cancel,
+      color: Colors.white,
+    ));
+
+var allCardBackgroundColor = Color(0xffEBAD53).withOpacity(0.5);
+var digestCardBackgroundColor = Colors.blueAccent.withOpacity(0.99);
 var newsCardBackgroundColor = Colors.greenAccent.withOpacity(0.8);
 var contactCardBackgroundColor = Colors.purpleAccent.withOpacity(0.8);

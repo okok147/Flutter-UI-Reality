@@ -6,26 +6,39 @@ final digestCardView = ListView(
   // Inside the widget to get index !
 
   children: <Widget>[
-    Container(height: 100, color: digestCardBackgroundColor),
-    SizedBox(
-      height: 30,
-    ),
     Dismissible(
       child: Container(
-        height: 70,
-        color: digestCardBackgroundColor,
+        decoration: new BoxDecoration(
+          borderRadius: BorderRadius.only(
+              topLeft: Radius.circular(20), bottomLeft: Radius.circular(20)),
+          color: Color(0xffBADEFF),
+        ),
+        height: 130,
+        child: Row(
+          children: <Widget>[
+            Container(),
+            Column(),
+          ],
+        ),
       ),
-      background: greenBackgroundContainer,
+      //right side
       secondaryBackground: Container(
-          child: Padding(
-            padding: const EdgeInsets.fromLTRB(0, 0, 16, 0),
-            child: Icon(
-              Icons.cancel,
-            ),
-          ),
+          decoration: new BoxDecoration(
+              borderRadius: BorderRadius.circular(20.0),
+              color: digestCardBackgroundColor),
           alignment: Alignment.centerRight,
-          color: digestCardBackgroundColor),
-      key: ValueKey('3'),
+          padding: EdgeInsets.fromLTRB(0, 0, 12, 0),
+          child: Icon(
+            Icons.cancel,
+            color: Colors.white,
+          )),
+      //left side
+      background: blueBackgroundContainer,
+
+      key: ValueKey('1'),
+    ),
+    SizedBox(
+      height: 20,
     ),
   ],
 );

@@ -6,14 +6,10 @@ final newsCardView = ListView(
   // Inside the widget to get index !
 
   children: <Widget>[
-    Container(height: 100, color: newsCardBackgroundColor),
-    SizedBox(
-      height: 30,
-    ),
     Dismissible(
       child: Container(
-        height: 70,
-        color: newsCardBackgroundColor,
+        height: 135,
+        color: Color(0xffBADEFF),
       ),
       background: greenBackgroundContainer,
       secondaryBackground: Container(
@@ -24,7 +20,27 @@ final newsCardView = ListView(
             ),
           ),
           alignment: Alignment.centerRight,
-          color: newsCardBackgroundColor),
+          color: digestCardBackgroundColor),
+      key: ValueKey('3'),
+    ),
+    
+    SizedBox(height: 20,),
+
+    Dismissible(
+      child: Container(
+        height: 135,
+        color: Color(0xFFBADEFF),
+      ),
+      background: blueBackgroundContainer,
+      secondaryBackground: Container(
+          child: Padding(
+            padding: const EdgeInsets.fromLTRB(0, 0, 16, 0),
+            child: Icon(
+              Icons.cancel,
+            ),
+          ),
+          alignment: Alignment.centerRight,
+          color: digestCardBackgroundColor),
       key: ValueKey('3'),
     ),
   ],
