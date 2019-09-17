@@ -64,5 +64,8 @@ That would be amazing.<a href ="https://dribbble.com/shots/7080175-Mobile-app-Fr
     - Those remaining part are not hard,as data is the most difficult part in this project.
       
 
-        
+# Day 6
+<img src="process/day6.gif" width="500" height="500">  
+    
+    - Hard Coding mode...
          
