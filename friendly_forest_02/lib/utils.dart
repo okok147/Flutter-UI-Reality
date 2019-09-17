@@ -226,7 +226,6 @@ var digestDismissable = Dismissible(
   key: ValueKey('1'),
 );
 
-
 var allDismissable = Dismissible(
   child: Container(
     height: 130,
@@ -291,11 +290,6 @@ var allDismissable = Dismissible(
 
   key: ValueKey('1'),
 );
-
-
-
-
-
 
 var allCardBackgroundColor = Color(0xffFF8D08).withOpacity(0.5);
 var digestCardBackgroundColor = Colors.blueAccent.withOpacity(0.9);
