@@ -6,7 +6,7 @@ final contactCardView = ListView(
   // Inside the widget to get index !
 
   children: <Widget>[
-   Dismissible(
+    Dismissible(
       child: Container(
         height: 135,
         color: Color(0xffBADEFF),
@@ -23,9 +23,9 @@ final contactCardView = ListView(
           color: digestCardBackgroundColor),
       key: ValueKey('3'),
     ),
-    
-    SizedBox(height: 20,),
-
+    SizedBox(
+      height: 20,
+    ),
     Dismissible(
       child: Container(
         height: 135,
@@ -39,8 +39,6 @@ final contactCardView = ListView(
               Icons.cancel,
             ),
           ),
-
-         
           alignment: Alignment.centerRight,
           color: digestCardBackgroundColor),
       key: ValueKey('3'),

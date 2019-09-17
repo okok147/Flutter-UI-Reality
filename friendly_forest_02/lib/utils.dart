@@ -150,18 +150,13 @@ var rightBlueBackgroundContainer = Container(
 var blueDismissable = Dismissible(
   child: Container(
     child: Text('HELLLLO'),
-    
     decoration: new BoxDecoration(
-      
       borderRadius: BorderRadius.only(
           topLeft: Radius.circular(20), bottomLeft: Radius.circular(20)),
       color: Color(0xffBADEFF).withOpacity(0.9),
-      
     ),
-    
     height: 130,
     width: 400,
-    
   ),
 
   //left side
