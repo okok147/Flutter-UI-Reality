@@ -137,7 +137,7 @@ var leftBackgroundContainer = Container(
 var rightBlueBackgroundContainer = Container(
   decoration: new BoxDecoration(
     borderRadius: BorderRadius.circular(20.0),
-    color: Color(0xff1D52C7).withOpacity(0.85),
+    color: Color(0xff4678C6).withOpacity(0.95),
   ),
   alignment: Alignment.centerRight,
   padding: EdgeInsets.fromLTRB(0, 0, 12, 0),
@@ -149,14 +149,38 @@ var rightBlueBackgroundContainer = Container(
 
 var blueDismissable = Dismissible(
   child: Container(
-    child: Text('HELLLLO'),
-    decoration: new BoxDecoration(
-      borderRadius: BorderRadius.only(
-          topLeft: Radius.circular(20), bottomLeft: Radius.circular(20)),
-      color: Color(0xffBADEFF).withOpacity(0.9),
-    ),
     height: 130,
-    width: 400,
+    width: 500,
+    child: Container(
+      decoration: new BoxDecoration(
+        borderRadius: BorderRadius.only(
+            topLeft: Radius.circular(20), bottomLeft: Radius.circular(20)),
+        color: Color(0xffBADEFF).withOpacity(0.9),
+      ),
+      padding: EdgeInsets.fromLTRB(30, 30, 20, 30),
+      child: Row(
+        children: <Widget>[
+          Text('This is a bird'),
+          Spacer(),
+          Container(
+            color: Colors.redAccent,
+            height: 120,
+            width: 200,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Text('Birds'),
+                SizedBox(
+                  height: 5,
+                ),
+                Text('Vulnerable to extinction due to'
+                    ' habitat loss & hunting')
+              ],
+            ),
+          ),
+        ],
+      ),
+    ),
   ),
 
   //left side
