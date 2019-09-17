@@ -122,16 +122,55 @@ var greenBackgroundContainer = Container(
   color: Colors.green,
 );
 
-var blueBackgroundContainer = Container(
+var leftBackgroundContainer = Container(
     decoration: new BoxDecoration(
-        borderRadius: BorderRadius.circular(20.0),
-        color: digestCardBackgroundColor),
+      borderRadius: BorderRadius.circular(20.0),
+      color: Color(0xff245EDB).withOpacity(0.05),
+    ),
     alignment: Alignment.centerRight,
     padding: EdgeInsets.fromLTRB(0, 0, 12, 0),
     child: Icon(
       Icons.cancel,
       color: Colors.white,
     ));
+
+var rightBlueBackgroundContainer = Container(
+  decoration: new BoxDecoration(
+    borderRadius: BorderRadius.circular(20.0),
+    color: Color(0xff1D52C7).withOpacity(0.85),
+  ),
+  alignment: Alignment.centerRight,
+  padding: EdgeInsets.fromLTRB(0, 0, 12, 0),
+  child: Icon(
+    Icons.cancel,
+    color: Colors.white,
+  ),
+);
+
+var blueDismissable = Dismissible(
+  child: Container(
+    child: Text('HELLLLO'),
+    
+    decoration: new BoxDecoration(
+      
+      borderRadius: BorderRadius.only(
+          topLeft: Radius.circular(20), bottomLeft: Radius.circular(20)),
+      color: Color(0xffBADEFF).withOpacity(0.9),
+      
+    ),
+    
+    height: 130,
+    width: 400,
+    
+  ),
+
+  //left side
+  background: leftBackgroundContainer,
+  //right side
+  secondaryBackground: rightBlueBackgroundContainer,
+
+  key: ValueKey('1'),
+);
 
 var allCardBackgroundColor = Color(0xffEBAD53).withOpacity(0.5);
 var digestCardBackgroundColor = Colors.blueAccent.withOpacity(0.99);

@@ -6,7 +6,7 @@ final allCardView = ListView(
   // Inside the widget to get index !
 
   children: <Widget>[
-     Dismissible(
+    Dismissible(
       child: Container(
         height: 135,
         color: allCardBackgroundColor,
@@ -23,15 +23,15 @@ final allCardView = ListView(
           color: digestCardBackgroundColor),
       key: ValueKey('3'),
     ),
-    
-    SizedBox(height: 20,),
-
+    SizedBox(
+      height: 20,
+    ),
     Dismissible(
       child: Container(
         height: 135,
         color: allCardBackgroundColor,
       ),
-      background: blueBackgroundContainer,
+      background: rightBlueBackgroundContainer,
       secondaryBackground: Container(
           child: Padding(
             padding: const EdgeInsets.fromLTRB(0, 0, 16, 0),

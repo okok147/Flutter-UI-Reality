@@ -31,7 +31,7 @@ final contactCardView = ListView(
         height: 135,
         color: Color(0xFFBADEFF),
       ),
-      background: blueBackgroundContainer,
+      background: rightBlueBackgroundContainer,
       secondaryBackground: Container(
           child: Padding(
             padding: const EdgeInsets.fromLTRB(0, 0, 16, 0),
