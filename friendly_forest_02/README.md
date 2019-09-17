@@ -68,4 +68,4 @@ That would be amazing.<a href ="https://dribbble.com/shots/7080175-Mobile-app-Fr
 <img src="process/day6.gif" width="500" height="500">  
     
     - Hard Coding mode...
-         
+    - Would finish the project with basic component
