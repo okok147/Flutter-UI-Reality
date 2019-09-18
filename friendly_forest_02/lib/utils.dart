@@ -136,6 +136,17 @@ var greenBackgroundContainer = Container(
   color: Colors.green,
 );
 
+var roundedBoxDecoration = BoxDecoration(
+  borderRadius: BorderRadius.only(
+      topLeft: Radius.circular(15), bottomLeft: Radius.circular(15)),
+  color: digestCardContextBackgroundColor,
+);
+
+var roundedCardDecoration = BoxDecoration(
+  borderRadius: BorderRadius.all(Radius.circular(10)),
+  color: Color(0xff562139).withOpacity(0.95),
+);
+
 var leftBackgroundContainer = Container(
     decoration: new BoxDecoration(
       borderRadius: BorderRadius.circular(20.0),
@@ -230,11 +241,7 @@ var allDismissable = Dismissible(
   child: Container(
     height: 130,
     child: Container(
-      decoration: new BoxDecoration(
-        borderRadius: BorderRadius.only(
-            topLeft: Radius.circular(15), bottomLeft: Radius.circular(15)),
-        color: allCardBackgroundColor,
-      ),
+      decoration: roundedBoxDecoration,
       padding: EdgeInsets.fromLTRB(0, 20, 0, 30),
       child: Row(
         children: <Widget>[
@@ -296,3 +303,31 @@ var digestCardBackgroundColor = Colors.blueAccent.withOpacity(0.9);
 var newsCardBackgroundColor = Colors.greenAccent.withOpacity(0.8);
 var contactCardBackgroundColor = Colors.purpleAccent.withOpacity(0.8);
 var digestCardContextBackgroundColor = Color(0xffBADEFF).withOpacity(0.5);
+
+var OthersCard = Padding(
+  padding: const EdgeInsets.fromLTRB(0,0,0,0),
+  child: Container(
+    height: 77,
+    width: 77,
+    decoration: roundedCardDecoration,
+    child: Center(
+      child: Padding(
+        padding: const EdgeInsets.all(12.0),
+        child: Container(
+        
+          
+          decoration: BoxDecoration(
+            
+            image: DecorationImage(
+              fit: BoxFit.cover,
+              
+              image: AssetImage('assets/cartoon_bird.png'),
+              
+
+            ),
+          ),
+        ),
+      ),
+    ),
+  ),
+);

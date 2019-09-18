@@ -185,6 +185,48 @@ class _HomePageState extends State<HomePage>
                     ),
                   ),
                 ),
+                Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Row(
+                    children: <Widget>[
+                      OthersCard,
+                      Padding(
+                        padding: const EdgeInsets.only(left: 16.0),
+                        child: Container(
+                          height: 60,
+                          width: 150,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: <Widget>[
+                              Text('Others',style: cardTextStyle,),
+                              Text('Rare mushrooms',style: cardContextTextStyle,),
+                              Container(
+                                height: 2,
+                                width: 77,
+                                decoration: BoxDecoration(
+                                  gradient: LinearGradient(
+                                      begin: Alignment.centerLeft,
+                                      end: Alignment.centerRight,
+                                      stops: [
+                                        0.1
+                                      ],
+                                      colors: [
+                                        Colors.orange[600],
+                                      ]),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                      Spacer(),
+                      Container(
+                        child: Text('45'),
+                      ),
+                    ],
+                  ),
+                ),
               ],
             ),
           ],
