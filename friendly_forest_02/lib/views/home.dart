@@ -206,14 +206,14 @@ class _HomePageState extends State<HomePage>
                                 style: cardTextStyle,
                               ),
                               SizedBox(
-                                height: 2,
+                                height: 5,
                               ),
                               Text(
                                 'Rare mushrooms',
                                 style: cardContextTextStyle,
                               ),
                               SizedBox(
-                                height: 5,
+                                height: 10,
                               ),
                               Container(
                                 height: 2,
