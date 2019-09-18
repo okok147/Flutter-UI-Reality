@@ -71,8 +71,11 @@ class _HomePageState extends State<HomePage>
                   children: <Widget>[
                     IconButton(
                       icon: Icon(
+                        
+                        
                         Icons.keyboard_arrow_left,
                         size: 37,
+                        
                       ),
                       onPressed: () {
                         Navigator.popAndPushNamed(context, infoViewRoute);
@@ -246,6 +249,49 @@ class _HomePageState extends State<HomePage>
                         ),
                       ),
                     ],
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(top: 8.0, left: 16.0),
+                  child: Container(
+                    height: 75,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: <Widget>[
+                        facebookCard,
+                        twitterCard,
+                        githubCard,
+                        Container(),
+                        Container(),
+                        Container(
+                          height: 55,
+                          width: 190,
+                          child: Padding(
+                            padding: const EdgeInsets.only(right:24.0),
+                            child: RaisedButton(
+                              color: Colors.orange.withOpacity(1),
+                              onPressed: () {
+                                Navigator.pushNamed(context, homeViewRoute);
+                              },
+                              child: const Text(
+                                'DONATE NOW',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 16.5,
+                                ),
+                              ),
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(
+                                    roundedcorner //replace with 12 is available
+                                    ),
+                              ),
+                              // the end of the button
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ],

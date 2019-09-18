@@ -336,3 +336,57 @@ var othersCard = Padding(
     ),
   ),
 );
+
+var facebookCard = Container(
+  width: 50,
+  height: 50,
+  decoration: BoxDecoration(
+    color: Colors.grey.withOpacity(0.1),
+    borderRadius: BorderRadius.all(Radius.circular(8)),
+  ),
+  child: Icon(
+    Icons.import_contacts,
+    color: Colors.blueAccent,
+    size: 22,
+  ),
+);
+
+var twitterCard = Container(
+  width: 50,
+  height: 50,
+  decoration: BoxDecoration(
+    color: Colors.grey.withOpacity(0.1),
+    borderRadius: BorderRadius.all(Radius.circular(8)),
+  ),
+  child: Icon(
+    Icons.import_contacts,
+    color: Colors.blueAccent,
+    size: 22,
+  ),
+);
+
+var githubCard = Container(
+  width: 50,
+  height: 50,
+  decoration: BoxDecoration(
+    color: Colors.grey.withOpacity(0.1),
+    borderRadius: BorderRadius.all(Radius.circular(8)),
+  ),
+  child: IconButton(
+    color: Colors.redAccent,
+    icon: Icon(
+      Icons.import_contacts,
+      size: 22,
+      
+
+      
+
+
+    ),
+
+    onPressed: (){
+
+    },
+
+  )
+);
