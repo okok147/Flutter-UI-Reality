@@ -186,7 +186,7 @@ class _HomePageState extends State<HomePage>
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.fromLTRB(16,0,16,16),
+                  padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
                   child: Row(
                     children: <Widget>[
                       othersCard,
@@ -197,12 +197,21 @@ class _HomePageState extends State<HomePage>
                           width: 150,
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
-                            
                             children: <Widget>[
-                              Text('Others',style: cardTextStyle,),
-                              SizedBox(height: 2,),
-                              Text('Rare mushrooms',style: cardContextTextStyle,),
-                              SizedBox(height: 5,),
+                              Text(
+                                'Others',
+                                style: cardTextStyle,
+                              ),
+                              SizedBox(
+                                height: 2,
+                              ),
+                              Text(
+                                'Rare mushrooms',
+                                style: cardContextTextStyle,
+                              ),
+                              SizedBox(
+                                height: 5,
+                              ),
                               Container(
                                 height: 2,
                                 width: 77,
@@ -226,16 +235,13 @@ class _HomePageState extends State<HomePage>
                       Container(
                         height: 50,
                         width: 50,
-                        
                         decoration: othersRoundedBoxDecoration,
-
                         child: Padding(
-                          padding: const EdgeInsets.only(bottom:3.0),
+                          padding: const EdgeInsets.only(bottom: 3.0),
                           child: Icon(
                             Icons.pie_chart_outlined,
                             color: Colors.orangeAccent,
                             size: 22,
-                            
                           ),
                         ),
                       ),
