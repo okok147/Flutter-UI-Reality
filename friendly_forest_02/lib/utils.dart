@@ -366,27 +366,17 @@ var twitterCard = Container(
 );
 
 var githubCard = Container(
-  width: 50,
-  height: 50,
-  decoration: BoxDecoration(
-    color: Colors.grey.withOpacity(0.1),
-    borderRadius: BorderRadius.all(Radius.circular(8)),
-  ),
-  child: IconButton(
-    color: Colors.redAccent,
-    icon: Icon(
-      Icons.import_contacts,
-      size: 22,
-      
-
-      
-
-
+    width: 50,
+    height: 50,
+    decoration: BoxDecoration(
+      color: Colors.grey.withOpacity(0.1),
+      borderRadius: BorderRadius.all(Radius.circular(8)),
     ),
-
-    onPressed: (){
-
-    },
-
-  )
-);
+    child: IconButton(
+      color: Colors.redAccent,
+      icon: Icon(
+        Icons.import_contacts,
+        size: 22,
+      ),
+      onPressed: () {},
+    ));
