@@ -73,3 +73,5 @@ That would be amazing.<a href ="https://dribbble.com/shots/7080175-Mobile-app-Fr
     
 # Day 7
 <img src="process/day7.gif" width="500" height="500">  
+
+    - Use Custom Icon 
