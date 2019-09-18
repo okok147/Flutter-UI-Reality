@@ -142,6 +142,17 @@ var roundedBoxDecoration = BoxDecoration(
   color: digestCardContextBackgroundColor,
 );
 
+var allRoundedBoxDecoration = BoxDecoration(
+  borderRadius: BorderRadius.only(
+      topLeft: Radius.circular(15), bottomLeft: Radius.circular(15)),
+  color: allCardBackgroundColor,
+);
+
+var othersRoundedBoxDecoration = BoxDecoration(
+ borderRadius: BorderRadius.all(Radius.circular(10)),
+  color: Colors.orangeAccent.withOpacity(0.31),
+);
+
 var roundedCardDecoration = BoxDecoration(
   borderRadius: BorderRadius.all(Radius.circular(10)),
   color: Color(0xff562139).withOpacity(0.95),
@@ -182,18 +193,19 @@ var digestDismissable = Dismissible(
         color: digestCardContextBackgroundColor,
       ),
       padding: EdgeInsets.fromLTRB(0, 20, 0, 30),
+      
       child: Row(
         children: <Widget>[
           Container(
-            height: 130,
-            width: 130,
+            height: 120,
+            width: 120,
             decoration: BoxDecoration(
                 image: DecorationImage(
                     image: ExactAssetImage('assets/peacock.png'))),
           ),
-          SizedBox(
-            width: 10,
-          ),
+
+          SizedBox(width: 5,),
+        
           Container(
             height: 120,
             width: 200,
@@ -241,7 +253,8 @@ var allDismissable = Dismissible(
   child: Container(
     height: 130,
     child: Container(
-      decoration: roundedBoxDecoration,
+      
+      decoration: allRoundedBoxDecoration,
       padding: EdgeInsets.fromLTRB(0, 20, 0, 30),
       child: Row(
         children: <Widget>[
@@ -250,10 +263,10 @@ var allDismissable = Dismissible(
             width: 130,
             decoration: BoxDecoration(
                 image: DecorationImage(
-                    image: ExactAssetImage('assets/peacock.png'))),
+                    image: ExactAssetImage('assets/cartoon_bird.png'))),
           ),
           SizedBox(
-            width: 10,
+            width: 5,
           ),
           Container(
             height: 120,
@@ -264,7 +277,7 @@ var allDismissable = Dismissible(
                 Padding(
                   padding: const EdgeInsets.fromLTRB(0, 15, 0, 0),
                   child: Text(
-                    'Birds',
+                    'Wolf',
                     style: cardTextStyle,
                   ),
                 ),
@@ -298,17 +311,17 @@ var allDismissable = Dismissible(
   key: ValueKey('1'),
 );
 
-var allCardBackgroundColor = Color(0xffFF8D08).withOpacity(0.5);
+var allCardBackgroundColor = Colors.redAccent.withOpacity(0.5);
 var digestCardBackgroundColor = Colors.blueAccent.withOpacity(0.9);
 var newsCardBackgroundColor = Colors.greenAccent.withOpacity(0.8);
 var contactCardBackgroundColor = Colors.purpleAccent.withOpacity(0.8);
 var digestCardContextBackgroundColor = Color(0xffBADEFF).withOpacity(0.5);
 
-var OthersCard = Padding(
+var othersCard = Padding(
   padding: const EdgeInsets.fromLTRB(0,0,0,0),
   child: Container(
-    height: 77,
-    width: 77,
+    height: 80,
+    width: 80,
     decoration: roundedCardDecoration,
     child: Center(
       child: Padding(

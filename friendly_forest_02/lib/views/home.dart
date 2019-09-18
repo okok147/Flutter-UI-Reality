@@ -186,21 +186,23 @@ class _HomePageState extends State<HomePage>
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(16.0),
+                  padding: const EdgeInsets.fromLTRB(16,0,16,16),
                   child: Row(
                     children: <Widget>[
-                      OthersCard,
+                      othersCard,
                       Padding(
-                        padding: const EdgeInsets.only(left: 16.0),
+                        padding: const EdgeInsets.only(left: 32.0),
                         child: Container(
-                          height: 60,
+                          height: 55,
                           width: 150,
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            
                             children: <Widget>[
                               Text('Others',style: cardTextStyle,),
+                              SizedBox(height: 2,),
                               Text('Rare mushrooms',style: cardContextTextStyle,),
+                              SizedBox(height: 5,),
                               Container(
                                 height: 2,
                                 width: 77,
@@ -222,7 +224,20 @@ class _HomePageState extends State<HomePage>
                       ),
                       Spacer(),
                       Container(
-                        child: Text('45'),
+                        height: 50,
+                        width: 50,
+                        
+                        decoration: othersRoundedBoxDecoration,
+
+                        child: Padding(
+                          padding: const EdgeInsets.only(bottom:3.0),
+                          child: Icon(
+                            Icons.pie_chart_outlined,
+                            color: Colors.orangeAccent,
+                            size: 22,
+                            
+                          ),
+                        ),
                       ),
                     ],
                   ),
