@@ -10,7 +10,8 @@ Let's draw some line. <a href= "https://dribbble.com/shots/7119123-Mobile-applic
     
     - Start a new journey.
     To do:
-    -Use bottom_navy_bar 
+    - Use bottom_navy_bar 
+    - Use Flexible for the layout 
     
  Good example for how to use List data:
  
