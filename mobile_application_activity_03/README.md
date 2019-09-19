@@ -9,3 +9,5 @@ Let's draw some line. <a href= "https://dribbble.com/shots/7119123-Mobile-applic
 <img src="process/day1.gif" height="500">  
     
     - Start a new journey.
+    To do:
+    -Use bottom_navy_bar 
