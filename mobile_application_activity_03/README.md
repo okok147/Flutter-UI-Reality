@@ -2,4 +2,4 @@
 
 Let's draw some line. <a href= "https://dribbble.com/shots/7119123-Mobile-application-Activity">Design</a>
 
-<img src ="">
+<img src ="design/Mobile application - Activity" width = "500">
