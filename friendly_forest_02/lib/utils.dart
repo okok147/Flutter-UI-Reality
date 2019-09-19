@@ -1,6 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:friendly_forest_02/social_media_icon_icons.dart';
 
 class SizeConfig {
   static MediaQueryData _mediaQueryData;
@@ -344,11 +345,16 @@ var facebookCard = Container(
     color: Colors.grey.withOpacity(0.1),
     borderRadius: BorderRadius.all(Radius.circular(8)),
   ),
-  child: Icon(
-    Icons.import_contacts,
-    color: Colors.blueAccent,
-    size: 22,
-  ),
+  child: IconButton(
+      
+      icon: Icon(
+        const IconData(0xe800, fontFamily: 'SocialMediaIcon'),
+        color: Color(0xff1A46C5),
+        size: 20,
+      ),
+      onPressed: () {},
+    ),
+    
 );
 
 var twitterCard = Container(
@@ -358,11 +364,16 @@ var twitterCard = Container(
     color: Colors.grey.withOpacity(0.1),
     borderRadius: BorderRadius.all(Radius.circular(8)),
   ),
-  child: Icon(
-    Icons.import_contacts,
-    color: Colors.blueAccent,
-    size: 22,
-  ),
+  child:IconButton(
+      color: Colors.redAccent,
+      icon: Icon(
+        const IconData(0xe801, fontFamily: 'SocialMediaIcon'),
+        color: Colors.blueAccent.withOpacity(0.8),
+        size: 20,
+      ),
+      onPressed: () {},
+    ),
+    
 );
 
 var githubCard = Container(
@@ -375,8 +386,12 @@ var githubCard = Container(
     child: IconButton(
       color: Colors.redAccent,
       icon: Icon(
-        Icons.import_contacts,
-        size: 22,
+        const IconData(0xf09b, fontFamily: 'SocialMediaIcon'),
+        size: 20,
+        
       ),
       onPressed: () {},
-    ));
+    ),
+    
+    
+    );

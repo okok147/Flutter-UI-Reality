@@ -6,6 +6,7 @@ import 'package:friendly_forest_02/DismissCardView/News.dart';
 import 'package:friendly_forest_02/DismissCardView/Contact.dart';
 import 'package:friendly_forest_02/router.dart';
 import 'package:friendly_forest_02/utils.dart';
+import 'package:friendly_forest_02/social_media_icon_icons.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({Key key, this.title}) : super(key: key);
@@ -262,8 +263,7 @@ class _HomePageState extends State<HomePage>
                         facebookCard,
                         twitterCard,
                         githubCard,
-                        Container(),
-                        Container(),
+                        
                         Container(
                           height: 55,
                           width: 190,

@@ -78,6 +78,10 @@ flutter:
       fonts:
         - asset: fonts/SearchIcon.ttf
 
+    - family: SocialMediaIcon
+      fonts:
+        - asset: fonts/SocialMediaIcon.ttf
+
 
 
 
