@@ -6,6 +6,13 @@ Let's draw some line. <a href= "https://dribbble.com/shots/7119123-Mobile-applic
 
 
 # Day 1
-<img src="process/day1.gif" width="500" height="500">  
+<img src="process/day1.gif" height="500">  
     
     - Start a new journey.
+    To do:
+    - Use bottom_navy_bar 
+    - Use Flexible for the layout 
+    
+ Good example for how to use List data:
+ 
+   https://www.youtube.com/watch?v=leA2nZYM9jY&t=480s
