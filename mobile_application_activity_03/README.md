@@ -5,5 +5,7 @@ Let's draw some line. <a href= "https://dribbble.com/shots/7119123-Mobile-applic
 <img src="design/design.png" width = "500"> 
 
 
-
 # Day 1
+<img src="process/day1.gif" width="500" height="500">  
+    
+    - Start a new journey.
