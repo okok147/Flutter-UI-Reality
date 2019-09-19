@@ -11,7 +11,7 @@
 ///      fonts:
 ///       - asset: fonts/SocialMediaIcon.ttf
 ///
-/// 
+///
 /// * Typicons, (c) Stephen Hutchings 2012
 ///         Author:    Stephen Hutchings
 ///         License:   SIL (http://scripts.sil.org/OFL)
@@ -28,7 +28,9 @@ class SocialMediaIcon {
 
   static const _kFontFam = 'SocialMediaIcon';
 
-  static const IconData facebook = const IconData(0xe800, fontFamily: _kFontFam);
+  static const IconData facebook =
+      const IconData(0xe800, fontFamily: _kFontFam);
   static const IconData twitter = const IconData(0xe801, fontFamily: _kFontFam);
-  static const IconData github_circled = const IconData(0xf09b, fontFamily: _kFontFam);
+  static const IconData github_circled =
+      const IconData(0xf09b, fontFamily: _kFontFam);
 }

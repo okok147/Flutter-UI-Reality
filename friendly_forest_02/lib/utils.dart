@@ -346,15 +346,13 @@ var facebookCard = Container(
     borderRadius: BorderRadius.all(Radius.circular(8)),
   ),
   child: IconButton(
-      
-      icon: Icon(
-        const IconData(0xe800, fontFamily: 'SocialMediaIcon'),
-        color: Color(0xff1A46C5),
-        size: 20,
-      ),
-      onPressed: () {},
+    icon: Icon(
+      const IconData(0xe800, fontFamily: 'SocialMediaIcon'),
+      color: Color(0xff1A46C5),
+      size: 20,
     ),
-    
+    onPressed: () {},
+  ),
 );
 
 var twitterCard = Container(
@@ -364,34 +362,30 @@ var twitterCard = Container(
     color: Colors.grey.withOpacity(0.1),
     borderRadius: BorderRadius.all(Radius.circular(8)),
   ),
-  child:IconButton(
-      color: Colors.redAccent,
-      icon: Icon(
-        const IconData(0xe801, fontFamily: 'SocialMediaIcon'),
-        color: Colors.blueAccent.withOpacity(0.8),
-        size: 20,
-      ),
-      onPressed: () {},
+  child: IconButton(
+    color: Colors.redAccent,
+    icon: Icon(
+      const IconData(0xe801, fontFamily: 'SocialMediaIcon'),
+      color: Colors.blueAccent.withOpacity(0.8),
+      size: 20,
     ),
-    
+    onPressed: () {},
+  ),
 );
 
 var githubCard = Container(
-    width: 50,
-    height: 50,
-    decoration: BoxDecoration(
-      color: Colors.grey.withOpacity(0.1),
-      borderRadius: BorderRadius.all(Radius.circular(8)),
+  width: 50,
+  height: 50,
+  decoration: BoxDecoration(
+    color: Colors.grey.withOpacity(0.1),
+    borderRadius: BorderRadius.all(Radius.circular(8)),
+  ),
+  child: IconButton(
+    color: Colors.redAccent,
+    icon: Icon(
+      const IconData(0xf09b, fontFamily: 'SocialMediaIcon'),
+      size: 20,
     ),
-    child: IconButton(
-      color: Colors.redAccent,
-      icon: Icon(
-        const IconData(0xf09b, fontFamily: 'SocialMediaIcon'),
-        size: 20,
-        
-      ),
-      onPressed: () {},
-    ),
-    
-    
-    );
+    onPressed: () {},
+  ),
+);

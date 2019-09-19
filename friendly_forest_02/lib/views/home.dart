@@ -72,11 +72,8 @@ class _HomePageState extends State<HomePage>
                   children: <Widget>[
                     IconButton(
                       icon: Icon(
-                        
-                        
                         Icons.keyboard_arrow_left,
                         size: 37,
-                        
                       ),
                       onPressed: () {
                         Navigator.popAndPushNamed(context, infoViewRoute);
@@ -263,12 +260,11 @@ class _HomePageState extends State<HomePage>
                         facebookCard,
                         twitterCard,
                         githubCard,
-                        
                         Container(
                           height: 55,
                           width: 190,
                           child: Padding(
-                            padding: const EdgeInsets.only(right:24.0),
+                            padding: const EdgeInsets.only(right: 24.0),
                             child: RaisedButton(
                               color: Colors.orange.withOpacity(1),
                               onPressed: () {
