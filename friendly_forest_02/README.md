@@ -81,5 +81,5 @@ That would be amazing.<a href ="https://dribbble.com/shots/7080175-Mobile-app-Fr
 
     - It is not prefect at all
     - Finished
-    - Suggestion: Learn how to use BloC to build backend,also better UI design is recommended.
+    - Suggestion: Learn how to use BloC to build backend,also better UI design and coding style is recommended.
     
