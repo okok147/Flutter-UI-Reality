@@ -13,4 +13,5 @@ Let's draw some line. <a href= "https://dribbble.com/shots/7119123-Mobile-applic
     -Use bottom_navy_bar 
     
  Good example for how to use List data:
- https://www.youtube.com/watch?v=leA2nZYM9jY&t=600s
+ 
+    https://www.youtube.com/watch?v=leA2nZYM9jY&t=600s
