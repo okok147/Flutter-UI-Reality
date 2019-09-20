@@ -20,3 +20,15 @@ Let's draw some line. <a href= "https://dribbble.com/shots/7119123-Mobile-applic
  Good example for how to use List data:
  
    https://www.youtube.com/watch?v=leA2nZYM9jY&t=480s
+   
+   # Day 2
+<img src="process/day2.gif" height="500">  
+    
+    - A good Start
+    To do:
+     - Use Flexible + FractionallySizedBox for the layout 
+    - Use Hero to expand > page 2
+    - Use AnimatedBuilder for building UI
+    - Use dio for accessing html 
+    - To build the appbar with content
+     
