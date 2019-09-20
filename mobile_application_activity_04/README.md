@@ -26,7 +26,7 @@ Let's draw some line. <a href= "https://dribbble.com/shots/7119123-Mobile-applic
     - A good Start
     To do:
     - Use CustomIcon + dio for building appBar's content
-    - To use DateTime for 'x' mins ago
-    - To use flutter_shimmer for chart effect!
+    - Use DateTime for 'x' mins ago
+    - Use flutter_shimmer for chart effect!
     
      
