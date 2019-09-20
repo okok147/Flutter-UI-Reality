@@ -20,7 +20,7 @@ Let's draw some line. <a href= "https://dribbble.com/shots/7119123-Mobile-applic
  
    https://www.youtube.com/watch?v=leA2nZYM9jY&t=480s
    
- Recommended:
+  🔥Recommended for different data type:
    <a href="https://github.com/kelvin147789/flutter-ui-resources/tree/d16507f761e6800fdd6d7bae61cd861ff801c7e2/Example/Best-Flutter-UI-Templates-master/best_flutter_ui_templates/lib/fitnessApp/models">ListData</a>
    
    # Day 2
