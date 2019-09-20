@@ -20,6 +20,9 @@ Let's draw some line. <a href= "https://dribbble.com/shots/7119123-Mobile-applic
  
    https://www.youtube.com/watch?v=leA2nZYM9jY&t=480s
    
+ Recommended:
+   https://github.com/kelvin147789/flutter-ui-resources/tree/d16507f761e6800fdd6d7bae61cd861ff801c7e2/Example/Best-Flutter-UI-Templates-master/best_flutter_ui_templates/lib/fitnessApp/models
+   
    # Day 2
 <img src="process/day2.gif" height="500">  
     
@@ -29,4 +32,5 @@ Let's draw some line. <a href= "https://dribbble.com/shots/7119123-Mobile-applic
     - Use DateTime for 'x' mins ago
     - Use flutter_shimmer for chart effect!
     
+ 
      
