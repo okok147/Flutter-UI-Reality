@@ -10,7 +10,7 @@ Let's draw some line. <a href= "https://dribbble.com/shots/7119123-Mobile-applic
     
     - Start a new journey.
     To do:
-    - Use bottom_navy_bar 
+    - Use bottom_navy_bar ✅    
     - Use Flexible + FractionallySizedBox for the layout 
     - Use Hero to expand > page 2
     - Use AnimatedBuilder for building UI
@@ -26,9 +26,5 @@ Let's draw some line. <a href= "https://dribbble.com/shots/7119123-Mobile-applic
     
     - A good Start
     To do:
-     - Use Flexible + FractionallySizedBox for the layout 
-    - Use Hero to expand > page 2
-    - Use AnimatedBuilder for building UI
-    - Use dio for accessing html 
     - To build the appbar with content
      
