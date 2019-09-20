@@ -4,23 +4,21 @@
 
 
 
-<h2> Project 01 </h2>
-   
+<h2> Project 01 </h2> ✅   
   <a href="https://github.com/kelvin147789/Flutter_UI_Reality/blob/master/gardener_01/README.md">Gardener_01 </a>
   
   <img src="gardener_01/design/homepage.png" width="250" height="500"  >  <img src="gardener_01/design/search.png" width="250" height="500">   
   
   
   
-<h2> Project 02 </h2>
-   
+<h2> Project 02 </h2> ✅   
   <a href="https://github.com/kelvin147789/Flutter_UI_Reality/tree/master/friendly_forest_02/README.md">Friendly_Forest_02 </a>
   
   <img src="friendly_forest_02/process/day8.gif" width="500" > 
   
   
   
-<h2> Project 03 </h2>
+<h2> Project 03 </h2> ✅ 
    
   <a href="https://github.com/kelvin147789/Flutter_UI_Reality/tree/master/market_app_03/README.md">Market_App_03 </a>
   
@@ -28,8 +26,7 @@
   
   
   
-  <h2> Project 04 </h2>
-  
+  <h2> Project 04 </h2>   
   <a href="https://github.com/kelvin147789/Flutter_UI_Reality/tree/master/mobile_application_activity_04">Mobile_Application_Activity_04 </a>  
   
   <img src="mobile_application_activity_04/design/design.png" width="500" > 
