@@ -14,8 +14,7 @@ Let's draw some line. <a href= "https://dribbble.com/shots/7119123-Mobile-applic
     - Use Flexible + FractionallySizedBox for the layout 
     - Use Hero to expand > page 2
     - Use AnimatedBuilder for building UI(Content)
-    - Use dio for accessing html 
-    
+      
     
  Good example for how to use List data:
  
@@ -26,7 +25,7 @@ Let's draw some line. <a href= "https://dribbble.com/shots/7119123-Mobile-applic
     
     - A good Start
     To do:
-    - To build the appbar with content
+    - Use CustomIcon + dio for building appBar's content
     - To use DateTime for 'x' mins ago
     
      
