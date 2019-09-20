@@ -1,11 +1,9 @@
 # Market-app-UI
 
-Simplicity and Beauty.
-<a href ="https://dribbble.com/shots/6525264-UI-Market-app">Design </a>
- <img src="design/profile_2x.png" width="500">    
+Simplicity and Beauty.<a href ="https://dribbble.com/shots/6525264-UI-Market-app">Design </a>
+   
  
- 
- # My version:
+# My version:
 
   
 
