@@ -34,6 +34,7 @@ Let's draw some line. <a href= "https://dribbble.com/shots/7119123-Mobile-applic
     - Use DateTime for 'x' mins ago
     - Use flutter_shimmer for chart effect!
     - Use FadeInImage for loading image from Internet
+    - For addition,learn how to implement google_map_flutter 
     
  
      
