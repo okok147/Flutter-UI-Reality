@@ -33,6 +33,7 @@ Let's draw some line. <a href= "https://dribbble.com/shots/7119123-Mobile-applic
     - Use CustomIcon + dio for building appBar's content
     - Use DateTime for 'x' mins ago
     - Use flutter_shimmer for chart effect!
+    - Use FadeInImage for loading image from Internet
     
  
      
