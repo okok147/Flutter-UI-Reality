@@ -11,9 +11,10 @@ Let's draw some line. <a href= "https://dribbble.com/shots/7119123-Mobile-applic
     - Start a new journey.
     To do:
     - Use bottom_navy_bar 
-    - Use Flexible for the layout 
+    - Use Flexible + FractionallySizedBox for the layout 
     - Use Hero to expand > page 2
     - Use AnimatedBuilder for building UI
+    
     
  Good example for how to use List data:
  
