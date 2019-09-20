@@ -1,6 +1,6 @@
 # Market-app-UI
 
-A new Flutter application.
+Simplicity and Beauty.
 
   <img src="design/welcomepage.png" width="400">  <img src="design/homepage.png" width="400">   
 
