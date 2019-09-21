@@ -35,6 +35,7 @@ Let's draw some line. <a href= "https://dribbble.com/shots/7119123-Mobile-applic
     - Use flutter_shimmer for chart effect!
     - Use FadeInImage for loading image from Internet
     - In addition,learn how to implement google_map_flutter 
+    - Use ValueListenableBuilder to value data in one time
     
  
      
