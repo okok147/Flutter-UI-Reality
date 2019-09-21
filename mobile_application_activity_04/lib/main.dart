@@ -61,7 +61,7 @@ class _MyHomePageState extends State<MyHomePage> {
         leading: Padding(
           padding: const EdgeInsets.only(left: 16.0),
           child: IconButton(
-            icon: Icon(Icons.check_circle),
+            icon: Icon(Icons.arrow_forward),
             iconSize: 35,
             alignment: Alignment.topRight,
             color: Colors.redAccent,
