@@ -31,7 +31,7 @@ Let's draw some line. <a href= "https://dribbble.com/shots/7119123-Mobile-applic
     - A good Start
     To do:
     - Use CustomIcon + dio for building appBar's content
-    - Use DateTime for 'x' mins ago
+    - Use DateTime for 'x' mins ago ✅  (Use seconds for better demonstration)
     - Use flutter_shimmer for chart effect!
     - Use FadeInImage for loading image from Internet
     - In addition,learn how to implement google_map_flutter 
@@ -39,5 +39,13 @@ Let's draw some line. <a href= "https://dribbble.com/shots/7119123-Mobile-applic
 Good resources to create a time loop:
 <a href="https://stackoverflow.com/questions/14946012/how-do-i-run-a-reoccurring-function-in-dart">reoccurring function, in Dart?</a>
     
+    
+   # Day 3
+<img src="process/day3.gif" height="500">  
+    
+    - A struggle period
+    To do :
+    - Leaarn Async/Await
+   
  
      
