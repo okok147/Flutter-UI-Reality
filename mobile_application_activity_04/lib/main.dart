@@ -65,11 +65,10 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     //yeah! the time loop is working!To prevent duplicate,cancel the event when calling the widget again,
     //so the loop would continue but not duplicate itself.
-    
+
     periodicSub = new Stream.periodic(const Duration(seconds: 1), (v) => v)
         .take(10000)
-        .listen((count) => print(passSeconds ++));
-        
+        .listen((count) => print(passSeconds++));
 
     return Scaffold(
       appBar: AppBar(
@@ -95,15 +94,13 @@ class _MyHomePageState extends State<MyHomePage> {
                   style: normalTextStyle,
                 ),
                 Text(
-                  '$passSeconds ' ,
+                  '$passSeconds ',
                   style: TextStyle(color: Colors.blueAccent, fontSize: 17.5),
                 ),
                 Text(
-                   'sec ago',
+                  'sec ago',
                   style: normalTextStyle,
                 ),
-
-
                 Padding(
                   padding: const EdgeInsets.only(left: 16.0),
                   child: FractionallySizedBox(
