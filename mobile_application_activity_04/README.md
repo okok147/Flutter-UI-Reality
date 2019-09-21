@@ -36,6 +36,8 @@ Let's draw some line. <a href= "https://dribbble.com/shots/7119123-Mobile-applic
     - Use FadeInImage for loading image from Internet
     - In addition,learn how to implement google_map_flutter 
     - Use ValueListenableBuilder to value data in one time
+Good resources to create a time loop:
+<a href="https://stackoverflow.com/questions/14946012/how-do-i-run-a-reoccurring-function-in-dart">reoccurring function, in Dart?</a>
     
  
      
