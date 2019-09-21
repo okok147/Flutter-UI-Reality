@@ -1,10 +1,14 @@
+import 'dart:async';
+import 'dart:math';
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:bottom_navy_bar/bottom_navy_bar.dart';
 import 'package:mobile_application_activity_03/Pages/home.dart';
 import 'package:mobile_application_activity_03/Pages/profile.dart';
 import 'package:mobile_application_activity_03/Pages/challenges.dart';
-import 'package:mobile_application_activity_03/Pages/settings.dart';
 import 'package:mobile_application_activity_03/utils.dart';
+import 'package:intl/intl.dart';
 
 void main() => runApp(MyApp());
 
@@ -34,6 +38,11 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  StreamSubscription periodicSub;
+  var passSeconds = 0;
+
+  var minutes = 1;
+
   int _selectedIndex = 0;
 
   final _pageOption = [
@@ -54,6 +63,14 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
+    //yeah! the time loop is working!To prevent duplicate,cancel the event when calling the widget again,
+    //so the loop would continue but not duplicate itself.
+    
+    periodicSub = new Stream.periodic(const Duration(seconds: 1), (v) => v)
+        .take(10000)
+        .listen((count) => print(passSeconds ++));
+        
+
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
@@ -74,9 +91,19 @@ class _MyHomePageState extends State<MyHomePage> {
             child: Row(
               children: <Widget>[
                 Text(
-                  'Last update $_selectedIndex min ago',
-                  style: TextStyle(color: Colors.grey, fontSize: 13.5),
+                  'Last update ',
+                  style: normalTextStyle,
                 ),
+                Text(
+                  '$passSeconds ' ,
+                  style: TextStyle(color: Colors.blueAccent, fontSize: 17.5),
+                ),
+                Text(
+                   'sec ago',
+                  style: normalTextStyle,
+                ),
+
+
                 Padding(
                   padding: const EdgeInsets.only(left: 16.0),
                   child: FractionallySizedBox(
@@ -108,6 +135,8 @@ class _MyHomePageState extends State<MyHomePage> {
           showElevation: false, //R use this to remove appBar's elevation
           onItemSelected: (index) => setState(
             () {
+              //pause the loop
+              periodicSub.cancel();
               _selectedIndex = index;
             },
           ),
