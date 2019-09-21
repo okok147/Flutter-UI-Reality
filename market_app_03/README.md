@@ -1,6 +1,6 @@
 # Market-app-UI
 
-Simplicity and Beauty.<a href ="https://dribbble.com/shots/6525264-UI-Market-app" target="">Design </a>
+Simplicity and Beauty.<a href ="https://dribbble.com/shots/6525264-UI-Market-app" target="blank">Design </a>
    
   <img src="design/welcomepage.png" width="250">  <img src="design/homepage.png" width="250">   
 
