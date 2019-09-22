@@ -7,7 +7,9 @@ class Profile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Theme.of(context).backgroundColor,
-      body: Center(child: Text('Profile')),
+      body: Center(
+        child: Text('Profile'),
+      ),
     );
   }
 }

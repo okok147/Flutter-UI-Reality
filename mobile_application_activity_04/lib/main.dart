@@ -7,6 +7,12 @@ import 'package:mobile_application_activity_03/Pages/home.dart';
 import 'package:mobile_application_activity_03/Pages/profile.dart';
 import 'package:mobile_application_activity_03/Pages/challenges.dart';
 import 'package:mobile_application_activity_03/utils.dart';
+import 'dart:async';
+import 'dart:convert';
+import 'package:http_parser/http_parser.dart';
+import 'package:mobile_application_activity_03/custom_app_icon_icons.dart';
+import 'package:dio/dio.dart';
+
 /* Launch simulator with flutter in a quick way:
 
 open -a simulator
@@ -46,6 +52,15 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  void getHttp() async {
+    try {
+      Response response = await Dio().get("http://www.google.com");
+      print(response);
+    } catch (e) {
+      print(e);
+    }
+  }
+
   var _selectedIndex = 0;
   StreamSubscription periodicSub;
   var passSeconds = 0;
@@ -84,11 +99,21 @@ class _MyHomePageState extends State<MyHomePage> {
         leading: Padding(
           padding: const EdgeInsets.only(left: 16.0),
           child: IconButton(
-            icon: Icon(Icons.arrow_forward),
+            icon: Icon(
+              const IconData(0xf269, fontFamily: 'CustomAppIcon'),
+            ),
             iconSize: 35,
             alignment: Alignment.topRight,
             color: Colors.redAccent,
-            onPressed: () {},
+            onPressed: () {
+              setState(
+                () {
+                  _selectedIndex = _selectedIndex;
+                  //pause the loop
+                  periodicSub.cancel();
+                },
+              );
+            },
           ),
         ),
         actions: <Widget>[
@@ -110,19 +135,6 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 Padding(
                   padding: const EdgeInsets.only(left: 16.0),
-                  child: FractionallySizedBox(
-                    child: InkWell(
-                      child: Container(
-                        height: 38,
-                        width: 38,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.all(Radius.circular(30)),
-                          color: Colors.blueGrey,
-                        ),
-                      ),
-                      onTap: () {},
-                    ),
-                  ),
                 ),
               ],
             ),
@@ -147,21 +159,21 @@ class _MyHomePageState extends State<MyHomePage> {
           items: [
             BottomNavyBarItem(
                 icon: Icon(
-                  Icons.apps,
+                  const IconData(0xf601, fontFamily: 'CustomAppIcon'),
                   color: _selectedColor[_selectedIndex],
                 ),
-                title: Text('Home'),
+                title: Text('Activity'),
                 activeColor: bottomActiveColor),
             BottomNavyBarItem(
                 icon: Icon(
-                  Icons.people,
+                  const IconData(0xe800, fontFamily: 'CustomAppIcon'),
                   color: _selectedColor[_selectedIndex],
                 ),
                 title: Text('Users'),
                 activeColor: bottomActiveColor),
             BottomNavyBarItem(
               icon: Icon(
-                Icons.local_drink,
+                const IconData(0xe801, fontFamily: 'CustomAppIcon'),
                 color: _selectedColor[_selectedIndex],
               ),
               title: Text('Challenges'),
@@ -169,7 +181,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             BottomNavyBarItem(
               icon: Icon(
-                Icons.settings,
+                const IconData(0xe802, fontFamily: 'CustomAppIcon'),
                 color: _selectedColor[_selectedIndex],
               ),
               title: Text('Settings'),
