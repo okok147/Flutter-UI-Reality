@@ -30,7 +30,7 @@ Let's draw some line. <a href= "https://dribbble.com/shots/7119123-Mobile-applic
     
     - A good Start
     To do:
-    - Use CustomIcon + dio for building appBar's content
+    - Use CustomIcon for building appBar's content  ✅ 
     - Use DateTime for 'x' mins ago ✅  (Use seconds for better demonstration)
     - Use flutter_shimmer for chart effect!
     - Use FadeInImage for loading image from Internet
@@ -59,6 +59,7 @@ Quick way to launch simulator in VSCODE:
 <img src="process/day4.gif" height="500">  
 
     - iOS13 is nuts! Hot restart did not work
+    
     - I would use AssetImage for the icon with inkWell
     - But at least would do the animation
     - http asset would not be implemented into this project,instead,json list data would be used mainly.
