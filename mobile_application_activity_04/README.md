@@ -58,8 +58,8 @@ Quick way to launch simulator in VSCODE:
    # Day 4
 <img src="process/day4.gif" height="500">  
 
-    - iOS13 is nuts! Hot restart did not work  
-    - I would use AssetImage for the icon with inkWell
+    - iOS13 is nuts! Hot restart is not working  
+    - I would use AssetImage for the icon with inkWell 
     - But at least would do the animation
     - http asset would not be implemented into this project,instead,json list data would be used mainly.
  
