@@ -53,5 +53,14 @@ Quick way to launch simulator in VSCODE:
     flutter run
     
 <a href="https://www.youtube.com/watch?v=EwHMSxSWIvQ&t=518s"> Building Lists with JSON Data </a>
+
+    
+   # Day 4
+<img src="process/day4.gif" height="500">  
+
+    - iOS13 is nuts! Hot restart did not work
+    - I would use AssetImage for the icon with inkWell
+    - But at least would do the animation
+    - http asset would not be implemented into this project,instead,json list data would be used mainly.
  
      
