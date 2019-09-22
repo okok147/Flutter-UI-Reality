@@ -1,5 +1,4 @@
 import 'dart:async';
-import 'dart:math';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -8,7 +7,16 @@ import 'package:mobile_application_activity_03/Pages/home.dart';
 import 'package:mobile_application_activity_03/Pages/profile.dart';
 import 'package:mobile_application_activity_03/Pages/challenges.dart';
 import 'package:mobile_application_activity_03/utils.dart';
-import 'package:intl/intl.dart';
+/* Launch simulator with flutter in a quick way:
+
+open -a simulator
+flutter run
+
+
+Terminate simluator:
+press 'q' in Terminal
+
+*/
 
 void main() => runApp(MyApp());
 
@@ -38,14 +46,13 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  var _selectedIndex = 0;
   StreamSubscription periodicSub;
   var passSeconds = 0;
 
   var minutes = 1;
 
-  int _selectedIndex = 0;
-
-  final _pageOption = [
+  var _pageOption = [
     HomePage(),
     Profile(),
     Challenges(),
@@ -95,7 +102,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 Text(
                   '$passSeconds ',
-                  style: TextStyle(color: Colors.blueAccent, fontSize: 17.5),
+                  style: TextStyle(color: Colors.blueAccent, fontSize: 15.5),
                 ),
                 Text(
                   'sec ago',
@@ -132,9 +139,9 @@ class _MyHomePageState extends State<MyHomePage> {
           showElevation: false, //R use this to remove appBar's elevation
           onItemSelected: (index) => setState(
             () {
+              _selectedIndex = index;
               //pause the loop
               periodicSub.cancel();
-              _selectedIndex = index;
             },
           ),
           items: [
