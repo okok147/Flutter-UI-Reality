@@ -7,10 +7,6 @@ import 'package:mobile_application_activity_03/Pages/home.dart';
 import 'package:mobile_application_activity_03/Pages/profile.dart';
 import 'package:mobile_application_activity_03/Pages/challenges.dart';
 import 'package:mobile_application_activity_03/utils.dart';
-import 'dart:async';
-import 'dart:convert';
-import 'package:http_parser/http_parser.dart';
-import 'package:mobile_application_activity_03/custom_app_icon_icons.dart';
 import 'package:dio/dio.dart';
 
 /* Launch simulator with flutter in a quick way:
@@ -54,7 +50,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   void getHttp() async {
     try {
-      Response response = await Dio().get("http://www.google.com");
+      Response response = await Dio().get("https://google.com");
       print(response);
     } catch (e) {
       print(e);
@@ -88,7 +84,7 @@ class _MyHomePageState extends State<MyHomePage> {
     //yeah! the time loop is working!To prevent duplicate,cancel the event when calling the widget again,
     //so the loop would continue but not duplicate itself.
 
-    periodicSub = new Stream.periodic(const Duration(seconds: 1), (v) => v)
+    periodicSub = new Stream.periodic(const Duration(seconds: 60), (v) => v)
         .take(10000)
         .listen((count) => print(passSeconds++));
 
@@ -102,7 +98,7 @@ class _MyHomePageState extends State<MyHomePage> {
             icon: Icon(
               const IconData(0xf269, fontFamily: 'CustomAppIcon'),
             ),
-            iconSize: 35,
+            iconSize: 32,
             alignment: Alignment.topRight,
             color: Colors.redAccent,
             onPressed: () {
@@ -130,11 +126,17 @@ class _MyHomePageState extends State<MyHomePage> {
                   style: TextStyle(color: Colors.blueAccent, fontSize: 15.5),
                 ),
                 Text(
-                  'sec ago',
+                  'mins ago',
                   style: normalTextStyle,
                 ),
                 Padding(
                   padding: const EdgeInsets.only(left: 16.0),
+                  child: Container(
+                    height: 40,
+                    child: CircleAvatar(
+                      backgroundColor: Colors.blueAccent,
+                    ),
+                  ),
                 ),
               ],
             ),
