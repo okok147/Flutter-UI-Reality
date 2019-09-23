@@ -5,7 +5,10 @@ var bottomUnactiveColor = Colors.black.withOpacity(1);
 
 var normalTextStyle = TextStyle(color: Colors.grey, fontSize: 14.5);
 
-class CardData{
+//Good demonstruction of how to make a list of data
+// https://github.com/kelvin147789/flutter-ui-resources/tree/d16507f761e6800fdd6d7bae61cd861ff801c7e2/Example/Best-Flutter-UI-Templates-master/best_flutter_ui_templates/lib/fitnessApp/models
+
+class CardData {
   String cardColor;
   String cardTitle;
   String cardIcon;
@@ -15,8 +18,5 @@ class CardData{
   String cardBar;
   String cardLine;
   String friendImage;
-
-
-
-
+  
 }
