@@ -132,7 +132,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 Padding(
                   padding: const EdgeInsets.only(left: 16.0),
                   child: Container(
-                    height: 40,
+                    height: 38,
                     child: CircleAvatar(
                       backgroundColor: Colors.blueAccent,
                     ),
