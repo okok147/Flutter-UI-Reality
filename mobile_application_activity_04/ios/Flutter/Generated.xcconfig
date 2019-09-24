@@ -1,0 +1,9 @@
+// This is a generated file; do not edit or check into version control.
+FLUTTER_ROOT=/Users/kaho/Documents/flutter
+FLUTTER_APPLICATION_PATH=/Users/kaho/Documents/GitHub/Flutter_UI_Reality/mobile_application_activity_04
+FLUTTER_TARGET=/Users/kaho/Documents/GitHub/Flutter_UI_Reality/mobile_application_activity_04/lib/main.dart
+FLUTTER_BUILD_DIR=build
+SYMROOT=${SOURCE_ROOT}/../build/ios
+FLUTTER_FRAMEWORK_DIR=/Users/kaho/Documents/flutter/bin/cache/artifacts/engine/ios
+FLUTTER_BUILD_NAME=1.0.0
+FLUTTER_BUILD_NUMBER=1
