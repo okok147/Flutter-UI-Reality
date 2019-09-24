@@ -7,7 +7,7 @@ import 'package:mobile_application_activity_03/Pages/home.dart';
 import 'package:mobile_application_activity_03/Pages/profile.dart';
 import 'package:mobile_application_activity_03/Pages/challenges.dart';
 import 'package:mobile_application_activity_03/utils.dart';
-import 'package:dio/dio.dart';
+
 
 /* Launch simulator with flutter in a quick way:
 
@@ -48,14 +48,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  void getHttp() async {
-    try {
-      Response response = await Dio().get("https://google.com");
-      print(response);
-    } catch (e) {
-      print(e);
-    }
-  }
+
 
   var _selectedIndex = 0;
   StreamSubscription periodicSub;
@@ -118,7 +111,7 @@ class _MyHomePageState extends State<MyHomePage> {
             child: Row(
               children: <Widget>[
                 Text(
-                  'Last update ',
+                  'Last LOL ',
                   style: normalTextStyle,
                 ),
                 Text(
