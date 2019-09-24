@@ -1,4 +1,4 @@
-# mobile_application_activity_03
+# mobile_application_activity_04
 
 Let's draw some line. <a href= "https://dribbble.com/shots/7119123-Mobile-application-Activity">Design</a>
 
@@ -59,8 +59,9 @@ Quick way to launch simulator in VSCODE:
 <img src="process/day4.gif" height="500">  
 
     - iOS13 is nuts! Hot restart is not working  
-    - I would use AssetImage for the icon with inkWell 
     - But at least would do the animation
     - http asset would not be implemented into this project,instead,json list data would be used mainly.
+    
+<a href="https://www.youtube.com/watch?v=BVchsYA8YtM"> Internet Asset</a>
  
      
