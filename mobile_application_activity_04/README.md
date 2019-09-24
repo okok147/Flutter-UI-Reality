@@ -63,5 +63,6 @@ Quick way to launch simulator in VSCODE:
     - But at least would do the animation
     - http asset would not be implemented into this project,instead,json list data would be used mainly.
     - Try Draggable for Card
+    - Let's hard coding it!
  
      
