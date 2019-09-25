@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import '../utils.dart';
-import '../utils.dart';
 
 void main() => runApp(Activity());
 
@@ -58,7 +57,39 @@ class Activity extends StatelessWidget {
             SizedBox(
               height: 20,
             ),
-            Container(height: 570, color: Colors.blueAccent),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(0, 16, 8, 12),
+              child: Container(
+                height: 600,
+                color: Colors.blueAccent.withOpacity(0.01),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        stepContainer,
+                        SizedBox(
+                          height: 18,
+                        ),
+                        heartRateContainer,
+                      ],
+                    ),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        activityContainer,
+                        SizedBox(
+                          height: 18,
+                        ),
+                        sleepContainer,
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+            ),
           ],
         ),
       ),
