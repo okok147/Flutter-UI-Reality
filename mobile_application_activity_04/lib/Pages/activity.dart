@@ -70,6 +70,7 @@ class Activity extends StatelessWidget {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
+                        //search it in utils.dart
                         stepContainer,
                         SizedBox(
                           height: 18,
