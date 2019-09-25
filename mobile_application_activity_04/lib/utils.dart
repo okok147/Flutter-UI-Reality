@@ -2,10 +2,17 @@ import 'package:flutter/material.dart';
 import 'dart:math' as math;
 import 'dart:ui' as ui;
 
+import 'package:mobile_application_activity_03/heart_rate_line_chart.dart';
+
 var bottomActiveColor = Color(0xff84C9F9).withOpacity(0.8);
 var bottomUnactiveColor = Colors.black.withOpacity(1);
 
-var normalTextStyle = TextStyle(color: Colors.grey, fontSize: 14.5);
+var normalTextStyle =
+    TextStyle(color: Colors.grey.withOpacity(0.8), fontSize: 14.5);
+var bpmTextStyle =
+    TextStyle(color: Colors.white.withOpacity(0.7), fontSize: 14.5);
+var heartRateTextStyle =
+    TextStyle(color: Colors.white.withOpacity(0.85), fontSize: 23.5);
 
 var helloTextStyle = TextStyle(
     color: Colors.black87.withOpacity(0.8),
@@ -23,7 +30,7 @@ var activityStepCardDecoation = BoxDecoration(
 
 var activityHeartRateCardDecoation = BoxDecoration(
   borderRadius: BorderRadius.circular(20),
-  color: Colors.redAccent.withOpacity(0.9),
+  color: Colors.redAccent.withOpacity(0.95),
 );
 
 var activityActivityCardDecoation = BoxDecoration(
@@ -57,12 +64,12 @@ var stepContainer = Container(
         ),
       ),
       Positioned(
-        top: 12,
-        right: 16,
+        top: 8,
+        right: 8,
         child: IconButton(
           icon: Icon(
-            const IconData(0xf601, fontFamily: 'CustomAppIcon'),
-            size: 28,
+            Icons.directions_walk,
+            size: 32,
             color: Colors.white,
           ),
           onPressed: () {},
@@ -76,7 +83,7 @@ var stepContainer = Container(
             height: 200,
             width: 200,
             child: CustomPaint(
-              painter: MyPainter(),
+              painter: StepsPainter(),
               size: Size(200, 200),
               child: Center(
                   child: Padding(
@@ -98,6 +105,50 @@ var heartRateContainer = Container(
   decoration: activityHeartRateCardDecoation,
   height: 300,
   width: 170,
+  child: Stack(
+    children: <Widget>[
+      Positioned(
+        top: 24,
+        left: 16,
+        child: Text(
+          'Heart',
+          style: activityTextStyle,
+        ),
+      ),
+      Positioned(
+          top: 48,
+          left: 16,
+          child: Text(
+            'Rate',
+            style: activityTextStyle,
+          )),
+      Positioned(
+        top: 8,
+        right: 8,
+        child: IconButton(
+          icon: Icon(
+            const IconData(0xe804, fontFamily: 'CustomAppIcon'),
+            size: 32,
+            color: Colors.white,
+          ),
+          onPressed: () {},
+        ),
+      ),
+      Positioned(
+        top: 100,
+        left: 40,
+        child: RichText(
+          text: TextSpan(children: <TextSpan>[
+            TextSpan(text: '67 ', style: heartRateTextStyle),
+            TextSpan(text: ' bpm', style: bpmTextStyle),
+          ]),
+        ),
+      ),
+      Positioned(
+        child: HeartRateLineChart(),
+      ),
+    ],
+  ),
 );
 
 var activityContainer = Container(
@@ -112,7 +163,7 @@ var sleepContainer = Container(
   width: 170,
 );
 
-class MyPainter extends CustomPainter {
+class StepsPainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     final rect = Rect.fromLTRB(40, 55, 130, 145);
@@ -128,8 +179,8 @@ class MyPainter extends CustomPainter {
   }
 
   @override
-  bool shouldRepaint(MyPainter oldDelegate) => false;
+  bool shouldRepaint(StepsPainter oldDelegate) => false;
 
   @override
-  bool shouldRebuildSemantics(MyPainter oldDelegate) => false;
+  bool shouldRebuildSemantics(StepsPainter oldDelegate) => false;
 }
