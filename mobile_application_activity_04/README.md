@@ -68,6 +68,9 @@ Quick way to launch simulator in VSCODE:
 <img src="process/day5.gif" height="500">  
 
     - Tough!But learn how to use custom paint!
+    - Would use custom font
+    
+   
     
  
      
