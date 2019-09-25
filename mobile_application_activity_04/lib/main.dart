@@ -134,7 +134,8 @@ class _MyHomePageState extends State<MyHomePage> {
                   child: Container(
                     height: 40,
                     child: CircleAvatar(
-                      backgroundColor: Colors.blueAccent,
+                      backgroundImage: NetworkImage(
+                          'https://picsum.photos/id/1062/5092/3395'),
                     ),
                   ),
                 ),
