@@ -40,7 +40,7 @@ class Activity extends StatelessWidget {
                   ],
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(right:0.0),
+                  padding: const EdgeInsets.only(right: 0.0),
                   child: Container(
                     alignment: Alignment.topRight,
                     child: IconButton(
@@ -55,14 +55,10 @@ class Activity extends StatelessWidget {
                 ),
               ],
             ),
-
             SizedBox(
               height: 20,
             ),
-
-            Container(height: 570,
-          
-            color:Colors.blueAccent),
+            Container(height: 570, color: Colors.blueAccent),
           ],
         ),
       ),
