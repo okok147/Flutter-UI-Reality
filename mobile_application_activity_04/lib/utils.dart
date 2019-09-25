@@ -161,8 +161,9 @@ var sleepContainer = Container(
   decoration: activitySleepCardDecoation,
   height: 220,
   width: 170,
+  
 );
-
+//custom paint
 class StepsPainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
