@@ -16,7 +16,6 @@ var maggieTextStyle = TextStyle(
     fontSize: 28.5,
     fontWeight: FontWeight.w600);
 
-
 var activityStepCardDecoation = BoxDecoration(
   borderRadius: BorderRadius.circular(20),
   color: Color(0xff3535DD).withOpacity(0.85),
@@ -40,10 +39,8 @@ var activitySleepCardDecoation = BoxDecoration(
 var activityTextStyle =
     TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.w600);
 
-    var activityNumberTextStyle =
+var activityNumberTextStyle =
     TextStyle(color: Colors.white, fontSize: 25, fontWeight: FontWeight.w300);
-
-
 
 var stepContainer = Container(
   decoration: activityStepCardDecoation,
@@ -83,12 +80,12 @@ var stepContainer = Container(
               size: Size(200, 200),
               child: Center(
                   child: Padding(
-                    padding: const EdgeInsets.only(top:3.0),
-                    child: Text(
-                '7 537',
-                style: activityNumberTextStyle,
-              ),
-                  )),
+                padding: const EdgeInsets.only(top: 3.0),
+                child: Text(
+                  '7 537',
+                  style: activityNumberTextStyle,
+                ),
+              )),
             ),
           ),
         ),

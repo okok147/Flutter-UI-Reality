@@ -136,6 +136,11 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: CircleAvatar(
                       backgroundImage: NetworkImage(
                           'https://bradleyrentals.net/wp-content/uploads/sites/5/2018/03/5685885-pretty-girl-images.jpg'),
+                      child: InkWell(
+                        onTap: () {
+                          setState(() {});
+                        },
+                      ),
                     ),
                   ),
                 ),
