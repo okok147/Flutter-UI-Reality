@@ -59,8 +59,7 @@ Quick way to launch simulator in VSCODE:
 <img src="process/day4.gif" height="500">  
 
     - iOS13 is nuts! Hot restart is not working  
-    - But at least would do the animation
-    - http asset would not be implemented into this project,instead,json list data would be used mainly.
+ 
     
 <a href="https://www.youtube.com/watch?v=BVchsYA8YtM"> Internet Asset</a>
  
