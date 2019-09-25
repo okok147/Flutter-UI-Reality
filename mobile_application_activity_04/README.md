@@ -62,5 +62,12 @@ Quick way to launch simulator in VSCODE:
  
     
 <a href="https://www.youtube.com/watch?v=BVchsYA8YtM"> Internet Asset</a>
+
+
+   # Day 5
+<img src="process/day5.gif" height="500">  
+
+    - Tough!But learn how to use custom paint!
+    
  
      
