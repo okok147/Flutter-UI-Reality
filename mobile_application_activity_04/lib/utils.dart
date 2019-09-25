@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'dart:math' as math;
+import 'dart:ui' as ui;
 
 var bottomActiveColor = Color(0xff84C9F9).withOpacity(0.8);
 var bottomUnactiveColor = Colors.black.withOpacity(1);
@@ -21,7 +23,7 @@ var activityStepCardDecoation = BoxDecoration(
 
 var activityHeartRateCardDecoation = BoxDecoration(
   borderRadius: BorderRadius.circular(20),
-  color: Colors.redAccent.withOpacity(0.95),
+  color: Colors.redAccent.withOpacity(0.9),
 );
 
 var activityActivityCardDecoation = BoxDecoration(
@@ -52,15 +54,31 @@ var stepContainer = Container(
         ),
       ),
       Positioned(
-        top: 24,
+        top: 12,
         right: 16,
         child: IconButton(
           icon: Icon(
             const IconData(0xf601, fontFamily: 'CustomAppIcon'),
             size: 28,
-            color: Colors.blueAccent,
+            color: Colors.white,
           ),
           onPressed: () {},
+        ),
+      ),
+      Padding(
+        padding: const EdgeInsets.only(top: 32),
+        child: Center(
+          child: Container(
+            color: Colors.transparent,
+            height: 200,
+            width: 200,
+            child: CustomPaint(
+              
+              painter: MyPainter(),
+              size: Size(200, 200),
+              child: Center(child: Text('123')),
+            ),
+          ),
         ),
       ),
     ],
@@ -84,3 +102,25 @@ var sleepContainer = Container(
   height: 210,
   width: 170,
 );
+
+class MyPainter extends CustomPainter {
+  @override
+  void paint(Canvas canvas, Size size) {
+    final rect = Rect.fromLTRB(40 , 50, 130, 145);
+    final startAngle = -math.pi/1.8;
+    final sweepAngle = math.pi *1.63;
+    final useCenter = false;
+    final paint = Paint()
+    ..color = Colors.white
+    ..strokeCap = StrokeCap.round
+    ..style = PaintingStyle.stroke
+    ..strokeWidth = 4.5;
+    canvas.drawArc(rect, startAngle, sweepAngle, useCenter, paint);
+  }
+
+  @override
+  bool shouldRepaint(MyPainter oldDelegate) => false;
+
+  @override
+  bool shouldRebuildSemantics(MyPainter oldDelegate) => false;
+}
