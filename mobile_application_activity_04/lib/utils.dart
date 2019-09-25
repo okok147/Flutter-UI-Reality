@@ -16,6 +16,7 @@ var maggieTextStyle = TextStyle(
     fontSize: 28.5,
     fontWeight: FontWeight.w600);
 
+
 var activityStepCardDecoation = BoxDecoration(
   borderRadius: BorderRadius.circular(20),
   color: Color(0xff3535DD).withOpacity(0.85),
@@ -33,15 +34,20 @@ var activityActivityCardDecoation = BoxDecoration(
 
 var activitySleepCardDecoation = BoxDecoration(
   borderRadius: BorderRadius.circular(20),
-  color: Color(0xff35C8DD),
+  color: Color(0xff35C8DD).withOpacity(0.75),
 );
 
 var activityTextStyle =
     TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.w600);
 
+    var activityNumberTextStyle =
+    TextStyle(color: Colors.white, fontSize: 25, fontWeight: FontWeight.w300);
+
+
+
 var stepContainer = Container(
   decoration: activityStepCardDecoation,
-  height: 210,
+  height: 220,
   width: 170,
   child: Stack(
     children: <Widget>[
@@ -73,10 +79,16 @@ var stepContainer = Container(
             height: 200,
             width: 200,
             child: CustomPaint(
-              
               painter: MyPainter(),
               size: Size(200, 200),
-              child: Center(child: Text('123')),
+              child: Center(
+                  child: Padding(
+                    padding: const EdgeInsets.only(top:3.0),
+                    child: Text(
+                '7 537',
+                style: activityNumberTextStyle,
+              ),
+                  )),
             ),
           ),
         ),
@@ -99,22 +111,22 @@ var activityContainer = Container(
 
 var sleepContainer = Container(
   decoration: activitySleepCardDecoation,
-  height: 210,
+  height: 220,
   width: 170,
 );
 
 class MyPainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
-    final rect = Rect.fromLTRB(40 , 50, 130, 145);
-    final startAngle = -math.pi/1.8;
-    final sweepAngle = math.pi *1.63;
+    final rect = Rect.fromLTRB(40, 55, 130, 145);
+    final startAngle = -math.pi / 1.9;
+    final sweepAngle = math.pi * 1.50;
     final useCenter = false;
     final paint = Paint()
-    ..color = Colors.white
-    ..strokeCap = StrokeCap.round
-    ..style = PaintingStyle.stroke
-    ..strokeWidth = 4.5;
+      ..color = Colors.white
+      ..strokeCap = StrokeCap.round
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 4.5;
     canvas.drawArc(rect, startAngle, sweepAngle, useCenter, paint);
   }
 

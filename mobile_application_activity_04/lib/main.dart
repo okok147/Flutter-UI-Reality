@@ -77,8 +77,6 @@ class _MyHomePageState extends State<MyHomePage> {
     Colors.blueAccent,
   ];
 
-  
-
   //use when on Pressed:
 
   @override
@@ -137,7 +135,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     height: 42,
                     child: CircleAvatar(
                       backgroundImage: NetworkImage(
-                          'https://picsum.photos/id/1062/5092/3395'),
+                          'https://bradleyrentals.net/wp-content/uploads/sites/5/2018/03/5685885-pretty-girl-images.jpg'),
                     ),
                   ),
                 ),
