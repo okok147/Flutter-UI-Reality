@@ -45,8 +45,7 @@ Good resources to create a time loop:
     
     - A struggle period
     To do :
-    - Learn Async/Await
-    
+    - Learn Async/Await ❌ Would not be used in this project.But I would learn how to use it.    
 Quick way to launch simulator in VSCODE:
 
     open -a simulator
