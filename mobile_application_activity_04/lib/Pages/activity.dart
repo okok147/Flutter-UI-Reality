@@ -36,7 +36,7 @@ class Activity extends StatelessWidget {
                           style: maggieTextStyle,
                         ),
                       ],
-                    )
+                    ),
                   ],
                 ),
                 Padding(
