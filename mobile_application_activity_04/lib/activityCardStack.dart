@@ -5,7 +5,6 @@ import 'dart:math' as math;
 import 'dart:ui' as ui;
 import 'package:mobile_application_activity_03/utils.dart';
 
-
 var heartRateStack = Stack(
   children: <Widget>[
     Positioned(
@@ -156,11 +155,9 @@ var activityStack = Stack(
         ]),
       ),
     ),
-
     Positioned(
       top: 110,
       left: 45,
-      child: ,
     ),
     Positioned(
       bottom: 55,
@@ -170,7 +167,6 @@ var activityStack = Stack(
         style: timeTextStyle,
       ),
     ),
-
     Positioned(
       bottom: 55,
       right: 16,
