@@ -29,6 +29,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
+        fontFamily: 'Cabin',
         primarySwatch: Colors.blue,
         accentColor: Colors.white,
         backgroundColor: Colors.white,
@@ -126,7 +127,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   style: TextStyle(color: Colors.blueAccent, fontSize: 15.5),
                 ),
                 Text(
-                  'mins ago',
+                  'min ago',
                   style: normalTextStyle,
                 ),
                 Padding(

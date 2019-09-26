@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:mobile_application_activity_03/utils.dart';
 import 'package:mobile_application_activity_03/heart_rate_line_chart.dart';
 import 'dart:math' as math;
-import 'dart:ui' as ui;
-import 'package:mobile_application_activity_03/utils.dart';
+import 'package:mobile_application_activity_03/activity_line_chart.dart';
+
 
 var heartRateStack = Stack(
   children: <Widget>[
@@ -155,10 +155,13 @@ var activityStack = Stack(
         ]),
       ),
     ),
+
     Positioned(
-      top: 110,
-      left: 45,
+      child: ActivityLineChart(),
     ),
+
+    
+   
     Positioned(
       bottom: 55,
       left: 16,

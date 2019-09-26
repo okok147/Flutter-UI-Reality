@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-
-import 'package:mobile_application_activity_03/heart_rate_line_chart.dart';
 import 'package:mobile_application_activity_03/activityCardStack.dart';
 
 var bottomActiveColor = Color(0xff84C9F9).withOpacity(0.8);
@@ -14,7 +12,7 @@ var heartRateTextStyle =
     TextStyle(color: Colors.white.withOpacity(0.85), fontSize: 23.5);
 
 var helloTextStyle = TextStyle(
-    color: Colors.black87.withOpacity(0.8),
+    color: Colors.black87.withOpacity(0.5),
     fontSize: 22.5,
     fontWeight: FontWeight.w300);
 var maggieTextStyle = TextStyle(
@@ -47,8 +45,10 @@ var activityTextStyle =
 
 var activityNumberTextStyle =
     TextStyle(color: Colors.white, fontSize: 25, fontWeight: FontWeight.w300);
-var timeTextStyle =
-    TextStyle(color: Colors.white.withOpacity(0.9), fontSize: 11.5, fontWeight: FontWeight.w400);
+var timeTextStyle = TextStyle(
+    color: Colors.white.withOpacity(0.9),
+    fontSize: 11.5,
+    fontWeight: FontWeight.w400);
 
 var stepContainer = Container(
   decoration: activityStepCardDecoation,
@@ -76,5 +76,3 @@ var sleepContainer = Container(
   height: 220,
   width: 170,
 );
-
-

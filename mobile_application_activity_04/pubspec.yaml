@@ -67,10 +67,11 @@ flutter:
         - asset: assets/CustomAppIcon.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
-  #   - family: Trajan Pro
-  #     fonts:
-  #       - asset: fonts/TrajanPro.ttf
-  #       - asset: fonts/TrajanPro_Bold.ttf
+  
+    - family: Cabin
+      fonts:
+        - asset: assets/fonts/Cabin-Regular.ttf
+         
   #         weight: 700
   #
   # For details regarding fonts from package dependencies,
