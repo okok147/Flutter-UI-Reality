@@ -5,7 +5,7 @@ class ActivityLineChart extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     List<Color> gradientColors = [
-      Colors.white.withOpacity(1),
+      Colors.white.withOpacity(0.9),
       Colors.white.withOpacity(0.5),
     ];
     return Padding(
@@ -42,11 +42,11 @@ class ActivityLineChart extends StatelessWidget {
                     show: false,
                     bottomTitles: SideTitles(
                       showTitles: false,
-                      reservedSize: 22,
+                      reservedSize: 2,
                       textStyle: TextStyle(
                           color: Colors.transparent,
                           fontWeight: FontWeight.bold,
-                          fontSize: 16),
+                          fontSize: 5),
                       getTitles: (value) {
                         switch (value.toInt()) {
                           case 2:
@@ -66,7 +66,7 @@ class ActivityLineChart extends StatelessWidget {
                       textStyle: TextStyle(
                         color: Colors.transparent,
                         fontWeight: FontWeight.bold,
-                        fontSize: 15,
+                        fontSize: 5,
                       ),
                       getTitles: (value) {
                         switch (value.toInt()) {
@@ -79,8 +79,8 @@ class ActivityLineChart extends StatelessWidget {
                         }
                         return '';
                       },
-                      reservedSize: 28,
-                      margin: 12,
+                      reservedSize: 2,
+                      margin: 2,
                     ),
                   ),
                   borderData: FlBorderData(
@@ -93,13 +93,16 @@ class ActivityLineChart extends StatelessWidget {
                   lineBarsData: [
                     LineChartBarData(
                       spots: [
-                        FlSpot(0, 0),
-                        FlSpot(2.6, 2),
-                        FlSpot(4.9, 5),
-                        FlSpot(6.8, 3.1),
-                        FlSpot(8, 4),
-                        FlSpot(9.5, 3),
-                        FlSpot(11, 4),
+                        FlSpot(1.5, 0),
+                        FlSpot(1.8, 1),
+                        FlSpot(2.6, 5),
+                        FlSpot(3.7, 2.5),
+                        FlSpot(4.8, 4),
+                        FlSpot(6, 1.1),
+                        FlSpot(7.5, 3.8),
+                        FlSpot(8.7, 1),
+                        FlSpot(10, 3.5),
+                        FlSpot(11, 1),
                       ],
                       isCurved: true,
                       colors: gradientColors,
@@ -111,7 +114,7 @@ class ActivityLineChart extends StatelessWidget {
                       belowBarData: BelowBarData(
                         show: true,
                         colors: gradientColors
-                            .map((color) => color.withOpacity(0.35))
+                            .map((color) => color.withOpacity(0.3))
                             .toList(),
                       ),
                     ),

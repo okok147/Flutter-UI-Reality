@@ -4,7 +4,6 @@ import 'package:mobile_application_activity_03/heart_rate_line_chart.dart';
 import 'dart:math' as math;
 import 'package:mobile_application_activity_03/activity_line_chart.dart';
 
-
 var heartRateStack = Stack(
   children: <Widget>[
     Positioned(
@@ -12,7 +11,7 @@ var heartRateStack = Stack(
       left: 16,
       child: Text(
         'Heart',
-        style: activityTextStyle,
+        style: activityCardTextStyle,
       ),
     ),
     Positioned(
@@ -20,7 +19,7 @@ var heartRateStack = Stack(
       left: 16,
       child: Text(
         'Rate',
-        style: activityTextStyle,
+        style: activityCardTextStyle,
       ),
     ),
     Positioned(
@@ -58,7 +57,7 @@ var stepStack = Stack(
       left: 16,
       child: Text(
         'Steps',
-        style: activityTextStyle,
+        style: activityCardTextStyle,
       ),
     ),
     Positioned(
@@ -70,7 +69,10 @@ var stepStack = Stack(
           size: 32,
           color: Colors.white,
         ),
-        onPressed: () {},
+        onPressed: () {
+          print(
+              ('you clicked the Step and will show info about step with using hero'));
+        },
       ),
     ),
     Padding(
@@ -88,7 +90,7 @@ var stepStack = Stack(
               padding: const EdgeInsets.only(top: 3.0),
               child: Text(
                 '7 537',
-                style: activityNumberTextStyle,
+                style: stepTextStyle,
               ),
             )),
           ),
@@ -128,7 +130,7 @@ var activityStack = Stack(
       left: 16,
       child: Text(
         'Activity',
-        style: activityTextStyle,
+        style: activityCardTextStyle,
       ),
     ),
     Positioned(
@@ -155,13 +157,9 @@ var activityStack = Stack(
         ]),
       ),
     ),
-
     Positioned(
       child: ActivityLineChart(),
     ),
-
-    
-   
     Positioned(
       bottom: 55,
       left: 16,
@@ -176,6 +174,74 @@ var activityStack = Stack(
       child: Text(
         '4PM',
         style: timeTextStyle,
+      ),
+    ),
+  ],
+);
+
+var sleepStack = Stack(
+  children: <Widget>[
+    Positioned(
+      top: 24,
+      left: 16,
+      child: Text(
+        'Sleep',
+        style: activityCardTextStyle,
+      ),
+    ),
+    Positioned(
+      top: 8,
+      right: 8,
+      child: IconButton(
+        icon: Icon(
+          const IconData(0xf186, fontFamily: 'CustomAppIcon'),
+          size: 32,
+          color: Colors.white,
+        ),
+        onPressed: () {},
+      ),
+    ),
+    Positioned(
+      top: 70,
+      left: 45,
+      child: RichText(
+        text: TextSpan(children: <TextSpan>[
+          TextSpan(text: '7 ', style: heartRateTextStyle),
+          TextSpan(text: 'h  ', style: bpmTextStyle),
+          TextSpan(text: '54 ', style: heartRateTextStyle),
+          TextSpan(text: 'm  ', style: bpmTextStyle),
+        ]),
+      ),
+    ),
+    Positioned(
+      child: Padding(
+        padding: const EdgeInsets.fromLTRB(16, 100, 16, 32),
+        child: Container(
+          color: Colors.transparent,
+          height: 90,
+          width: 145,
+          child: Align(
+            alignment: Alignment.bottomLeft,
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.end,
+              children: <Widget>[
+                sleepBarGreyContainer,
+                sleepBarWhiteContainer,
+                sleepBarDoubleGreyContainer,
+                sleepBarTripleWhiteContainer,
+                sleepBarGreyContainer,
+                sleepBarOneThirdWhiteContainer,
+                sleepBarTripleGreyContainer,
+                SizedBox(
+                  width: 7,
+                ),
+                sleepBarDoubleGreyContainer,
+                sleepBarHalfWhiteContainer,
+                sleepBarGreyContainer,
+              ],
+            ),
+          ),
+        ),
       ),
     ),
   ],
