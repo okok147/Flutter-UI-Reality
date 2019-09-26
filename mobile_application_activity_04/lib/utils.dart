@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'dart:math' as math;
-import 'dart:ui' as ui;
 
 import 'package:mobile_application_activity_03/heart_rate_line_chart.dart';
+import 'package:mobile_application_activity_03/activityCardStack.dart';
 
 var bottomActiveColor = Color(0xff84C9F9).withOpacity(0.8);
 var bottomUnactiveColor = Colors.black.withOpacity(1);
@@ -48,140 +47,34 @@ var activityTextStyle =
 
 var activityNumberTextStyle =
     TextStyle(color: Colors.white, fontSize: 25, fontWeight: FontWeight.w300);
+var timeTextStyle =
+    TextStyle(color: Colors.white.withOpacity(0.9), fontSize: 11.5, fontWeight: FontWeight.w400);
 
 var stepContainer = Container(
   decoration: activityStepCardDecoation,
   height: 220,
   width: 170,
-  child: Stack(
-    children: <Widget>[
-      Positioned(
-        top: 24,
-        left: 16,
-        child: Text(
-          'Steps',
-          style: activityTextStyle,
-        ),
-      ),
-      Positioned(
-        top: 8,
-        right: 8,
-        child: IconButton(
-          icon: Icon(
-            Icons.directions_walk,
-            size: 32,
-            color: Colors.white,
-          ),
-          onPressed: () {},
-        ),
-      ),
-      Padding(
-        padding: const EdgeInsets.only(top: 32),
-        child: Center(
-          child: Container(
-            color: Colors.transparent,
-            height: 200,
-            width: 200,
-            child: CustomPaint(
-              painter: StepsPainter(),
-              size: Size(200, 200),
-              child: Center(
-                  child: Padding(
-                padding: const EdgeInsets.only(top: 3.0),
-                child: Text(
-                  '7 537',
-                  style: activityNumberTextStyle,
-                ),
-              )),
-            ),
-          ),
-        ),
-      ),
-    ],
-  ),
+  child: stepStack,
 );
 
 var heartRateContainer = Container(
   decoration: activityHeartRateCardDecoation,
   height: 300,
   width: 170,
-  child: Stack(
-    children: <Widget>[
-      Positioned(
-        top: 24,
-        left: 16,
-        child: Text(
-          'Heart',
-          style: activityTextStyle,
-        ),
-      ),
-      Positioned(
-          top: 48,
-          left: 16,
-          child: Text(
-            'Rate',
-            style: activityTextStyle,
-          )),
-      Positioned(
-        top: 8,
-        right: 8,
-        child: IconButton(
-          icon: Icon(
-            const IconData(0xe804, fontFamily: 'CustomAppIcon'),
-            size: 32,
-            color: Colors.white,
-          ),
-          onPressed: () {},
-        ),
-      ),
-      Positioned(
-        top: 100,
-        left: 40,
-        child: RichText(
-          text: TextSpan(children: <TextSpan>[
-            TextSpan(text: '67 ', style: heartRateTextStyle),
-            TextSpan(text: ' bpm', style: bpmTextStyle),
-          ]),
-        ),
-      ),
-      Positioned(
-        child: HeartRateLineChart(),
-      ),
-    ],
-  ),
+  child: heartRateStack,
 );
 
 var activityContainer = Container(
   decoration: activityActivityCardDecoation,
   height: 300,
   width: 170,
+  child: activityStack,
 );
 
 var sleepContainer = Container(
   decoration: activitySleepCardDecoation,
   height: 220,
   width: 170,
-  
 );
-//custom paint
-class StepsPainter extends CustomPainter {
-  @override
-  void paint(Canvas canvas, Size size) {
-    final rect = Rect.fromLTRB(40, 55, 130, 145);
-    final startAngle = -math.pi / 1.9;
-    final sweepAngle = math.pi * 1.50;
-    final useCenter = false;
-    final paint = Paint()
-      ..color = Colors.white
-      ..strokeCap = StrokeCap.round
-      ..style = PaintingStyle.stroke
-      ..strokeWidth = 4.5;
-    canvas.drawArc(rect, startAngle, sweepAngle, useCenter, paint);
-  }
 
-  @override
-  bool shouldRepaint(StepsPainter oldDelegate) => false;
 
-  @override
-  bool shouldRebuildSemantics(StepsPainter oldDelegate) => false;
-}
