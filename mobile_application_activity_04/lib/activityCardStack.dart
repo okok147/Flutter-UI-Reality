@@ -109,7 +109,7 @@ class StepsPainter extends CustomPainter {
     final sweepAngle = math.pi * 1.50;
     final useCenter = false;
     final paint = Paint()
-      ..color = Colors.white
+      ..color = switchColor[0]
       ..strokeCap = StrokeCap.round
       ..style = PaintingStyle.stroke
       ..strokeWidth = 4.5;

@@ -152,3 +152,8 @@ var sleepBarHalfWhiteContainer = Container(
   width: 3,
   decoration: sleepChart1Decoration,
 );
+
+var switchColor = [
+  Colors.white,
+  Color(0xff3535DD).withOpacity(0.85),
+];
