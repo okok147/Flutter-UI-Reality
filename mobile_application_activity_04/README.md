@@ -68,7 +68,7 @@ Quick way to launch simulator in VSCODE:
 
     - Tough!But learn how to use custom paint!
     - Would use custom font  ✅ 
-    
+    - Use Bar chart with fl_chart in activity time
    
     
  
