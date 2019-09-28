@@ -18,7 +18,7 @@
   
 <h2> Project 02 ✅  </h2>  
 
-  <a href="https://github.com/kelvin147789/Flutter_UI_Reality/tree/master/friendly_forest_02/README.md">Friendly_Forest_02 </a>
+  <a href="https://github.com/kelvin147789/Flutter_UI_Reality/tree/master/friendly_forest_02">Friendly_Forest_02 </a>
   
   <img src="friendly_forest_02/process/day8.gif" width="500" > 
   
