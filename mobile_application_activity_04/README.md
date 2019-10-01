@@ -1,6 +1,6 @@
 # mobile_application_activity_04
 
-A new Flutter project.
+Let's draw some chart.
 
 
 <a href="https://pusher.com/tutorials/flutter-listviews">Listview example</a>
