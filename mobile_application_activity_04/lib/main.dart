@@ -1,120 +1,55 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(MaterialApp(
-    title: 'Returning Data',
-    home: HomeScreen(),
-  ));
+void main() => runApp(TestPage());
+
+
+class TestPage extends StatefulWidget {
+  @override
+  _TestPageState createState() => new _TestPageState();
 }
 
-class HomeScreen extends StatelessWidget {
+class _TestPageState extends State<TestPage> {
+  String text = "Initial Text";
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Returning Data Demo'),
-      ),
-      body: Center(
-        child: SelectionButton(),
-      ),
-    );
-  }
-}
-
-class SelectionButton extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return RaisedButton(
-      onPressed: () {
-        _navigateAndDisplaySelection(context);
-      },
-      child: Text('Pick an option, any option!'),
-    );
-  }
-
-  _navigateAndDisplaySelection(BuildContext context) async {
-    final result = await Navigator.push(
-      context,
-      MaterialPageRoute(builder: (context) => SelectionScreen()),
-    );
-    Scaffold.of(context)
-      ..removeCurrentSnackBar()
-      ..showSnackBar(SnackBar(content: Text("$result")));
-  }
-}
-
-class SelectionScreen extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Pick an option'),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: RaisedButton(
-                onPressed: () {
-                  // Close the screen and return "Yep!" as the result.
-                  Navigator.pop(context, UnSelectionButton());
-                },
-                child: Text('Yep!'),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: RaisedButton(
-                onPressed: () {
-                  // Close the screen and return "Nope!" as the result.
-                  Navigator.pop(context, 'Nope.');
-                },
-                child: Text('Nope.'),
-              ),
-            )
-          ],
+    return new Scaffold(
+        drawer: new Drawer(
+          child: new ListView(
+            children: <Widget>[
+              new Container(child: new DrawerHeader(child: new Container())),
+              new Container(
+                child: new Column(children: <Widget>[
+                  new ListTile(
+                      leading: new Icon(Icons.info),
+                      onTap: () {
+                        setState(() {
+                          text = "info pressed";
+                        });
+                      }),
+                  new ListTile(
+                      leading: new Icon(Icons.save),
+                      onTap: () {
+                        setState(() {
+                          text = "save pressed";
+                        });
+                      }),
+                  new ListTile(
+                      leading: new Icon(Icons.settings),
+                      onTap: () {
+                        setState(() {
+                          text = "settings pressed";
+                        });
+                      }),
+                ]),
+              )
+            ],
+          ),
         ),
-      ),
-    );
-  }
-}
-
-class UnSelectionScreen extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Pick an option'),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: RaisedButton(
-                onPressed: () {
-                  // Close the screen and return "Yep!" as the result.
-                  Navigator.pop(context, UnSelectionButton());
-                },
-                child: Text('Yep!'),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: RaisedButton(
-                onPressed: () {
-                  // Close the screen and return "Nope!" as the result.
-                  Navigator.pop(context, 'Nope.');
-                },
-                child: Text('Nope.'),
-              ),
-            )
-          ],
+        appBar: new AppBar(
+          title: new Text("Test Page"),
         ),
-      ),
-    );
+        body: new Center(
+          child: new Text((text)),
+        ));
   }
 }
