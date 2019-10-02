@@ -16,4 +16,6 @@ Let's draw some chart.
 
 <a href="https://api.flutter.dev/flutter/widgets/Expanded-class.html">Expanded for flexiable design</a>
 
+<a href="https://stackoverflow.com/questions/47953410/flutter-drawer-widget-change-scaffold-body-content">change Scaffold.body content</a>
+
 
