@@ -1,8 +1,8 @@
 # mobile_application_activity_04
 
-Let's draw some chart.
+Let's draw some chart.<a href="https://dribbble.com/shots/7119123-Mobile-application-Activity">Design<a/>
 
-<img src="design/mobile_application_activity_04.png">
+
 
 <a href="https://pub.dev/packages/bottom_navy_bar#-readme-tab-">Bottom Navy Bar</a>
 
