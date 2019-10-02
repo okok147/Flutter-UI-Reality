@@ -2,6 +2,8 @@
 
 Let's draw some chart.
 
+<a href="https://pub.dev/packages/bottom_navy_bar#-readme-tab-">Bottom Navy Bar</a>
+
 
 <a href="https://pusher.com/tutorials/flutter-listviews">Listview example</a>
     
