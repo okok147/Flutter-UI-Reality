@@ -11,7 +11,7 @@ Resources:
 <a href="https://pub.dev/packages/bottom_navy_bar#-readme-tab-">Bottom Navy Bar</a>
 
 
-<a href="https://pusher.com/tutorials/flutter-listviews">Listview example</a>
+<a href="https://pusher.com/tutorials/flutter-listviews">Mastering Flutter ListViews</a>
 
 <a href="https://flutter.dev/docs/development/data-and-backend/json">JSON and serialization</a>
     
