@@ -4,6 +4,10 @@ Let's draw some chart.<a href="https://dribbble.com/shots/7119123-Mobile-applica
 
 
 
+
+
+Resources:
+
 <a href="https://pub.dev/packages/bottom_navy_bar#-readme-tab-">Bottom Navy Bar</a>
 
 
