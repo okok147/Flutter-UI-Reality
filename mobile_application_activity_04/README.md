@@ -13,8 +13,6 @@ Resources:
 
 <a href="https://pusher.com/tutorials/flutter-listviews">Mastering Flutter ListViews</a>
 
-<a href="https://elements-web-staging.herokuapp.com/tutorials?q=flutter">Tutorial with flutter</a>
-
 <a href="https://flutter.dev/docs/development/data-and-backend/json">JSON and serialization</a>
     
 
