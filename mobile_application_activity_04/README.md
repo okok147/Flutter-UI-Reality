@@ -2,7 +2,7 @@
 
 Let's draw some chart.
 
-<img src="design/mobile_application_activity_04.gif">
+<img src="design/mobile_application_activity_04.png">
 
 <a href="https://pub.dev/packages/bottom_navy_bar#-readme-tab-">Bottom Navy Bar</a>
 
