@@ -79,17 +79,15 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 Padding(
                   padding: const EdgeInsets.only(left: 16.0),
-                  child: FractionallySizedBox(
-                    child: InkWell(
-                      child: Container(
-                        height: 38,
-                        width: 38,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.all(Radius.circular(30)),
-                          color: Colors.blueGrey,
-                        ),
+                  child: Container(
+                    height: 42,
+                    child: CircleAvatar(
+                      backgroundImage: NetworkImage(
+                        'https://bradleyrentals.net/wp-content/uploads/sites/5/2018/03/5685885-pretty-girl-images.jpg',
                       ),
-                      onTap: () {},
+                      child: InkWell(
+                        onTap: () {},
+                      ),
                     ),
                   ),
                 ),
