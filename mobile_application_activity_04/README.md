@@ -1,23 +1,32 @@
-# mobile_application_activity_04
+# mobile_application_activity_03
 
-Let's draw some chart.
+Let's draw some line. <a href= "https://dribbble.com/shots/7119123-Mobile-application-Activity">Design</a>
 
-<img src="design/mobile_application_activity_04.png">
-
-<a href="https://pub.dev/packages/bottom_navy_bar#-readme-tab-">Bottom Navy Bar</a>
+<img src="design/design.png" width = "500"> 
 
 
-<a href="https://pusher.com/tutorials/flutter-listviews">Listview example</a>
-
-<a href="https://flutter.dev/docs/development/data-and-backend/json">JSON and serialization</a>
+# Day 1
+<img src="process/day1.gif" height="500">  
     
-
-<a href="https://stackoverflow.com/questions/49471063/how-to-run-code-after-some-delay-in-flutter">Delay display</a>
-
-<a href="https://api.flutter.dev/flutter/widgets/Expanded-class.html">Expanded for flexiable design</a>
-
-<a href="https://stackoverflow.com/questions/47953410/flutter-drawer-widget-change-scaffold-body-content">change Scaffold.body content</a>
-
-<a href="https://flutter.dev/docs/development/data-and-backend/state-mgmt/simple">Simple app state management(Provider)</a>
-
-
+    - Start a new journey.
+    To do:
+    - Use bottom_navy_bar ✅    
+    - Use Flexible + FractionallySizedBox for the layout 
+    - Use Hero to expand > page 2
+    - Use AnimatedBuilder for building UI(Content)
+      
+    
+ Good example for how to use List data:
+ 
+   https://www.youtube.com/watch?v=leA2nZYM9jY&t=480s
+   
+   # Day 2
+<img src="process/day2.gif" height="500">  
+    
+    - A good Start
+    To do:
+    - Use CustomIcon + dio for building appBar's content
+    - Use DateTime for 'x' mins ago
+    - Use flutter_shimmer for chart effect!
+    
+     
