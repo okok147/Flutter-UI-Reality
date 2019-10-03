@@ -1,99 +1,210 @@
 import 'package:flutter/material.dart';
-import '../utils.dart';
+import 'package:mobile_application_activity_03/utils.dart';
+import 'package:mobile_application_activity_03/activityCardStack.dart';
 
-//homepage
+class Activity extends StatefulWidget {
+  Activity({Key key}) : super(key: key);
 
-void main() => runApp(Activity());
+  _ActivityState createState() => _ActivityState();
+}
 
-class Activity extends StatelessWidget {
+class _ActivityState extends State<Activity> {
+  PageController _pageController;
+
+  @override
+  void initState() {
+    super.initState();
+    _pageController = PageController();
+  }
+
+  @override
+  void dispose() {
+    _pageController.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: Padding(
-        padding: const EdgeInsets.fromLTRB(24, 40, 24, 16),
-        child: ListView(
-          children: <Widget>[
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      body: PageView(
+        controller: _pageController,
+        children: [
+          Padding(
+            padding: const EdgeInsets.fromLTRB(24, 36, 16, 16),
+            child: ListView(
               children: <Widget>[
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
-                    Text(
-                      'Hello, ',
-                      style: helloTextStyle,
-                    ),
-                    SizedBox(
-                      height: 0,
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
                         Text(
-                          'Maggie',
-                          style: maggieTextStyle,
+                          'Hello, ',
+                          style: helloTextStyle,
+                        ),
+                        SizedBox(
+                          height: 1,
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: <Widget>[
+                            Text(
+                              'Maggie',
+                              style: maggieTextStyle,
+                            ),
+                          ],
                         ),
                       ],
                     ),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 8.0),
+                      child: Container(
+                        alignment: Alignment.topRight,
+                        child: IconButton(
+                          icon: Icon(
+                            const IconData(0xf601, fontFamily: 'CustomAppIcon'),
+                            size: 28,
+                            color: Colors.lightBlue,
+                          ),
+                          onPressed: () {},
+                        ),
+                      ),
+                    ),
                   ],
                 ),
+                SizedBox(
+                  height: 28,
+                ),
                 Padding(
-                  padding: const EdgeInsets.only(right: 0.0),
+                  padding: const EdgeInsets.fromLTRB(0, 16, 8, 12),
                   child: Container(
-                    alignment: Alignment.topRight,
-                    child: IconButton(
-                      icon: Icon(
-                        const IconData(0xf601, fontFamily: 'CustomAppIcon'),
-                        size: 28,
-                        color: Colors.blueAccent,
-                      ),
-                      onPressed: () {},
+                    height: 600,
+                    color: Colors.blueAccent.withOpacity(0.01),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                            //search it in utils.dart
+                            Container(
+                              decoration: activityStepCardDecoration,
+                              height: 220,
+                              width: 174,
+                              //in activityCardStack.dart
+                              child: Container(
+                                child: InkWell(
+                                  onTap: () {
+                                    //navigate to another page
+                                    if (_pageController.hasClients) {
+                                      _pageController.animateToPage(
+                                        1,
+                                        duration:
+                                            const Duration(milliseconds: 400),
+                                        curve: Curves.easeInCubic,
+                                      );
+                                    }
+                                  },
+                                  child: Stack(
+                                    children: <Widget>[
+                                      Positioned(
+                                        top: 24,
+                                        left: 16,
+                                        child: Text(
+                                          'Steps',
+                                          style: activityCardTextStyle,
+                                        ),
+                                      ),
+                                      Positioned(
+                                        top: 8,
+                                        right: 8,
+                                        child: IconButton(
+                                          icon: Icon(
+                                            Icons.directions_walk,
+                                            size: 32,
+                                            color: Colors.white,
+                                          ),
+                                          onPressed: () {},
+                                        ),
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsets.only(top: 32),
+                                        child: Center(
+                                          child: Container(
+                                            color: Colors.transparent,
+                                            height: 200,
+                                            width: 200,
+                                            child: CustomPaint(
+                                              painter: StepsPainter(),
+                                              size: Size(200, 200),
+                                              child: Center(
+                                                  child: Padding(
+                                                padding: const EdgeInsets.only(
+                                                    top: 3.0),
+                                                child: Text(
+                                                  '7 537',
+                                                  style: stepTextStyle,
+                                                ),
+                                              )),
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                            ),
+                            SizedBox(
+                              height: 18,
+                            ),
+                            //utils.dart
+                            heartRateContainer,
+                          ],
+                        ),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                            activityContainer,
+                            SizedBox(
+                              height: 18,
+                            ),
+                            sleepContainer,
+                          ],
+                        ),
+                      ],
                     ),
                   ),
                 ),
               ],
             ),
-            SizedBox(
-              height: 20,
-            ),
-            Padding(
-              padding: const EdgeInsets.fromLTRB(0, 16, 8, 12),
-              child: Container(
-                height: 600,
-                color: Colors.blueAccent.withOpacity(0.01),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: <Widget>[
-                        //search it in utils.dart
-                        stepContainer,
-                        SizedBox(
-                          height: 18,
-                        ),
-                        heartRateContainer,
-                      ],
-                    ),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: <Widget>[
-                        activityContainer,
-                        SizedBox(
-                          height: 18,
-                        ),
-                        sleepContainer,
-                      ],
-                    ),
-                  ],
-                ),
+          ),
+
+          //another page
+          Container(
+            color: Colors.white,
+            child: Center(
+              child: RaisedButton(
+                color: Colors.blueAccent,
+                onPressed: () {
+                  //navigate to another page
+                  if (_pageController.hasClients) {
+                    _pageController.animateToPage(
+                      0,
+                      duration: const Duration(milliseconds: 400),
+                      curve: Curves.easeOutCubic,
+                    );
+                  }
+                },
+                child: Text('Previous'),
               ),
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }

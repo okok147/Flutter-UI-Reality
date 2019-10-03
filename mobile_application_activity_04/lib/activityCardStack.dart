@@ -3,6 +3,7 @@ import 'package:mobile_application_activity_03/utils.dart';
 import 'package:mobile_application_activity_03/heart_rate_line_chart.dart';
 import 'dart:math' as math;
 import 'package:mobile_application_activity_03/activity_line_chart.dart';
+import 'package:mobile_application_activity_03/Pages/activity.dart';
 
 var heartRateStack = Stack(
   children: <Widget>[
@@ -46,56 +47,6 @@ var heartRateStack = Stack(
     ),
     Positioned(
       child: HeartRateLineChart(),
-    ),
-  ],
-);
-
-var stepStack = Stack(
-  children: <Widget>[
-    Positioned(
-      top: 24,
-      left: 16,
-      child: Text(
-        'Steps',
-        style: activityCardTextStyle,
-      ),
-    ),
-    Positioned(
-      top: 8,
-      right: 8,
-      child: IconButton(
-        icon: Icon(
-          Icons.directions_walk,
-          size: 32,
-          color: Colors.white,
-        ),
-        onPressed: () {
-          print(
-              ('you clicked the Step and will show info about step with using hero'));
-        },
-      ),
-    ),
-    Padding(
-      padding: const EdgeInsets.only(top: 32),
-      child: Center(
-        child: Container(
-          color: Colors.transparent,
-          height: 200,
-          width: 200,
-          child: CustomPaint(
-            painter: StepsPainter(),
-            size: Size(200, 200),
-            child: Center(
-                child: Padding(
-              padding: const EdgeInsets.only(top: 3.0),
-              child: Text(
-                '7 537',
-                style: stepTextStyle,
-              ),
-            )),
-          ),
-        ),
-      ),
     ),
   ],
 );

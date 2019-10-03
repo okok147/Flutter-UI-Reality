@@ -106,7 +106,7 @@ class HeartRateLineChart extends StatelessWidget {
                         ],
                         isCurved: true,
                         colors: gradientColors,
-                        barWidth: 4.5,
+                        barWidth: 4.2,
                         isStrokeCapRound: true,
                         dotData: FlDotData(
                           show: false,

@@ -12,12 +12,14 @@ var heartRateTextStyle =
     TextStyle(color: Colors.white.withOpacity(0.85), fontSize: 23.5);
 
 var helloTextStyle = TextStyle(
-    color: Colors.black87.withOpacity(0.5),
-    fontSize: 22.5,
-    fontWeight: FontWeight.w300);
+  color: Colors.black87.withOpacity(0.55),
+  fontSize: 22.5,
+  fontWeight: FontWeight.w300,
+  fontFamily: 'Cabin',
+);
 
 var maggieTextStyle = TextStyle(
-    color: Colors.black.withOpacity(1),
+    color: Colors.black.withOpacity(0.9),
     fontSize: 28.5,
     fontWeight: FontWeight.w600);
 
@@ -61,8 +63,8 @@ var sleepChart1Decoration = BoxDecoration(
 );
 
 var stepTextStyle = TextStyle(
-  color: Colors.white.withOpacity(1),
-  fontSize: 23.5,
+  color: Colors.white.withOpacity(0.95),
+  fontSize: 25.5,
   fontWeight: FontWeight.w100,
 );
 
@@ -83,31 +85,24 @@ var timeTextStyle = TextStyle(
     fontSize: 11.5,
     fontWeight: FontWeight.w400);
 
-var stepContainer = Container(
-  decoration: activityStepCardDecoration,
-  height: 220,
-  width: 170,
-  child: stepStack,
-);
-
 var heartRateContainer = Container(
   decoration: activityHeartRateCardDecoration,
   height: 300,
-  width: 170,
+  width: 174,
   child: heartRateStack,
 );
 
 var activityContainer = Container(
   decoration: activityActivityCardDecoration,
   height: 300,
-  width: 170,
+  width: 174,
   child: activityStack,
 );
 
 var sleepContainer = Container(
   decoration: activitySleepCardDecoration,
   height: 220,
-  width: 170,
+  width: 174,
   child: sleepStack,
 );
 

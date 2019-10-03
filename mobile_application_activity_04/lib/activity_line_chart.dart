@@ -93,8 +93,9 @@ class ActivityLineChart extends StatelessWidget {
                   lineBarsData: [
                     LineChartBarData(
                       spots: [
-                        FlSpot(1.5, 0),
-                        FlSpot(1.8, 1),
+                        FlSpot(0.3, 1.2),
+                        FlSpot(1.5, 3),
+                        FlSpot(1.8, 4),
                         FlSpot(2.6, 5),
                         FlSpot(3.7, 2.5),
                         FlSpot(4.8, 4),
@@ -114,7 +115,7 @@ class ActivityLineChart extends StatelessWidget {
                       belowBarData: BelowBarData(
                         show: true,
                         colors: gradientColors
-                            .map((color) => color.withOpacity(0.3))
+                            .map((color) => color.withOpacity(0.35))
                             .toList(),
                       ),
                     ),
