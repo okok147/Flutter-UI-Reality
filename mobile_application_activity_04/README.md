@@ -44,9 +44,7 @@ Good resources to create a time loop:
    # Day 3
 <img src="process/day3.gif" height="500">  
     
-    - A struggle period
-    To do :
-    - Learn Async/Await ❌ Would not be used in this project.But I would learn how to use it.    
+    - A struggle period 
 Quick way to launch simulator in VSCODE:
 
     open -a simulator
@@ -58,7 +56,7 @@ Quick way to launch simulator in VSCODE:
    # Day 4
 <img src="process/day4.gif" height="500">  
 
-    - iOS13 is nuts! Hot restart is not working  
+    - iOS13 is nuts! Hot restart is not working  (Solved)
  
     
 <a href="https://www.youtube.com/watch?v=BVchsYA8YtM"> Internet Asset</a>
