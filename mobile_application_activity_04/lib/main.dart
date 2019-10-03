@@ -1,24 +1,38 @@
+import 'dart:async';
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:bottom_navy_bar/bottom_navy_bar.dart';
+import 'package:mobile_application_activity_03/Pages/activity.dart';
+import 'package:mobile_application_activity_03/Pages/profile.dart';
+import 'package:mobile_application_activity_03/Pages/challenges.dart';
+import 'package:mobile_application_activity_03/utils.dart';
+import 'package:dio/dio.dart';
+
+/* Launch simulator with flutter in a quick way:
+
+open -a simulator
+flutter run
+
+
+Terminate simluator:
+press 'q' in Terminal
+
+*/
 
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-        // This is the theme of your application.
-        //
-        // Try running your application with "flutter run". You'll see the
-        // application has a blue toolbar. Then, without quitting the app, try
-        // changing the primarySwatch below to Colors.green and then invoke
-        // "hot reload" (press "r" in the console where you ran "flutter run",
-        // or simply save your changes to "hot reload" in a Flutter IDE).
-        // Notice that the counter didn't reset back to zero; the application
-        // is not restarted.
+        fontFamily: 'Cabin',
         primarySwatch: Colors.blue,
+        accentColor: Colors.white,
+        backgroundColor: Colors.white,
       ),
       home: MyHomePage(title: 'Flutter Demo Home Page'),
     );
@@ -28,15 +42,6 @@ class MyApp extends StatelessWidget {
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);
 
-  // This widget is the home page of your application. It is stateful, meaning
-  // that it has a State object (defined below) that contains fields that affect
-  // how it looks.
-
-  // This class is the configuration for the state. It holds the values (in this
-  // case the title) provided by the parent (in this case the App widget) and
-  // used by the build method of the State. Fields in a Widget subclass are
-  // always marked "final".
-
   final String title;
 
   @override
@@ -44,68 +49,156 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      // This call to setState tells the Flutter framework that something has
-      // changed in this State, which causes it to rerun the build method below
-      // so that the display can reflect the updated values. If we changed
-      // _counter without calling setState(), then the build method would not be
-      // called again, and so nothing would appear to happen.
-      _counter++;
-    });
+  void getHttp() async {
+    try {
+      Response response = await Dio().get("https://google.com");
+      print(response);
+    } catch (e) {
+      print(e);
+    }
   }
+
+  var _selectedIndex = 0;
+  StreamSubscription periodicSub;
+  var passSeconds = 0;
+
+  var minutes = 1;
+
+  var _pageOption = [
+    Activity(),
+    Profile(),
+    Challenges(),
+    Profile(),
+  ];
+
+  var _selectedColor = [
+    bottomUnactiveColor,
+    Colors.deepPurpleAccent,
+    Colors.red,
+    Colors.blueAccent,
+  ];
+
+  //use when on Pressed:
 
   @override
   Widget build(BuildContext context) {
-    // This method is rerun every time setState is called, for instance as done
-    // by the _incrementCounter method above.
-    //
-    // The Flutter framework has been optimized to make rerunning build methods
-    // fast, so that you can just rebuild anything that needs updating rather
-    // than having to individually change instances of widgets.
+    //yeah! the time loop is working!To prevent duplicate,cancel the event when calling the widget again,
+    //so the loop would continue but not duplicate itself.
+
+    periodicSub = new Stream.periodic(const Duration(seconds: 60), (v) => v)
+        .take(10000)
+        .listen((count) => print(passSeconds++));
+
     return Scaffold(
       appBar: AppBar(
-        // Here we take the value from the MyHomePage object that was created by
-        // the App.build method, and use it to set our appbar title.
-        title: Text(widget.title),
-      ),
-      body: Center(
-        // Center is a layout widget. It takes a single child and positions it
-        // in the middle of the parent.
-        child: Column(
-          // Column is also a layout widget. It takes a list of children and
-          // arranges them vertically. By default, it sizes itself to fit its
-          // children horizontally, and tries to be as tall as its parent.
-          //
-          // Invoke "debug painting" (press "p" in the console, choose the
-          // "Toggle Debug Paint" action from the Flutter Inspector in Android
-          // Studio, or the "Toggle Debug Paint" command in Visual Studio Code)
-          // to see the wireframe for each widget.
-          //
-          // Column has various properties to control how it sizes itself and
-          // how it positions its children. Here we use mainAxisAlignment to
-          // center the children vertically; the main axis here is the vertical
-          // axis because Columns are vertical (the cross axis would be
-          // horizontal).
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              'You have pushed the button this many times:',
+        elevation: 0,
+        backgroundColor: Colors.white,
+        leading: Padding(
+          padding: const EdgeInsets.only(left: 16.0),
+          child: IconButton(
+            icon: Icon(
+              const IconData(0xf269, fontFamily: 'CustomAppIcon'),
             ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.display1,
+            iconSize: 32,
+            alignment: Alignment.topRight,
+            color: Colors.redAccent,
+            onPressed: () {
+              setState(
+                () {
+                  _selectedIndex = _selectedIndex;
+                  //pause the loop
+                  periodicSub.cancel();
+                },
+              );
+            },
+          ),
+        ),
+        actions: <Widget>[
+          Padding(
+            padding: const EdgeInsets.only(right: 24.0),
+            child: Row(
+              children: <Widget>[
+                Text(
+                  'Last update ',
+                  style: normalTextStyle,
+                ),
+                Text(
+                  '$passSeconds ',
+                  style: TextStyle(color: Colors.blueAccent, fontSize: 15.5),
+                ),
+                Text(
+                  'min ago',
+                  style: normalTextStyle,
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(left: 16.0),
+                  child: Container(
+                    height: 42,
+                    child: CircleAvatar(
+                      backgroundImage: NetworkImage(
+                          'https://bradleyrentals.net/wp-content/uploads/sites/5/2018/03/5685885-pretty-girl-images.jpg'),
+                      child: InkWell(
+                        onTap: () {
+                          setState(() {});
+                        },
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+      backgroundColor: Theme.of(context).backgroundColor,
+      body: _pageOption[_selectedIndex],
+      bottomNavigationBar: Padding(
+        padding: const EdgeInsets.fromLTRB(32, 0, 32, 0),
+        child: BottomNavyBar(
+          selectedIndex: _selectedIndex,
+
+          showElevation: false, //R use this to remove appBar's elevation
+          onItemSelected: (index) => setState(
+            () {
+              _selectedIndex = index;
+              //pause the loop
+              periodicSub.cancel();
+            },
+          ),
+          items: [
+            BottomNavyBarItem(
+                icon: Icon(
+                  const IconData(0xf601, fontFamily: 'CustomAppIcon'),
+                  color: _selectedColor[_selectedIndex],
+                ),
+                title: Text('Activity'),
+                activeColor: bottomActiveColor),
+            BottomNavyBarItem(
+                icon: Icon(
+                  const IconData(0xe800, fontFamily: 'CustomAppIcon'),
+                  color: _selectedColor[_selectedIndex],
+                ),
+                title: Text('Users'),
+                activeColor: bottomActiveColor),
+            BottomNavyBarItem(
+              icon: Icon(
+                const IconData(0xe801, fontFamily: 'CustomAppIcon'),
+                color: _selectedColor[_selectedIndex],
+              ),
+              title: Text('Challenges'),
+              activeColor: bottomActiveColor,
+            ),
+            BottomNavyBarItem(
+              icon: Icon(
+                const IconData(0xe802, fontFamily: 'CustomAppIcon'),
+                color: _selectedColor[_selectedIndex],
+              ),
+              title: Text('Settings'),
+              activeColor: bottomActiveColor,
             ),
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }

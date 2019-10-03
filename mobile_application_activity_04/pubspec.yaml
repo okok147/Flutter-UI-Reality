@@ -1,4 +1,4 @@
-name: mobile_application_activity_04
+name: mobile_application_activity_03
 description: A new Flutter project.
 
 # The following defines the version and build number for your application.
@@ -14,11 +14,16 @@ description: A new Flutter project.
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+  sdk: ">=2.2.0 <3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
+  bottom_navy_bar:
+  intl:
+  http:
+  dio:
+  fl_chart:
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -56,16 +61,17 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
+  fonts:
+    - family: CustomAppIcon
+      fonts:
+        - asset: assets/CustomAppIcon.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
-  #   - family: Trajan Pro
-  #     fonts:
-  #       - asset: fonts/TrajanPro.ttf
-  #       - asset: fonts/TrajanPro_Bold.ttf
+  
+    - family: Cabin
+      fonts:
+        - asset: assets/fonts/Cabin-Regular.ttf
+         
   #         weight: 700
   #
   # For details regarding fonts from package dependencies,
