@@ -74,11 +74,10 @@ Quick way to launch simulator in VSCODE:
     
  
      
-=======
+
 # Resources
 
 <a href="https://pub.dev/packages/bottom_navy_bar#-readme-tab-">Bottom Navy Bar</a>
-
 
 <a href="https://pusher.com/tutorials/flutter-listviews">Mastering Flutter ListViews</a>
 
