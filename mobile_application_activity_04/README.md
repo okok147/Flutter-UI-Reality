@@ -1,10 +1,7 @@
 # mobile_application_activity_04
 
-<<<<<<< HEAD
+
 Let's draw some line. <a href= "https://dribbble.com/shots/7119123-Mobile-application-Activity">Design</a>
-=======
-Let's draw some chart.<a href="https://dribbble.com/shots/7119123-Mobile-application-Activity">Design<a/>
->>>>>>> 4858b047f35ee2a729adf1226466428bc8202778
 
 <img src="design/design.png" width = "500"> 
 
@@ -107,4 +104,4 @@ Resources:
 
 
 
->>>>>>> 4858b047f35ee2a729adf1226466428bc8202778
+
