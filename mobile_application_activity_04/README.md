@@ -54,7 +54,7 @@ Quick way to launch simulator in VSCODE:
     
 <a href="https://www.youtube.com/watch?v=EwHMSxSWIvQ&t=518s"> Building Lists with JSON Data </a>
 
-<<<<<<< HEAD
+
 =======
 
 
@@ -67,7 +67,7 @@ Resources:
 <a href="https://pusher.com/tutorials/flutter-listviews">Mastering Flutter ListViews</a>
 
 <a href="https://flutter.dev/docs/development/data-and-backend/json">JSON and serialization</a>
->>>>>>> 4858b047f35ee2a729adf1226466428bc8202778
+
     
    # Day 4
 <img src="process/day4.gif" height="500">  
@@ -77,7 +77,6 @@ Resources:
     
 <a href="https://www.youtube.com/watch?v=BVchsYA8YtM"> Internet Asset</a>
 
-<<<<<<< HEAD
 
    # Day 5
 <img src="process/day5.gif" height="500">  
@@ -90,6 +89,7 @@ Resources:
  
      
 =======
+# Resources
 <a href="https://api.flutter.dev/flutter/widgets/Expanded-class.html">Expanded for flexiable design</a>
 
 <a href="https://stackoverflow.com/questions/47953410/flutter-drawer-widget-change-scaffold-body-content">change Scaffold.body content</a>
