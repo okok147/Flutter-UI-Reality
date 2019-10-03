@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 void main() => runApp(Profile());
 
 class Profile extends StatelessWidget {

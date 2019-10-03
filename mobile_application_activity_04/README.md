@@ -1,6 +1,10 @@
 # mobile_application_activity_04
 
+<<<<<<< HEAD
 Let's draw some line. <a href= "https://dribbble.com/shots/7119123-Mobile-application-Activity">Design</a>
+=======
+Let's draw some chart.<a href="https://dribbble.com/shots/7119123-Mobile-application-Activity">Design<a/>
+>>>>>>> 4858b047f35ee2a729adf1226466428bc8202778
 
 <img src="design/design.png" width = "500"> 
 
@@ -53,6 +57,20 @@ Quick way to launch simulator in VSCODE:
     
 <a href="https://www.youtube.com/watch?v=EwHMSxSWIvQ&t=518s"> Building Lists with JSON Data </a>
 
+<<<<<<< HEAD
+=======
+
+
+
+Resources:
+
+<a href="https://pub.dev/packages/bottom_navy_bar#-readme-tab-">Bottom Navy Bar</a>
+
+
+<a href="https://pusher.com/tutorials/flutter-listviews">Mastering Flutter ListViews</a>
+
+<a href="https://flutter.dev/docs/development/data-and-backend/json">JSON and serialization</a>
+>>>>>>> 4858b047f35ee2a729adf1226466428bc8202778
     
    # Day 4
 <img src="process/day4.gif" height="500">  
@@ -62,6 +80,7 @@ Quick way to launch simulator in VSCODE:
     
 <a href="https://www.youtube.com/watch?v=BVchsYA8YtM"> Internet Asset</a>
 
+<<<<<<< HEAD
 
    # Day 5
 <img src="process/day5.gif" height="500">  
@@ -73,3 +92,19 @@ Quick way to launch simulator in VSCODE:
     
  
      
+=======
+<a href="https://api.flutter.dev/flutter/widgets/Expanded-class.html">Expanded for flexiable design</a>
+
+<a href="https://stackoverflow.com/questions/47953410/flutter-drawer-widget-change-scaffold-body-content">change Scaffold.body content</a>
+
+<a href="https://flutter.dev/docs/development/data-and-backend/state-mgmt/simple">Simple app state management(Provider)</a>
+
+<a href="https://api.flutter.dev/flutter/widgets/PageController-class.html"><B>PageController</B></a>
+
+<a href="https://dart.dev/codelabs/async-await">Asynchronous programming: futures, async, await</a>
+
+<a href="https://www.youtube.com/watch?v=EwHMSxSWIvQ&t=513s">Future builder - Building Lists with JSON Data</a>
+
+
+
+>>>>>>> 4858b047f35ee2a729adf1226466428bc8202778
