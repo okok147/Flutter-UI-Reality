@@ -70,6 +70,14 @@ Quick way to launch simulator in VSCODE:
     - Tough!But learn how to use custom paint!
     - Would use custom font  ✅ 
     - Use Bar chart with fl_chart in activity time
+    
+    
+    
+ # Day 6
+<img src="process/day6.gif" height="500">  
+
+    - PageController ✅ 
+    
    
     
  
