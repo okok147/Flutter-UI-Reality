@@ -185,22 +185,40 @@ class _ActivityState extends State<Activity> {
           ),
 
           //another page
-          Container(
-            color: Colors.white,
-            child: Center(
-              child: RaisedButton(
-                color: Colors.blueAccent,
-                onPressed: () {
-                  //navigate to another page
-                  if (_pageController.hasClients) {
-                    _pageController.animateToPage(
-                      0,
-                      duration: const Duration(milliseconds: 400),
-                      curve: Curves.easeOutCubic,
-                    );
-                  }
-                },
-                child: Text('Previous'),
+          Scaffold(
+            backgroundColor: Colors.white,
+            body: Padding(
+              padding: const EdgeInsets.fromLTRB(8,0,16,16),
+              child: ListView(
+                
+                children: <Widget>[
+                 
+                  Row(
+                    mainAxisSize: MainAxisSize.min,
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: <Widget>[
+                      IconButton(
+                        icon: Icon(Icons.chevron_left),
+                        iconSize: 25,
+                        onPressed: () {
+                          //navigate to another page
+                          if (_pageController.hasClients) {
+                            _pageController.animateToPage(
+                              0,
+                              duration: const Duration(milliseconds: 400),
+                              curve: Curves.easeOutCubic,
+                            );
+                          }
+                        },
+                        color: Colors.black.withOpacity(0.9),
+                      ),
+                      Text(
+                        'Back',
+                        style: TextStyle(fontSize: 17, fontFamily: 'Arimo'),
+                      )
+                    ],
+                  ),
+                ],
               ),
             ),
           ),

@@ -3,7 +3,6 @@ import 'package:mobile_application_activity_03/utils.dart';
 import 'package:mobile_application_activity_03/heart_rate_line_chart.dart';
 import 'dart:math' as math;
 import 'package:mobile_application_activity_03/activity_line_chart.dart';
-import 'package:mobile_application_activity_03/Pages/activity.dart';
 
 var heartRateStack = Stack(
   children: <Widget>[

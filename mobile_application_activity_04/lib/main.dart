@@ -99,9 +99,9 @@ class _MyHomePageState extends State<MyHomePage> {
             icon: Icon(
               const IconData(0xf269, fontFamily: 'CustomAppIcon'),
             ),
-            iconSize: 32,
+            iconSize: 35,
             alignment: Alignment.topRight,
-            color: Colors.redAccent,
+            color: Colors.redAccent.withOpacity(0.95),
             onPressed: () {
               setState(
                 () {
