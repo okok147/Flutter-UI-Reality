@@ -186,13 +186,11 @@ class _ActivityState extends State<Activity> {
 
           //another page
           Scaffold(
-            backgroundColor: Colors.white,
+            backgroundColor: Colors.grey.withOpacity(0.04),
             body: Padding(
-              padding: const EdgeInsets.fromLTRB(8,0,16,16),
+              padding: const EdgeInsets.fromLTRB(8, 0, 16, 16),
               child: ListView(
-                
                 children: <Widget>[
-                 
                   Row(
                     mainAxisSize: MainAxisSize.min,
                     mainAxisAlignment: MainAxisAlignment.start,
@@ -217,6 +215,53 @@ class _ActivityState extends State<Activity> {
                         style: TextStyle(fontSize: 17, fontFamily: 'Arimo'),
                       )
                     ],
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(32, 8, 32, 32),
+                    child: Stack(
+                      children: <Widget>[
+                        Container(
+                          color: Colors.redAccent.withOpacity(0.5),
+                          height: 250,
+                          child: Center(
+                            child: Container(
+                              height: 200,
+                              child: Material(
+                                elevation: 20,
+                                shadowColor:
+                                    Color(0xff3535DD).withOpacity(0.35),
+                                child: Container(),
+                                shape: CircleBorder(),
+                              ),
+                            ),
+                          ),
+                        ),
+                        Positioned(
+                          top: 90,
+                          left: 110,
+                          child: Text(
+                            '7 567',
+                            style: TextStyle(
+                                fontSize: 43,
+                                fontFamily: 'Arimo',
+                                fontWeight: FontWeight.w300),
+                          ),
+                        ),
+                        Positioned(
+                          top: 150,
+                          left: 125,
+                          child: Text(
+                            '10 000',
+                            style: TextStyle(
+                              fontWeight: FontWeight.w300,
+                              fontFamily: 'Arimo',
+                              color: Colors.grey.withOpacity(0.9),
+                              fontSize: 22,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ],
               ),

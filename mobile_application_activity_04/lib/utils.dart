@@ -12,7 +12,7 @@ var heartRateTextStyle =
     TextStyle(color: Colors.white.withOpacity(0.85), fontSize: 23.5);
 
 var helloTextStyle = TextStyle(
-  color: Colors.black87.withOpacity(0.55),
+  color: Colors.black87.withOpacity(0.65),
   fontSize: 22.5,
   fontWeight: FontWeight.w300,
   fontFamily: 'Cabin',
