@@ -79,7 +79,7 @@ Quick way to launch simulator in VSCODE:
  # Day 7
 <img src="process/day7.gif" height="500">  
 
-    - Iconbutton ,navigate to previous page
+    - Iconbutton ,navigate to previous page ✅ 
     
    
     
