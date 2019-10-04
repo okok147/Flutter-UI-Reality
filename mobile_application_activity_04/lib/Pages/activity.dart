@@ -186,7 +186,7 @@ class _ActivityState extends State<Activity> {
 
           //another page
           Scaffold(
-            backgroundColor: Colors.grey.withOpacity(0.04),
+            backgroundColor: Colors.grey.withOpacity(0.03),
             body: Padding(
               padding: const EdgeInsets.fromLTRB(8, 0, 16, 16),
               child: ListView(
@@ -217,27 +217,34 @@ class _ActivityState extends State<Activity> {
                     ],
                   ),
                   Padding(
-                    padding: const EdgeInsets.fromLTRB(32, 8, 32, 32),
+                    padding: const EdgeInsets.fromLTRB(32, 12, 32, 32),
                     child: Stack(
                       children: <Widget>[
                         Container(
-                          color: Colors.redAccent.withOpacity(0.5),
+                          color: Colors.redAccent.withOpacity(0.0),
                           height: 250,
                           child: Center(
                             child: Container(
+                              
+                              
                               height: 200,
                               child: Material(
-                                elevation: 20,
+                                color: Colors.white,
+                                elevation: 15,
                                 shadowColor:
                                     Color(0xff3535DD).withOpacity(0.35),
-                                child: Container(),
-                                shape: CircleBorder(),
+                                child: Container(
+                                 
+                                ),
+                                shape: CircleBorder(
+                                  
+                                ),
                               ),
                             ),
                           ),
                         ),
                         Positioned(
-                          top: 90,
+                          top: 85,
                           left: 110,
                           child: Text(
                             '7 567',
