@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mobile_application_activity_03/utils.dart';
 import 'package:mobile_application_activity_03/activityCardStack.dart';
+import 'dart:math' as math;
 
 class Activity extends StatefulWidget {
   Activity({Key key}) : super(key: key);
@@ -188,7 +189,7 @@ class _ActivityState extends State<Activity> {
           Scaffold(
             backgroundColor: Colors.grey.withOpacity(0.03),
             body: Padding(
-              padding: const EdgeInsets.fromLTRB(8, 0, 16, 16),
+              padding: const EdgeInsets.fromLTRB(8, 0, 0, 16),
               child: ListView(
                 children: <Widget>[
                   Row(
@@ -217,28 +218,30 @@ class _ActivityState extends State<Activity> {
                     ],
                   ),
                   Padding(
-                    padding: const EdgeInsets.fromLTRB(32, 12, 32, 32),
+                    padding: const EdgeInsets.fromLTRB(32, 12, 32, 16),
                     child: Stack(
                       children: <Widget>[
+                        Positioned(
+                          top: 0,
+                          left: 50,
+                          child: CustomPaint(
+                            painter: StepDetailsPainter(),
+                            size: Size(200, 200),
+                          ),
+                        ),
                         Container(
                           color: Colors.redAccent.withOpacity(0.0),
                           height: 250,
                           child: Center(
                             child: Container(
-                              
-                              
                               height: 200,
                               child: Material(
                                 color: Colors.white,
                                 elevation: 15,
                                 shadowColor:
                                     Color(0xff3535DD).withOpacity(0.35),
-                                child: Container(
-                                 
-                                ),
-                                shape: CircleBorder(
-                                  
-                                ),
+                                child: Container(),
+                                shape: CircleBorder(),
                               ),
                             ),
                           ),
@@ -247,7 +250,7 @@ class _ActivityState extends State<Activity> {
                           top: 85,
                           left: 110,
                           child: Text(
-                            '7 567',
+                            '7 537',
                             style: TextStyle(
                                 fontSize: 43,
                                 fontFamily: 'Arimo',
@@ -267,7 +270,59 @@ class _ActivityState extends State<Activity> {
                             ),
                           ),
                         ),
+                        Positioned(
+                          top: 152,
+                          left: 125,
+                          child: Text('7 537', style: stepTextStyle),
+                        ),
                       ],
+                    ),
+                  ),
+                  Container(
+                    height: 30,
+                    color: Colors.blueAccent.withOpacity(0.0),
+                    child: Padding(
+                      padding: const EdgeInsets.fromLTRB(16, 0, 24, 8),
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: <Widget>[
+                          Text(
+                            'Activity Time',
+                            style: TextStyle(
+                              fontSize: 18,
+                              color: Colors.black.withOpacity(0.8),
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
+                            child: Container(
+                              alignment: Alignment.bottomRight,
+                              height: 20,
+                              child: Row(
+                                children: <Widget>[
+                                  Text(
+                                    'Details',
+                                    style: TextStyle(
+                                        fontSize: 14.5,
+                                        decoration: TextDecoration.underline,
+                                        color: Colors.grey.withOpacity(0.8)),
+                                  ),
+                                  InkWell(
+                                    onTap: () {},
+                                    child: Icon(
+                                      Icons.chevron_right,
+                                      color: Colors.grey.withOpacity(0.75),
+                                      size: 15.5,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ],

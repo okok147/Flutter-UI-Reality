@@ -62,7 +62,7 @@ class StepsPainter extends CustomPainter {
       ..color = switchColor[0]
       ..strokeCap = StrokeCap.round
       ..style = PaintingStyle.stroke
-      ..strokeWidth = 4.5;
+      ..strokeWidth = 3.5;
     canvas.drawArc(rect, startAngle, sweepAngle, useCenter, paint);
   }
 
@@ -71,6 +71,28 @@ class StepsPainter extends CustomPainter {
 
   @override
   bool shouldRebuildSemantics(StepsPainter oldDelegate) => false;
+}
+
+class StepDetailsPainter extends CustomPainter {
+  @override
+  void paint(Canvas canvas, Size size) {
+    final rect = Rect.fromLTRB(5, 10, 235, 240);
+    final startAngle = -math.pi / 2.1;
+    final sweepAngle = math.pi * 1.5;
+    final useCenter = false;
+    final paint = Paint()
+      ..color = switchColor[1].withOpacity(0.9)
+      ..strokeCap = StrokeCap.round
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 9.5;
+    canvas.drawArc(rect, startAngle, sweepAngle, useCenter, paint);
+  }
+
+  @override
+  bool shouldRepaint(StepDetailsPainter oldDelegate) => true;
+
+  @override
+  bool shouldRebuildSemantics(StepDetailsPainter oldDelegate) => false;
 }
 
 var activityStack = Stack(
