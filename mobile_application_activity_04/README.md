@@ -88,6 +88,8 @@ Quick way to launch simulator in VSCODE:
     - CustomPaint ,Container with row (Text and Inkwell with Icon) ✅ 
     
 <a href="https://pub.dev/packages/simple_animations">simple animation</a>
+Example:
+<a href="https://www.youtube.com/watch?v=pRzP34u786w">Flutter Party Event Application UI and Animation - Flutter UI Desig</a>
     
    
     
