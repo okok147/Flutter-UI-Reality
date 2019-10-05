@@ -81,6 +81,12 @@ Quick way to launch simulator in VSCODE:
 
     - Iconbutton ,navigate to previous page ✅ 
     
+    
+  # Day 8
+<img src="process/day8.gif" height="500">  
+
+    - CustomPaint ,Container with row (Text and Inkwell with Icon) ✅ 
+    
    
     
  
