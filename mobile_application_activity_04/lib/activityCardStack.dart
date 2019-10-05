@@ -76,15 +76,15 @@ class StepsPainter extends CustomPainter {
 class StepDetailsPainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
-    final rect = Rect.fromLTRB(5, 10, 235, 240);
+    final rect = Rect.fromLTRB(3, 7, 239, 243);
     final startAngle = -math.pi / 2.1;
     final sweepAngle = math.pi * 1.5;
     final useCenter = false;
     final paint = Paint()
-      ..color = switchColor[1].withOpacity(0.9)
+      ..color = switchColor[1].withOpacity(0.85)
       ..strokeCap = StrokeCap.round
       ..style = PaintingStyle.stroke
-      ..strokeWidth = 9.5;
+      ..strokeWidth = 10.5;
     canvas.drawArc(rect, startAngle, sweepAngle, useCenter, paint);
   }
 
