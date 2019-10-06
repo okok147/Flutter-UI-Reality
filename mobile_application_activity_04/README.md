@@ -87,6 +87,13 @@ Quick way to launch simulator in VSCODE:
 
     - CustomPaint ,Container with row (Text and Inkwell with Icon) ✅ 
     
+   # Day 9
+  <img src="process/day9.gif" height="500">  
+
+    - BarChart ✅ 
+    -FadeAnimation ✅ 
+    
+    
 <a href="https://pub.dev/packages/simple_animations">simple animation</a>
     
 Example:
