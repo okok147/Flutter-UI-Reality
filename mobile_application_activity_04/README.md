@@ -91,7 +91,7 @@ Quick way to launch simulator in VSCODE:
   <img src="process/day9.gif" height="500">  
 
     - BarChart ✅ 
-    -FadeAnimation ✅ 
+    - FadeAnimation ✅ 
     
     
 <a href="https://pub.dev/packages/simple_animations">simple animation</a>
