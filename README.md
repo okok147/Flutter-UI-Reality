@@ -11,7 +11,7 @@ Explore to the unknown.
 
   <a href="https://github.com/kelvin147789/Flutter_UI_Reality/tree/master/gardener_01">Gardener_01 </a>
   
-  <img src="gardener_01/design/homepage.png" width="250" height="500"  >  <img src="gardener_01/design/search.png" width="250" height="500">   
+  <img src="gardener_01/design/homepage.png" width="250" height="400"  >  <img src="gardener_01/design/search.png" width="250" height="400">   
   
   
   
