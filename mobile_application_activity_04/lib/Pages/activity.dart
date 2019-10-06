@@ -222,7 +222,7 @@ class _ActivityState extends State<Activity> {
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: <Widget>[
                       FadeAnimation(
-                        4.5,
+                        8,
                         IconButton(
                           icon: Icon(Icons.chevron_left),
                           iconSize: 25,
@@ -240,7 +240,7 @@ class _ActivityState extends State<Activity> {
                         ),
                       ),
                       FadeAnimation(
-                        5,
+                        8,
                         Text(
                           'Back',
                           style: TextStyle(fontSize: 17, fontFamily: 'Arimo'),
@@ -313,11 +313,14 @@ class _ActivityState extends State<Activity> {
                       ],
                     ),
                   ),
-                  BarChartSample1(),
+                  FadeAnimation(
+                    3,
+                    BarChartSample1(),
+                  ),
                   Padding(
                     padding: const EdgeInsets.fromLTRB(32, 0, 16, 16),
                     child: FadeAnimation(
-                      5,
+                      4.5,
                       Text(
                         'Statistic',
                         style: TextStyle(
