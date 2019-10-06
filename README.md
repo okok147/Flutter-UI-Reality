@@ -2,7 +2,7 @@
 
 Explore to the unknown.
 
-<img src="https://github.com/kelvin147789/Flutter_UI_Reality/blob/master/images/black_hole.gif">
+<img src="images/black_hole.gif">
 
 
 
