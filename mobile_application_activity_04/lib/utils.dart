@@ -153,3 +153,8 @@ var switchColor = [
   Colors.white,
   Color(0xff3535DD).withOpacity(0.85),
 ];
+
+var redBarColor = Colors.redAccent.withOpacity(0.95);
+var blueBarColor = Color(0xff3535DD).withOpacity(0.85);
+var barChartTextStyle =
+    TextStyle(color: Colors.grey, fontWeight: FontWeight.normal, fontSize: 13);

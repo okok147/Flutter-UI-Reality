@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:mobile_application_activity_03/utils.dart';
 import 'package:mobile_application_activity_03/activityCardStack.dart';
 import 'package:mobile_application_activity_03/FadeAnimation.dart';
-import 'package:mobile_application_activity_03/bar_chart.dart';
+import 'package:mobile_application_activity_03/activity_time_bar_chart.dart';
 
 class Activity extends StatefulWidget {
   Activity({Key key}) : super(key: key);
