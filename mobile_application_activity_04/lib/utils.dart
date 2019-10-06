@@ -19,9 +19,10 @@ var helloTextStyle = TextStyle(
 );
 
 var maggieTextStyle = TextStyle(
-    color: Colors.black.withOpacity(0.9),
-    fontSize: 28.5,
-    fontWeight: FontWeight.w600);
+  color: Colors.black.withOpacity(0.9),
+  fontSize: 28.5,
+  fontWeight: FontWeight.w600,
+);
 
 var activityCardTextStyle =
     TextStyle(color: Colors.white.withOpacity(1), fontSize: 18.5);

@@ -76,7 +76,7 @@ class StepsPainter extends CustomPainter {
 class StepDetailsPainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
-    final rect = Rect.fromLTRB(3, 7, 239, 243);
+    final rect = Rect.fromLTRB(3, 6.5, 239, 243);
     final startAngle = -math.pi / 2.1;
     final sweepAngle = math.pi * 1.5;
     final useCenter = false;

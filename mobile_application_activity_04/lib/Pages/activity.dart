@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:mobile_application_activity_03/utils.dart';
 import 'package:mobile_application_activity_03/activityCardStack.dart';
-import 'dart:math' as math;
+import 'package:mobile_application_activity_03/FadeAnimation.dart';
+import 'package:mobile_application_activity_03/bar_chart.dart';
 
 class Activity extends StatefulWidget {
   Activity({Key key}) : super(key: key);
@@ -42,19 +43,25 @@ class _ActivityState extends State<Activity> {
                       mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
-                        Text(
-                          'Hello, ',
-                          style: helloTextStyle,
+                        FadeAnimation(
+                          1,
+                          Text(
+                            'Hello, ',
+                            style: helloTextStyle,
+                          ),
                         ),
                         SizedBox(
-                          height: 1,
+                          height: 1.5,
                         ),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: <Widget>[
-                            Text(
-                              'Maggie',
-                              style: maggieTextStyle,
+                            FadeAnimation(
+                              3,
+                              Text(
+                                'Maggie',
+                                style: maggieTextStyle,
+                              ),
                             ),
                           ],
                         ),
@@ -247,29 +254,33 @@ class _ActivityState extends State<Activity> {
                           ),
                         ),
                         Positioned(
-                          top: 85,
-                          left: 110,
-                          child: Text(
-                            '7 537',
-                            style: TextStyle(
-                                fontSize: 43,
-                                fontFamily: 'Arimo',
-                                fontWeight: FontWeight.w300),
-                          ),
-                        ),
+                            top: 85,
+                            left: 110,
+                            child: FadeAnimation(
+                              1,
+                              Text(
+                                '7 537',
+                                style: TextStyle(
+                                    fontSize: 43,
+                                    fontFamily: 'Arimo',
+                                    fontWeight: FontWeight.w300),
+                              ),
+                            )),
                         Positioned(
-                          top: 150,
-                          left: 125,
-                          child: Text(
-                            '10 000',
-                            style: TextStyle(
-                              fontWeight: FontWeight.w300,
-                              fontFamily: 'Arimo',
-                              color: Colors.grey.withOpacity(0.9),
-                              fontSize: 22,
-                            ),
-                          ),
-                        ),
+                            top: 150,
+                            left: 125,
+                            child: FadeAnimation(
+                              2,
+                              Text(
+                                '10 000',
+                                style: TextStyle(
+                                  fontWeight: FontWeight.w300,
+                                  fontFamily: 'Arimo',
+                                  color: Colors.grey.withOpacity(0.9),
+                                  fontSize: 22,
+                                ),
+                              ),
+                            )),
                         Positioned(
                           top: 152,
                           left: 125,
@@ -278,53 +289,7 @@ class _ActivityState extends State<Activity> {
                       ],
                     ),
                   ),
-                  Container(
-                    height: 30,
-                    color: Colors.blueAccent.withOpacity(0.0),
-                    child: Padding(
-                      padding: const EdgeInsets.fromLTRB(16, 0, 24, 8),
-                      child: Row(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: <Widget>[
-                          Text(
-                            'Activity Time',
-                            style: TextStyle(
-                              fontSize: 18,
-                              color: Colors.black.withOpacity(0.8),
-                              fontWeight: FontWeight.w600,
-                            ),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
-                            child: Container(
-                              alignment: Alignment.bottomRight,
-                              height: 20,
-                              child: Row(
-                                children: <Widget>[
-                                  Text(
-                                    'Details',
-                                    style: TextStyle(
-                                        fontSize: 14.5,
-                                        decoration: TextDecoration.underline,
-                                        color: Colors.grey.withOpacity(0.8)),
-                                  ),
-                                  InkWell(
-                                    onTap: () {},
-                                    child: Icon(
-                                      Icons.chevron_right,
-                                      color: Colors.grey.withOpacity(0.75),
-                                      size: 15.5,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
+                  BarChartSample1(),
                 ],
               ),
             ),
