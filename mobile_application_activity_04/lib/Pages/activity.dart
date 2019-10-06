@@ -243,7 +243,7 @@ class _ActivityState extends State<Activity> {
                         8,
                         Text(
                           'Back',
-                          style: TextStyle(fontSize: 17, fontFamily: 'Arimo'),
+                          style: TextStyle(fontSize: 16.5,fontFamily: 'Arimo-Regular' ),
                         ),
                       ),
                     ],
@@ -286,7 +286,7 @@ class _ActivityState extends State<Activity> {
                                 '7 537',
                                 style: TextStyle(
                                     fontSize: 43,
-                                    fontFamily: 'Arimo',
+                                    fontFamily: 'Arimo-Regular',
                                     fontWeight: FontWeight.w300),
                               ),
                             )),
@@ -299,7 +299,7 @@ class _ActivityState extends State<Activity> {
                                 '10 000',
                                 style: TextStyle(
                                   fontWeight: FontWeight.w300,
-                                  fontFamily: 'Arimo',
+                                  fontFamily: 'Arimo-Regular',
                                   color: Colors.grey.withOpacity(0.9),
                                   fontSize: 22,
                                 ),
@@ -324,8 +324,8 @@ class _ActivityState extends State<Activity> {
                       Text(
                         'Statistic',
                         style: TextStyle(
-                          fontFamily: 'Arimo',
-                          fontWeight: FontWeight.w500,
+                          fontFamily: 'Arimo-Regular',
+                          fontWeight: FontWeight.w600,
                           fontSize: 19,
                         ),
                       ),
@@ -359,9 +359,10 @@ class _ActivityState extends State<Activity> {
                         Text(
                           '145 ccal burned',
                           style: TextStyle(
-                            fontSize: 17,
-                            fontWeight: FontWeight.w100,
-                            color: Colors.black.withOpacity(0.75),
+                            fontSize: 16,
+                            fontWeight: FontWeight.w400,
+                            color: Colors.black.withOpacity(0.85),
+                            fontFamily: 'Arimo-Regular'
                           ),
                         ),
                       ),

@@ -15,13 +15,14 @@ var helloTextStyle = TextStyle(
   color: Colors.black87.withOpacity(0.65),
   fontSize: 22.5,
   fontWeight: FontWeight.w300,
-  fontFamily: 'Cabin',
+  fontFamily: 'Arimo-Regular',
 );
 
 var maggieTextStyle = TextStyle(
   color: Colors.black.withOpacity(0.9),
   fontSize: 28.5,
   fontWeight: FontWeight.w600,
+  fontFamily: 'Arimo',
 );
 
 var activityCardTextStyle =

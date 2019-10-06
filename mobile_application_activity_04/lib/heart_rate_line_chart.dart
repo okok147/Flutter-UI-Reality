@@ -44,7 +44,7 @@ class HeartRateLineChart extends StatelessWidget {
                         showTitles: false,
                         reservedSize: 30,
                         textStyle: TextStyle(
-                            color: Colors.white,
+                            color: Colors.black,
                             fontWeight: FontWeight.bold,
                             fontSize: 32),
                         getTitles: (value) {
