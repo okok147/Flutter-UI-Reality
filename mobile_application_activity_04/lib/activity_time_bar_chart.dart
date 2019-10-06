@@ -23,9 +23,8 @@ class BarChartSample1State extends State<BarChartSample1> {
   StreamController<BarTouchResponse> barTouchedResultStreamController;
 
   int touchedIndex;
-  
+
   bool isPlaying = true;
-  
 
   @override
   void initState() {
@@ -59,7 +58,6 @@ class BarChartSample1State extends State<BarChartSample1> {
 
   @override
   Widget build(BuildContext context) {
-    
     return AspectRatio(
       aspectRatio: 1.3,
       child: Card(
@@ -95,16 +93,22 @@ class BarChartSample1State extends State<BarChartSample1> {
                           children: <Widget>[
                             FadeAnimation(
                               4,
-                              Text('Details',style: TextStyle(
-                                color: Colors.grey,
-                                decoration: TextDecoration.underline,
-                                textBaseline: TextBaseline.alphabetic,
-                              ),),
+                              Text(
+                                'Details',
+                                style: TextStyle(
+                                  color: Colors.grey,
+                                  decoration: TextDecoration.underline,
+                                  textBaseline: TextBaseline.alphabetic,
+                                ),
+                              ),
                             ),
                             FadeAnimation(
                               4,
                               InkWell(
-                                child: Icon(Icons.chevron_right,color: Colors.grey,),
+                                child: Icon(
+                                  Icons.chevron_right,
+                                  color: Colors.grey,
+                                ),
                                 onTap: () {
                                   setState(() {
                                     isPlaying = !isPlaying;
@@ -123,7 +127,6 @@ class BarChartSample1State extends State<BarChartSample1> {
                   const SizedBox(
                     height: 25,
                   ),
-                  
                   Expanded(
                     child: Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 8.0),
@@ -260,9 +263,8 @@ class BarChartSample1State extends State<BarChartSample1> {
                   return '';
                 case 6:
                   return '2PM';
-                 case 7:
+                case 7:
                   return '';
-                
 
                 default:
                   return '';
@@ -323,10 +325,10 @@ class BarChartSample1State extends State<BarChartSample1> {
         switch (i) {
           case 0:
             return makeGroupData(0, Random().nextInt(3).toDouble() + 5,
-                barColor:  redBarColor);
+                barColor: redBarColor);
           case 1:
             return makeGroupData(1, Random().nextInt(3).toDouble() + 10.5,
-               barColor: blueBarColor);
+                barColor: blueBarColor);
           case 2:
             return makeGroupData(2, Random().nextInt(3).toDouble() + 22,
                 barColor: blueBarColor);
@@ -335,13 +337,13 @@ class BarChartSample1State extends State<BarChartSample1> {
                 barColor: redBarColor);
           case 4:
             return makeGroupData(4, Random().nextInt(3).toDouble() + 18,
-                 barColor: blueBarColor);
+                barColor: blueBarColor);
           case 5:
             return makeGroupData(5, Random().nextInt(3).toDouble() + 7.5,
-                 barColor: redBarColor);
+                barColor: redBarColor);
           case 6:
             return makeGroupData(6, Random().nextInt(3).toDouble() + 12.5,
-                 barColor: blueBarColor);
+                barColor: blueBarColor);
           case 7:
             return makeGroupData(7, Random().nextInt(3).toDouble() + 3,
                 barColor: redBarColor);
@@ -360,13 +362,6 @@ class BarChartSample1State extends State<BarChartSample1> {
       if (mounted) {
         refreshState();
       }
-
-      
-      
-
     }
-
-    
-    
   }
 }
