@@ -72,6 +72,9 @@ flutter:
     - family: Cabin
       fonts:
         - asset: assets/fonts/Cabin-Regular.ttf
+    - family: Arimo
+      fonts:
+        - asset: assets/fonts/Arimo-BoldItalic.ttf
 
     
          

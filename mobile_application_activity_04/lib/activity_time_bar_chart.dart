@@ -59,7 +59,7 @@ class BarChartSample1State extends State<BarChartSample1> {
   @override
   Widget build(BuildContext context) {
     return AspectRatio(
-      aspectRatio: 1.3,
+      aspectRatio: 1.55,
       child: Card(
         elevation: 0,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(18)),
@@ -67,7 +67,7 @@ class BarChartSample1State extends State<BarChartSample1> {
         child: Stack(
           children: <Widget>[
             Padding(
-              padding: const EdgeInsets.fromLTRB(32, 16, 32, 32),
+              padding: const EdgeInsets.fromLTRB(32, 8, 32, 20),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 mainAxisAlignment: MainAxisAlignment.start,
@@ -125,7 +125,7 @@ class BarChartSample1State extends State<BarChartSample1> {
                     ],
                   ),
                   const SizedBox(
-                    height: 25,
+                    height: 22,
                   ),
                   Expanded(
                     child: Padding(
@@ -136,9 +136,6 @@ class BarChartSample1State extends State<BarChartSample1> {
                             BarChart(isPlaying ? randomData() : mainBarData()),
                       ),
                     ),
-                  ),
-                  const SizedBox(
-                    height: 15,
                   ),
                 ],
               ),

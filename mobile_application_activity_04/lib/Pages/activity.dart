@@ -290,6 +290,56 @@ class _ActivityState extends State<Activity> {
                     ),
                   ),
                   BarChartSample1(),
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(32, 0, 16, 16),
+                    child: FadeAnimation(
+                      5,
+                      Text(
+                        'Statistic',
+                        style: TextStyle(
+                          fontFamily: 'Arimo',
+                          fontWeight: FontWeight.w500,
+                          fontSize: 19,
+                        ),
+                      ),
+                    ),
+                  ),
+                  Row(
+                    children: <Widget>[
+                      FadeAnimation(
+                        6,
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(32, 5, 16, 8),
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(10),
+                            child: Container(
+                              height: 42,
+                              width: 42,
+                              color: Colors.blue.withOpacity(0.11),
+                              child: Center(
+                                child: Icon(
+                                  const IconData(0xe805,
+                                      fontFamily: 'CustomAppIcon'),
+                                  color: Colors.redAccent,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                      FadeAnimation(
+                        7,
+                        Text(
+                          '145 ccal burned',
+                          style: TextStyle(
+                            fontSize: 17,
+                            fontWeight: FontWeight.w100,
+                            color: Colors.black.withOpacity(0.75),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
                 ],
               ),
             ),
