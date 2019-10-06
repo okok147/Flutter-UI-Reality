@@ -83,9 +83,14 @@ Quick way to launch simulator in VSCODE:
     
     
   # Day 8
-<img src="process/day8.gif" height="500">  
+  <img src="process/day8.gif" height="500">  
 
     - CustomPaint ,Container with row (Text and Inkwell with Icon) ✅ 
+    
+<a href="https://pub.dev/packages/simple_animations">simple animation</a>
+    
+Example:
+<a href="https://www.youtube.com/watch?v=pRzP34u786w">Flutter Party Event Application UI and Animation - Flutter UI Design</a>
     
    
     
@@ -111,6 +116,7 @@ Quick way to launch simulator in VSCODE:
 <a href="https://dart.dev/codelabs/async-await">Asynchronous programming: futures, async, await</a>
 
 <a href="https://www.youtube.com/watch?v=EwHMSxSWIvQ&t=513s">Future builder - Building Lists with JSON Data</a>
+
 
 
 
