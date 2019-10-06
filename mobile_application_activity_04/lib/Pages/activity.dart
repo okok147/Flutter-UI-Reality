@@ -69,15 +69,19 @@ class _ActivityState extends State<Activity> {
                     ),
                     Padding(
                       padding: const EdgeInsets.only(left: 8.0),
-                      child: Container(
-                        alignment: Alignment.topRight,
-                        child: IconButton(
-                          icon: Icon(
-                            const IconData(0xf601, fontFamily: 'CustomAppIcon'),
-                            size: 28,
-                            color: Colors.lightBlue,
+                      child: FadeAnimation(
+                        4,
+                        Container(
+                          alignment: Alignment.topRight,
+                          child: IconButton(
+                            icon: Icon(
+                              const IconData(0xf601,
+                                  fontFamily: 'CustomAppIcon'),
+                              size: 28,
+                              color: Colors.lightBlue,
+                            ),
+                            onPressed: () {},
                           ),
-                          onPressed: () {},
                         ),
                       ),
                     ),
@@ -99,70 +103,75 @@ class _ActivityState extends State<Activity> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: <Widget>[
                             //search it in utils.dart
-                            Container(
-                              decoration: activityStepCardDecoration,
-                              height: 220,
-                              width: 174,
-                              //in activityCardStack.dart
-                              child: Container(
-                                child: InkWell(
-                                  onTap: () {
-                                    //navigate to another page
-                                    if (_pageController.hasClients) {
-                                      _pageController.animateToPage(
-                                        1,
-                                        duration:
-                                            const Duration(milliseconds: 400),
-                                        curve: Curves.easeInCubic,
-                                      );
-                                    }
-                                  },
-                                  child: Stack(
-                                    children: <Widget>[
-                                      Positioned(
-                                        top: 24,
-                                        left: 16,
-                                        child: Text(
-                                          'Steps',
-                                          style: activityCardTextStyle,
-                                        ),
-                                      ),
-                                      Positioned(
-                                        top: 8,
-                                        right: 8,
-                                        child: IconButton(
-                                          icon: Icon(
-                                            Icons.directions_walk,
-                                            size: 32,
-                                            color: Colors.white,
+                            FadeAnimation(
+                              5,
+                              Container(
+                                decoration: activityStepCardDecoration,
+                                height: 220,
+                                width: 174,
+                                //in activityCardStack.dart
+                                child: Container(
+                                  child: InkWell(
+                                    onTap: () {
+                                      //navigate to another page
+                                      if (_pageController.hasClients) {
+                                        _pageController.animateToPage(
+                                          1,
+                                          duration:
+                                              const Duration(milliseconds: 400),
+                                          curve: Curves.easeInCubic,
+                                        );
+                                      }
+                                    },
+                                    child: Stack(
+                                      children: <Widget>[
+                                        Positioned(
+                                          top: 24,
+                                          left: 16,
+                                          child: Text(
+                                            'Steps',
+                                            style: activityCardTextStyle,
                                           ),
-                                          onPressed: () {},
                                         ),
-                                      ),
-                                      Padding(
-                                        padding: const EdgeInsets.only(top: 32),
-                                        child: Center(
-                                          child: Container(
-                                            color: Colors.transparent,
-                                            height: 200,
-                                            width: 200,
-                                            child: CustomPaint(
-                                              painter: StepsPainter(),
-                                              size: Size(200, 200),
-                                              child: Center(
-                                                  child: Padding(
-                                                padding: const EdgeInsets.only(
-                                                    top: 3.0),
-                                                child: Text(
-                                                  '7 537',
-                                                  style: stepTextStyle,
-                                                ),
-                                              )),
+                                        Positioned(
+                                          top: 8,
+                                          right: 8,
+                                          child: IconButton(
+                                            icon: Icon(
+                                              Icons.directions_walk,
+                                              size: 32,
+                                              color: Colors.white,
+                                            ),
+                                            onPressed: () {},
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding:
+                                              const EdgeInsets.only(top: 32),
+                                          child: Center(
+                                            child: Container(
+                                              color: Colors.transparent,
+                                              height: 200,
+                                              width: 200,
+                                              child: CustomPaint(
+                                                painter: StepsPainter(),
+                                                size: Size(200, 200),
+                                                child: Center(
+                                                    child: Padding(
+                                                  padding:
+                                                      const EdgeInsets.only(
+                                                          top: 3.0),
+                                                  child: Text(
+                                                    '7 537',
+                                                    style: stepTextStyle,
+                                                  ),
+                                                )),
+                                              ),
                                             ),
                                           ),
                                         ),
-                                      ),
-                                    ],
+                                      ],
+                                    ),
                                   ),
                                 ),
                               ),
@@ -171,17 +180,26 @@ class _ActivityState extends State<Activity> {
                               height: 18,
                             ),
                             //utils.dart
-                            heartRateContainer,
+                            FadeAnimation(
+                              7,
+                              heartRateContainer,
+                            ),
                           ],
                         ),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: <Widget>[
-                            activityContainer,
+                            FadeAnimation(
+                              6,
+                              activityContainer,
+                            ),
                             SizedBox(
                               height: 18,
                             ),
-                            sleepContainer,
+                            FadeAnimation(
+                              8,
+                              sleepContainer,
+                            ),
                           ],
                         ),
                       ],
@@ -203,25 +221,31 @@ class _ActivityState extends State<Activity> {
                     mainAxisSize: MainAxisSize.min,
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: <Widget>[
-                      IconButton(
-                        icon: Icon(Icons.chevron_left),
-                        iconSize: 25,
-                        onPressed: () {
-                          //navigate to another page
-                          if (_pageController.hasClients) {
-                            _pageController.animateToPage(
-                              0,
-                              duration: const Duration(milliseconds: 400),
-                              curve: Curves.easeOutCubic,
-                            );
-                          }
-                        },
-                        color: Colors.black.withOpacity(0.9),
+                      FadeAnimation(
+                        4.5,
+                        IconButton(
+                          icon: Icon(Icons.chevron_left),
+                          iconSize: 25,
+                          onPressed: () {
+                            //navigate to another page
+                            if (_pageController.hasClients) {
+                              _pageController.animateToPage(
+                                0,
+                                duration: const Duration(milliseconds: 400),
+                                curve: Curves.easeOutCubic,
+                              );
+                            }
+                          },
+                          color: Colors.black.withOpacity(0.9),
+                        ),
                       ),
-                      Text(
-                        'Back',
-                        style: TextStyle(fontSize: 17, fontFamily: 'Arimo'),
-                      )
+                      FadeAnimation(
+                        5,
+                        Text(
+                          'Back',
+                          style: TextStyle(fontSize: 17, fontFamily: 'Arimo'),
+                        ),
+                      ),
                     ],
                   ),
                   Padding(
@@ -315,7 +339,7 @@ class _ActivityState extends State<Activity> {
                             child: Container(
                               height: 42,
                               width: 42,
-                              color: Colors.blue.withOpacity(0.11),
+                              color: Colors.blue.withOpacity(0.095),
                               child: Center(
                                 child: Icon(
                                   const IconData(0xe805,
