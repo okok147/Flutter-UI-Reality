@@ -26,6 +26,8 @@ class BarChartSample1State extends State<BarChartSample1> {
 
   bool isPlaying = true;
 
+  
+
   @override
   void initState() {
     super.initState();
@@ -88,8 +90,8 @@ class BarChartSample1State extends State<BarChartSample1> {
                           ),
                         ),
                       ),
-                      Container(
-                        child: Row(
+                     
+                        Row(
                           children: <Widget>[
                             FadeAnimation(
                               4,
@@ -121,7 +123,7 @@ class BarChartSample1State extends State<BarChartSample1> {
                             )
                           ],
                         ),
-                      ),
+                      
                     ],
                   ),
                   const SizedBox(

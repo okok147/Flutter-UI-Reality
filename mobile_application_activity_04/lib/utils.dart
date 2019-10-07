@@ -157,5 +157,35 @@ var switchColor = [
 
 var redBarColor = Colors.redAccent.withOpacity(0.95);
 var blueBarColor = Color(0xff3535DD).withOpacity(0.85);
-var barChartTextStyle =
-    TextStyle(color: Colors.grey, fontWeight: FontWeight.normal, fontSize: 13);
+var barChartTextStyle = TextStyle(
+  color: Colors.grey,
+  fontWeight: FontWeight.normal,
+  fontSize: 13,
+);
+var flTitleTextStyle = TextStyle(
+    color: Colors.grey.withOpacity(0.95),
+    fontWeight: FontWeight.normal,
+    fontSize: 12);
+
+var weeklyChallengeNormalTextStyle = TextStyle(
+  color: Colors.grey,
+  fontSize: 12,
+);
+
+var weeklyChallengeTomTextStyle = TextStyle(
+  color: Color(0xff3535DD).withOpacity(0.95),
+  fontSize: 12,
+);
+
+var weeklyChallengeMaggieTextStyle = TextStyle(
+  color: Colors.redAccent.withOpacity(0.95),
+  fontSize: 12,
+);
+
+var weeklyChallengeTextStyle = TextStyle(
+  color: Colors.grey.withOpacity(0.85),
+  fontSize: 13.5,
+  fontFamily: 'Arimo-Reulgar',
+  fontWeight: FontWeight.w400,
+);
+

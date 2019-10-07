@@ -27,13 +27,13 @@ class HeartRateLineChart extends StatelessWidget {
                       drawHorizontalGrid: false,
                       getDrawingVerticalGridLine: (value) {
                         return const FlLine(
-                          color: Color(0xff37434d),
+                          color: Colors.black,
                           strokeWidth: 1,
                         );
                       },
                       getDrawingHorizontalGridLine: (value) {
                         return const FlLine(
-                          color: Colors.white,
+                          color: Colors.black,
                           strokeWidth: 1,
                         );
                       },
@@ -64,7 +64,7 @@ class HeartRateLineChart extends StatelessWidget {
                       leftTitles: SideTitles(
                         showTitles: true,
                         textStyle: TextStyle(
-                          color: Colors.white,
+                          color: Colors.black,
                           fontWeight: FontWeight.bold,
                           fontSize: 15,
                         ),
@@ -86,7 +86,7 @@ class HeartRateLineChart extends StatelessWidget {
                     borderData: FlBorderData(
                         show: false,
                         border:
-                            Border.all(color: Color(0xff37434d), width: 10)),
+                            Border.all(color: Colors.black, width: 10)),
                     minX: 0,
                     maxX: 11,
                     minY: 0,
