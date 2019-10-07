@@ -2,7 +2,7 @@
 
 Explore to the unknown.
 
-<img src="https://github.com/kelvin147789/Flutter_UI_Reality/blob/master/images/black_hole.gif">
+<img src="images/black_hole.gif">
 
 
 
@@ -11,7 +11,7 @@ Explore to the unknown.
 
   <a href="https://github.com/kelvin147789/Flutter_UI_Reality/tree/master/gardener_01">Gardener_01 </a>
   
-  <img src="gardener_01/design/homepage.png" width="250" height="500"  >  <img src="gardener_01/design/search.png" width="250" height="500">   
+  <img src="gardener_01/design/homepage.png" width="250">  <img src="gardener_01/design/search.png" width="250">   
   
   
   
@@ -34,7 +34,7 @@ Explore to the unknown.
 
   <a href="https://github.com/kelvin147789/Flutter_UI_Reality/tree/master/mobile_application_activity_04">Market_App_04 </a>
   
-  <img src="https://github.com/kelvin147789/Flutter_UI_Reality/blob/master/mobile_application_activity_04/design/design.png" width="500" > 
+  <img src="mobile_application_activity_04/design/design.png" width="500" > 
   
 
   
@@ -52,11 +52,11 @@ Explore to the unknown.
 
 # Support My work 🦄:
 
- <img src= "https://github.com/kelvin147789/Flutter_UI_Reality/blob/master/images/bitcoin.png" width="18">    BTC Address:
+ <img src= "images/bitcoin.png" width="18">    BTC Address:
  
     3Eqg2Wm9978CmcDJp4z3yM2CqjUu19Vuru
     
- <img src= "https://github.com/kelvin147789/Flutter_UI_Reality/blob/master/images/ethereum.png" width="18">    ETH Address:
+ <img src= "images/ethereum.png" width="18">    ETH Address:
  
     0x463d1d31eEEC94952D852046cF15913d02F627b8
 
