@@ -93,6 +93,13 @@ Quick way to launch simulator in VSCODE:
     - BarChart ✅ 
     - FadeAnimation ✅ 
     
+   # Day 10
+  <img src="process/day10.gif" height="500">  
+
+    - Weekly Challenge ✅ 
+    - Almost finished ......
+    
+    
     
 <a href="https://pub.dev/packages/simple_animations">simple animation</a>
     
