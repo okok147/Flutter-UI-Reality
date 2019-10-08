@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mobile_application_activity_03/activityCardStack.dart';
+import 'package:mobile_application_activity_03/FadeAnimation.dart';
 
 var bottomActiveColor = Color(0xff84C9F9).withOpacity(0.8);
 var bottomUnactiveColor = Colors.black.withOpacity(1);
@@ -189,3 +190,62 @@ var weeklyChallengeTextStyle = TextStyle(
   fontWeight: FontWeight.w400,
 );
 
+var detailRow = Row(
+  children: <Widget>[
+    FadeAnimation(
+      2,
+      Text(
+        'Details',
+        style: TextStyle(
+          color: Colors.grey,
+          decoration: TextDecoration.underline,
+          textBaseline: TextBaseline.alphabetic,
+        ),
+      ),
+    ),
+    FadeAnimation(
+      2,
+      InkWell(
+        child: Icon(
+          Icons.chevron_right,
+          color: Colors.grey,
+        ),
+        onTap: () {},
+      ),
+    )
+  ],
+);
+
+var whiteDetailRow = Row(
+  children: <Widget>[
+    FadeAnimation(
+      2,
+      Text(
+        'Details',
+        style: TextStyle(
+          color: Colors.white,
+          decoration: TextDecoration.underline,
+          textBaseline: TextBaseline.alphabetic,
+        ),
+      ),
+    ),
+    FadeAnimation(
+      2,
+      InkWell(
+        child: Icon(
+          Icons.chevron_right,
+          color: Colors.white,
+        ),
+        onTap: () {
+          print('Aw!');
+        },
+      ),
+    )
+  ],
+);
+
+var commonTextStyle = TextStyle(
+  color: Colors.white.withOpacity(0.7),
+  fontFamily: 'Arimo-Regular',
+  fontWeight: FontWeight.w400,
+);

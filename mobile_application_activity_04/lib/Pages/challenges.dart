@@ -14,9 +14,9 @@ class Challenges extends StatelessWidget {
       body: ListView(
         children: <Widget>[
           Container(
-            height: 320,
+            height: 315,
             width: 150,
-            margin: EdgeInsets.fromLTRB(24, 16, 24, 24),
+            margin: EdgeInsets.fromLTRB(24, 12, 24, 12),
             padding: EdgeInsets.all(16),
             decoration: BoxDecoration(
               border: Border.all(
@@ -42,31 +42,7 @@ class Challenges extends StatelessWidget {
                               fontFamily: 'Arimo-Regular'),
                         ),
                       ),
-                      Row(
-                        children: <Widget>[
-                          FadeAnimation(
-                            2,
-                            Text(
-                              'Details',
-                              style: TextStyle(
-                                color: Colors.grey,
-                                decoration: TextDecoration.underline,
-                                textBaseline: TextBaseline.alphabetic,
-                              ),
-                            ),
-                          ),
-                          FadeAnimation(
-                            2,
-                            InkWell(
-                              child: Icon(
-                                Icons.chevron_right,
-                                color: Colors.grey,
-                              ),
-                              onTap: () {},
-                            ),
-                          )
-                        ],
-                      ),
+                      detailRow,
                     ],
                   ),
                 ),
@@ -209,7 +185,7 @@ class Challenges extends StatelessWidget {
                     padding: const EdgeInsets.only(left: 8.0),
                     child: Container(
                       color: Colors.transparent,
-                      height: 32,
+                      height: 24,
                       child: Align(
                         alignment: Alignment.bottomLeft,
                         child: Text(
@@ -219,6 +195,135 @@ class Challenges extends StatelessWidget {
                       ),
                     ),
                   ),
+                ),
+              ],
+            ),
+          ),
+          FadeAnimation(
+            8,
+            Padding(
+              padding: const EdgeInsets.fromLTRB(24, 2, 24, 8),
+              child: Container(
+                decoration: activityHeartRateCardDecoration,
+                height: 205,
+                child: Padding(
+                  padding: const EdgeInsets.fromLTRB(22, 16, 16, 0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      FadeAnimation(
+                        9,
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                            Text(
+                              'Common global challenge',
+                              style: activityCardTextStyle,
+                            ),
+                            SizedBox(
+                              height: 5,
+                            ),
+                            Text(
+                              "Finish - 30.09(30 days left)",
+                              style: commonTextStyle,
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(0, 16, 32, 0),
+                        child: Row(
+                          children: <Widget>[
+                            FadeAnimation(
+                              10,
+                              Container(
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(20),
+                                  color: Colors.amber.withOpacity(1),
+                                ),
+                                height: 110,
+                                width: 110,
+                                child: Padding(
+                                  padding:
+                                      const EdgeInsets.fromLTRB(0, 22, 0, 0),
+                                  child: Column(
+                                    children: <Widget>[
+                                      Text(
+                                        '62',
+                                        style: TextStyle(
+                                            color: Colors.white,
+                                            fontSize: 35,
+                                            fontFamily: 'Arimo-Regular'),
+                                      ),
+                                      SizedBox(
+                                        height: 8,
+                                      ),
+                                      Text(
+                                        'day goals',
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontFamily: 'Arimo-Regular',
+                                          fontSize: 15,
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.fromLTRB(48, 0, 0, 0),
+                              child: Container(
+                                height: 100,
+                                width: 130,
+                                child: Column(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceAround,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: <Widget>[
+                                    FadeAnimation(
+                                      11,
+                                      Text(
+                                        'You are better than 78% of people.',
+                                        style: commonTextStyle,
+                                      ),
+                                    ),
+                                    FadeAnimation(
+                                      12,
+                                      whiteDetailRow,
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.fromLTRB(24, 24, 24, 24),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                FadeAnimation(
+                  12,
+                  Text(
+                    'Challenge a friend...',
+                    style: TextStyle(
+                      fontFamily: 'Arimo-Regular',
+                      fontSize: 19,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                ),
+                Container(
+                  height: 100,
+                  color: Colors.transparent,
                 ),
               ],
             ),
