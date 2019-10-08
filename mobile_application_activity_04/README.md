@@ -99,6 +99,12 @@ Quick way to launch simulator in VSCODE:
     - Weekly Challenge ✅ 
     - Almost finished ......
     
+   # Day 11
+  <img src="process/day11.gif" height="500">  
+
+    - Common global challenge ✅ 
+    
+    
     
     
 <a href="https://pub.dev/packages/simple_animations">simple animation</a>
