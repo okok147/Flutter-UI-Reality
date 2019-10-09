@@ -50,12 +50,12 @@ class Challenges extends StatelessWidget {
                   children: <Widget>[
                     Positioned(
                       child: FadeAnimation(
-                        3,
+                        2,
                         TomLineChartSample2(),
                       ),
                     ),
                     FadeAnimation(
-                      4,
+                      2,
                       MaggieLineChartSample2(),
                     ),
                     Positioned(
@@ -82,7 +82,7 @@ class Challenges extends StatelessWidget {
                       top: 62,
                       right: 27,
                       child: FadeAnimation(
-                        3.5,
+                        2,
                         Container(
                           height: 28,
                           width: 28,
@@ -101,7 +101,7 @@ class Challenges extends StatelessWidget {
                   ],
                 ),
                 FadeAnimation(
-                  5,
+                  2,
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
@@ -148,7 +148,7 @@ class Challenges extends StatelessWidget {
                   ),
                 ),
                 FadeAnimation(
-                  6,
+                  2,
                   Padding(
                     padding: const EdgeInsets.fromLTRB(0, 8, 0, 0),
                     child: Container(
@@ -180,7 +180,7 @@ class Challenges extends StatelessWidget {
                   ),
                 ),
                 FadeAnimation(
-                  7,
+                  2,
                   Padding(
                     padding: const EdgeInsets.only(left: 8.0),
                     child: Container(
@@ -200,7 +200,7 @@ class Challenges extends StatelessWidget {
             ),
           ),
           FadeAnimation(
-            8,
+            2,
             Padding(
               padding: const EdgeInsets.fromLTRB(24, 2, 24, 8),
               child: Container(
@@ -212,7 +212,7 @@ class Challenges extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       FadeAnimation(
-                        9,
+                        2,
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: <Widget>[
@@ -235,7 +235,7 @@ class Challenges extends StatelessWidget {
                         child: Row(
                           children: <Widget>[
                             FadeAnimation(
-                              10,
+                              3,
                               Container(
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(20),
@@ -282,7 +282,7 @@ class Challenges extends StatelessWidget {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: <Widget>[
                                     FadeAnimation(
-                                      11,
+                                      3,
                                       Text(
                                         'You are better than 78% of people.',
                                         style: commonTextStyle,
@@ -311,7 +311,7 @@ class Challenges extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 FadeAnimation(
-                  12,
+                  3,
                   Text(
                     'Challenge a friend...',
                     style: TextStyle(
@@ -330,7 +330,7 @@ class Challenges extends StatelessWidget {
                       scrollDirection: Axis.horizontal,
                       children: <Widget>[
                         FadeAnimation(
-                          12.5,
+                          3,
                           ClipRRect(
                             borderRadius: BorderRadius.circular(15),
                             child: Container(
@@ -349,7 +349,7 @@ class Challenges extends StatelessWidget {
                         Padding(
                             padding: const EdgeInsets.only(left: 18.5),
                             child: FadeAnimation(
-                              13,
+                              3.5,
                               Container(
                                 width: 55,
                                 child: ClipRRect(
@@ -364,7 +364,7 @@ class Challenges extends StatelessWidget {
                         Padding(
                           padding: const EdgeInsets.only(left: 18.5),
                           child: FadeAnimation(
-                            13.2,
+                            3.5,
                             Container(
                               width: 55,
                               child: ClipRRect(
@@ -380,7 +380,7 @@ class Challenges extends StatelessWidget {
                         Padding(
                           padding: const EdgeInsets.only(left: 18.5),
                           child: FadeAnimation(
-                            13.4,
+                            3.5,
                             Container(
                               width: 55,
                               child: ClipRRect(
@@ -396,7 +396,7 @@ class Challenges extends StatelessWidget {
                         Padding(
                           padding: const EdgeInsets.only(left: 18.5),
                           child: FadeAnimation(
-                            13.6,
+                            3.5,
                             Container(
                               width: 55,
                               child: ClipRRect(
@@ -412,7 +412,7 @@ class Challenges extends StatelessWidget {
                         Padding(
                           padding: const EdgeInsets.only(left: 20.5),
                           child: FadeAnimation(
-                            13.8,
+                            3.5,
                             Container(
                               width: 55,
                               child: ClipRRect(

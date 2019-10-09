@@ -320,7 +320,7 @@ class _ActivityState extends State<Activity> {
                   Padding(
                     padding: const EdgeInsets.fromLTRB(32, 0, 16, 16),
                     child: FadeAnimation(
-                      4.5,
+                      3,
                       Text(
                         'Statistic',
                         style: TextStyle(
