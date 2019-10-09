@@ -107,7 +107,7 @@ Quick way to launch simulator in VSCODE:
     - Common global challenge ✅ 
     
    # Day 12
-  <img src="process/day12.gif" height="500">  
+  <img src="process/day12.gif">  
 
     - Project finished ✅ 
     
