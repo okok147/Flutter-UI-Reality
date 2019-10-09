@@ -321,9 +321,103 @@ class Challenges extends StatelessWidget {
                     ),
                   ),
                 ),
-                Container(
-                  height: 100,
-                  color: Colors.transparent,
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(16, 24, 0, 16),
+                  child: Container(
+                    height: 55,
+                    color: Colors.transparent,
+                    child: ListView(
+                      scrollDirection: Axis.horizontal,
+                      children: <Widget>[
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(15),
+                          child: Container(
+                            color: Colors.blue.withOpacity(0.08),
+                            width: 55,
+                            child: Icon(
+                              Icons.add,
+                              color: Colors.blueAccent,
+                            ),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(left: 25.5),
+                          child: Container(
+                            
+                            width: 55,
+                            child: ClipRRect(
+                            borderRadius: BorderRadius.circular(15),
+                            child: Image.network(
+                              'https://picsum.photos/250?image=9',
+                              fit: BoxFit.fitWidth,
+                            ),
+                          ),
+                          ),
+                        ),
+
+                        Padding(
+                          padding: const EdgeInsets.only(left: 25.5),
+                          child: Container(
+                            
+                            width: 55,
+                            child: ClipRRect(
+                            borderRadius: BorderRadius.circular(15),
+                            child: Image.network(
+                              'https://picsum.photos/250?image=9',
+                              fit: BoxFit.fitWidth,
+                            ),
+                          ),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(left: 25.5),
+                          child: Container(
+                            
+                            width: 55,
+                            child: ClipRRect(
+                            borderRadius: BorderRadius.circular(15),
+                            child: Image.network(
+                              'https://picsum.photos/250?image=9',
+                              fit: BoxFit.fitWidth,
+                            ),
+                          ),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(left: 25.5),
+                          child: Container(
+                            
+                            width: 55,
+                            child: ClipRRect(
+                            borderRadius: BorderRadius.circular(15),
+                            child: Image.network(
+                              'https://picsum.photos/250?image=9',
+                              fit: BoxFit.fitWidth,
+                            ),
+                          ),
+                          ),
+                        ),
+                        
+                          Padding(
+                          padding: const EdgeInsets.only(left: 24.5),
+                          child: Container(
+                            
+                            width: 55,
+                            child: ClipRRect(
+                            borderRadius: BorderRadius.circular(15),
+                            child: Image.network(
+                              'https://picsum.photos/250?image=9',
+                              fit: BoxFit.fitWidth,
+                            ),
+                          ),
+                          ),
+                        ),
+                      
+                      
+                        
+                      ],
+                    ),
+                  ),
                 ),
               ],
             ),
