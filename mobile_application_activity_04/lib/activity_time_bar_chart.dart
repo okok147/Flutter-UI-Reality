@@ -26,8 +26,6 @@ class BarChartSample1State extends State<BarChartSample1> {
 
   bool isPlaying = true;
 
-  
-
   @override
   void initState() {
     super.initState();
@@ -90,40 +88,38 @@ class BarChartSample1State extends State<BarChartSample1> {
                           ),
                         ),
                       ),
-                     
-                        Row(
-                          children: <Widget>[
-                            FadeAnimation(
-                              4,
-                              Text(
-                                'Details',
-                                style: TextStyle(
-                                  color: Colors.grey,
-                                  decoration: TextDecoration.underline,
-                                  textBaseline: TextBaseline.alphabetic,
-                                ),
+                      Row(
+                        children: <Widget>[
+                          FadeAnimation(
+                            4,
+                            Text(
+                              'Details',
+                              style: TextStyle(
+                                color: Colors.grey,
+                                decoration: TextDecoration.underline,
+                                textBaseline: TextBaseline.alphabetic,
                               ),
                             ),
-                            FadeAnimation(
-                              4,
-                              InkWell(
-                                child: Icon(
-                                  Icons.chevron_right,
-                                  color: Colors.grey,
-                                ),
-                                onTap: () {
-                                  setState(() {
-                                    isPlaying = !isPlaying;
-                                    if (isPlaying) {
-                                      refreshState();
-                                    }
-                                  });
-                                },
+                          ),
+                          FadeAnimation(
+                            4,
+                            InkWell(
+                              child: Icon(
+                                Icons.chevron_right,
+                                color: Colors.grey,
                               ),
-                            )
-                          ],
-                        ),
-                      
+                              onTap: () {
+                                setState(() {
+                                  isPlaying = !isPlaying;
+                                  if (isPlaying) {
+                                    refreshState();
+                                  }
+                                });
+                              },
+                            ),
+                          )
+                        ],
+                      ),
                     ],
                   ),
                   const SizedBox(

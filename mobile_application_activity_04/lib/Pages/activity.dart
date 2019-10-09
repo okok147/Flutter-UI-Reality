@@ -243,7 +243,8 @@ class _ActivityState extends State<Activity> {
                         2,
                         Text(
                           'Back',
-                          style: TextStyle(fontSize: 16.5,fontFamily: 'Arimo-Regular' ),
+                          style: TextStyle(
+                              fontSize: 16.5, fontFamily: 'Arimo-Regular'),
                         ),
                       ),
                     ],
@@ -359,11 +360,10 @@ class _ActivityState extends State<Activity> {
                         Text(
                           '145 ccal burned',
                           style: TextStyle(
-                            fontSize: 16,
-                            fontWeight: FontWeight.w400,
-                            color: Colors.black.withOpacity(0.85),
-                            fontFamily: 'Arimo-Regular'
-                          ),
+                              fontSize: 16,
+                              fontWeight: FontWeight.w400,
+                              color: Colors.black.withOpacity(0.85),
+                              fontFamily: 'Arimo-Regular'),
                         ),
                       ),
                     ],
