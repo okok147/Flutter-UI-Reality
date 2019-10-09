@@ -57,7 +57,7 @@ class _ActivityState extends State<Activity> {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: <Widget>[
                             FadeAnimation(
-                              3,
+                              1,
                               Text(
                                 'Maggie',
                                 style: maggieTextStyle,
@@ -70,7 +70,7 @@ class _ActivityState extends State<Activity> {
                     Padding(
                       padding: const EdgeInsets.only(left: 8.0),
                       child: FadeAnimation(
-                        4,
+                        2,
                         Container(
                           alignment: Alignment.topRight,
                           child: IconButton(
@@ -104,7 +104,7 @@ class _ActivityState extends State<Activity> {
                           children: <Widget>[
                             //search it in utils.dart
                             FadeAnimation(
-                              5,
+                              2,
                               Container(
                                 decoration: activityStepCardDecoration,
                                 height: 220,
@@ -181,7 +181,7 @@ class _ActivityState extends State<Activity> {
                             ),
                             //utils.dart
                             FadeAnimation(
-                              7,
+                              2,
                               heartRateContainer,
                             ),
                           ],
@@ -190,14 +190,14 @@ class _ActivityState extends State<Activity> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: <Widget>[
                             FadeAnimation(
-                              6,
+                              2,
                               activityContainer,
                             ),
                             SizedBox(
                               height: 18,
                             ),
                             FadeAnimation(
-                              8,
+                              2,
                               sleepContainer,
                             ),
                           ],
@@ -222,7 +222,7 @@ class _ActivityState extends State<Activity> {
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: <Widget>[
                       FadeAnimation(
-                        8,
+                        2,
                         IconButton(
                           icon: Icon(Icons.chevron_left),
                           iconSize: 25,
@@ -240,7 +240,7 @@ class _ActivityState extends State<Activity> {
                         ),
                       ),
                       FadeAnimation(
-                        8,
+                        2,
                         Text(
                           'Back',
                           style: TextStyle(fontSize: 16.5,fontFamily: 'Arimo-Regular' ),
@@ -334,7 +334,7 @@ class _ActivityState extends State<Activity> {
                   Row(
                     children: <Widget>[
                       FadeAnimation(
-                        6,
+                        3,
                         Padding(
                           padding: const EdgeInsets.fromLTRB(32, 5, 16, 8),
                           child: ClipRRect(
@@ -355,7 +355,7 @@ class _ActivityState extends State<Activity> {
                         ),
                       ),
                       FadeAnimation(
-                        7,
+                        3,
                         Text(
                           '145 ccal burned',
                           style: TextStyle(
