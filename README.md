@@ -34,7 +34,7 @@ Explore to the unknown.
 
   <a href="https://github.com/kelvin147789/Flutter_UI_Reality/tree/master/mobile_application_activity_04">Application_Activity_04 </a>
   
-  <img src="mobile_application_activity_04/design/design.png" width="500" > 
+  <img src="mobile_application_activity_04/process/day12.gif" width="500" > 
   
 
   
