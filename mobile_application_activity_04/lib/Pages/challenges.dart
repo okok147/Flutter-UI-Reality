@@ -329,92 +329,102 @@ class Challenges extends StatelessWidget {
                     child: ListView(
                       scrollDirection: Axis.horizontal,
                       children: <Widget>[
-                        ClipRRect(
-                          borderRadius: BorderRadius.circular(15),
-                          child: Container(
-                            color: Colors.blue.withOpacity(0.08),
-                            width: 55,
-                            child: Icon(
-                              Icons.add,
-                              color: Colors.blueAccent,
+                        FadeAnimation(
+                          12.5,
+                          ClipRRect(
+                            borderRadius: BorderRadius.circular(15),
+                            child: Container(
+                              color: Colors.blue.withOpacity(0.08),
+                              width: 55,
+                              child: InkWell(
+                                onTap: () {},
+                                child: Icon(
+                                  Icons.add,
+                                  color: Colors.blueAccent,
+                                ),
+                              ),
                             ),
                           ),
                         ),
                         Padding(
-                          padding: const EdgeInsets.only(left: 25.5),
-                          child: Container(
-                            
-                            width: 55,
-                            child: ClipRRect(
-                            borderRadius: BorderRadius.circular(15),
-                            child: Image.network(
-                              'https://picsum.photos/250?image=9',
-                              fit: BoxFit.fitWidth,
-                            ),
-                          ),
-                          ),
-                        ),
-
+                            padding: const EdgeInsets.only(left: 18.5),
+                            child: FadeAnimation(
+                              13,
+                              Container(
+                                width: 55,
+                                child: ClipRRect(
+                                  borderRadius: BorderRadius.circular(15),
+                                  child: Image.network(
+                                    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUJbllMUM3ghFuGFDIoDUBsx-xoGF8oP_Fy4AjCZeBMEhQwSq3',
+                                    fit: BoxFit.cover,
+                                  ),
+                                ),
+                              ),
+                            )),
                         Padding(
-                          padding: const EdgeInsets.only(left: 25.5),
-                          child: Container(
-                            
-                            width: 55,
-                            child: ClipRRect(
-                            borderRadius: BorderRadius.circular(15),
-                            child: Image.network(
-                              'https://picsum.photos/250?image=9',
-                              fit: BoxFit.fitWidth,
+                          padding: const EdgeInsets.only(left: 18.5),
+                          child: FadeAnimation(
+                            13.2,
+                            Container(
+                              width: 55,
+                              child: ClipRRect(
+                                borderRadius: BorderRadius.circular(15),
+                                child: Image.network(
+                                  'https://static.wixstatic.com/media/48fd98_a0b82991b9f14f03828d06ae6816d890~mv2_d_2570_3855_s_4_2.jpg',
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
                             ),
-                          ),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(left: 25.5),
-                          child: Container(
-                            
-                            width: 55,
-                            child: ClipRRect(
-                            borderRadius: BorderRadius.circular(15),
-                            child: Image.network(
-                              'https://picsum.photos/250?image=9',
-                              fit: BoxFit.fitWidth,
-                            ),
-                          ),
                           ),
                         ),
                         Padding(
-                          padding: const EdgeInsets.only(left: 25.5),
-                          child: Container(
-                            
-                            width: 55,
-                            child: ClipRRect(
-                            borderRadius: BorderRadius.circular(15),
-                            child: Image.network(
-                              'https://picsum.photos/250?image=9',
-                              fit: BoxFit.fitWidth,
+                          padding: const EdgeInsets.only(left: 18.5),
+                          child: FadeAnimation(
+                            13.4,
+                            Container(
+                              width: 55,
+                              child: ClipRRect(
+                                borderRadius: BorderRadius.circular(15),
+                                child: Image.network(
+                                  'http://www.suneseemodel.com/wp-content/uploads/2018/12/LG-590x590.jpg',
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
                             ),
                           ),
-                          ),
                         ),
-                        
-                          Padding(
-                          padding: const EdgeInsets.only(left: 24.5),
-                          child: Container(
-                            
-                            width: 55,
-                            child: ClipRRect(
-                            borderRadius: BorderRadius.circular(15),
-                            child: Image.network(
-                              'https://picsum.photos/250?image=9',
-                              fit: BoxFit.fitWidth,
+                        Padding(
+                          padding: const EdgeInsets.only(left: 18.5),
+                          child: FadeAnimation(
+                            13.6,
+                            Container(
+                              width: 55,
+                              child: ClipRRect(
+                                borderRadius: BorderRadius.circular(15),
+                                child: Image.network(
+                                  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfxsE9iAw5kiOmxn6Rhy9mnF3Kif9RE4mPbEeChqVIvcxo3_bk',
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
                             ),
                           ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(left: 20.5),
+                          child: FadeAnimation(
+                            13.8,
+                            Container(
+                              width: 55,
+                              child: ClipRRect(
+                                borderRadius: BorderRadius.circular(15),
+                                child: Image.network(
+                                  'https://www.telegraph.co.uk/content/dam/beauty/Spark/shiseido/neelam-gill-model.jpg?imwidth=450',
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
+                            ),
                           ),
                         ),
-                      
-                      
-                        
                       ],
                     ),
                   ),
