@@ -8,6 +8,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: new MyHomePage(),
     );
   }
@@ -18,20 +19,26 @@ class MyHomePage extends StatefulWidget {
 }
 
 class MyCustomCard extends StatelessWidget {
-  MyCustomCard({ this.colors });
+  MyCustomCard({this.colors});
 
   final MaterialColor colors;
 
   Widget build(BuildContext context) {
+    var allWidth = MediaQuery.of(context).size.width;
+    var allHeight = MediaQuery.of(context).size.width;
     return new Container(
-      alignment: FractionalOffset.center,
-      height: 144.0,
-      width: 360.0,
+      height: allWidth / 10,
+      width: allHeight / 10,
       decoration: new BoxDecoration(
-        color: colors.shade50,
-        border: new Border.all(color: new Color(0xFF9E9E9E)),
+        color: colors.shade800,
+        borderRadius: BorderRadius.circular(10),
+        border: new Border.all(color: Colors.transparent),
       ),
-      child: new FlutterLogo(size: 100.0, colors: colors),
+      child: Material(
+        color: colors.shade800,
+        borderRadius: BorderRadius.circular(10),
+        elevation: 5,
+      ),
     );
   }
 }
@@ -72,7 +79,6 @@ class MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
     ThemeData theme = Theme.of(context);
 
     return new Scaffold(
-      appBar: new AppBar(),
       floatingActionButton: new FloatingActionButton(
         child: new Icon(Icons.flip_to_back),
         onPressed: () {
@@ -88,7 +94,9 @@ class MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
         child: new Stack(
           children: <Widget>[
             new AnimatedBuilder(
-              child: new MyCustomCard(colors: Colors.orange),
+              child: new MyCustomCard(
+                colors: Colors.red,
+              ),
               animation: _backScale,
               builder: (BuildContext context, Widget child) {
                 final Matrix4 transform = new Matrix4.identity()
