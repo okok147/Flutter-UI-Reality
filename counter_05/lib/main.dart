@@ -40,8 +40,8 @@ class MyCustomCard extends StatelessWidget {
     );
 
     var firstHelloContainer = Container(
-      height: allHeight/20,
-      width: allWidth/1,
+      height: allHeight / 20,
+      width: allWidth / 1,
     );
 
     var helloContainer = Container(
@@ -60,18 +60,15 @@ class MyCustomCard extends StatelessWidget {
     );
     return new Center(
       child: Container(
-        decoration: BoxDecoration(
-            color: Colors.transparent,
-            boxShadow: [
-              BoxShadow(
-                color: Colors.grey.withOpacity(0.02),
-                blurRadius: allWidth / 10,
-              ),
-            ]),
+        decoration: BoxDecoration(color: Colors.transparent, boxShadow: [
+          BoxShadow(
+            color: Colors.grey.withOpacity(0.02),
+            blurRadius: allWidth / 10,
+          ),
+        ]),
         height: allHeight / 1.5,
         width: allWidth / 3.3,
         child: Column(
-          
           children: <Widget>[
             firstHelloContainer,
             Row(
@@ -123,7 +120,6 @@ class MyCustomCard extends StatelessWidget {
                 helloContainer,
               ],
             ),
-            
           ],
         ),
       ),
