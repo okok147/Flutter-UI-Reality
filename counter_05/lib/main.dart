@@ -26,18 +26,106 @@ class MyCustomCard extends StatelessWidget {
   Widget build(BuildContext context) {
     var allWidth = MediaQuery.of(context).size.width;
     var allHeight = MediaQuery.of(context).size.width;
-    return new Container(
-      height: allWidth / 10,
-      width: allHeight / 10,
+    var helloSizedBox = SizedBox(
+      width: allWidth / 400,
+    );
+
+    var invisableContainer = Container(
+      height: allHeight / 3,
+      width: allWidth / 3,
+    );
+    var invisableeSnackContainer = Container(
+      height: allHeight / 400,
+      width: allWidth / 3,
+    );
+
+    var firstHelloContainer = Container(
+      height: allHeight/20,
+      width: allWidth/1,
+    );
+
+    var helloContainer = Container(
+      height: allWidth / 10.2,
+      width: allHeight / 10.2,
       decoration: new BoxDecoration(
         color: colors.shade800,
-        borderRadius: BorderRadius.circular(15),
+        borderRadius: BorderRadius.circular(1),
         border: new Border.all(color: Colors.transparent),
       ),
       child: Material(
         color: colors.shade800,
-        borderRadius: BorderRadius.circular(15),
+        borderRadius: BorderRadius.circular(1),
         elevation: 5,
+      ),
+    );
+    return new Center(
+      child: Container(
+        decoration: BoxDecoration(
+            color: Colors.transparent,
+            boxShadow: [
+              BoxShadow(
+                color: Colors.grey.withOpacity(0.02),
+                blurRadius: allWidth / 10,
+              ),
+            ]),
+        height: allHeight / 1.5,
+        width: allWidth / 3.3,
+        child: Column(
+          
+          children: <Widget>[
+            firstHelloContainer,
+            Row(
+              children: <Widget>[
+                helloContainer,
+                helloSizedBox,
+                helloContainer,
+                helloSizedBox,
+                helloContainer,
+              ],
+            ),
+            invisableeSnackContainer,
+            Row(
+              children: <Widget>[
+                helloContainer,
+                helloSizedBox,
+                helloContainer,
+                helloSizedBox,
+                helloContainer,
+              ],
+            ),
+            invisableeSnackContainer,
+            Row(
+              children: <Widget>[
+                helloContainer,
+                helloSizedBox,
+                helloContainer,
+                helloSizedBox,
+                helloContainer,
+              ],
+            ),
+            invisableeSnackContainer,
+            Row(
+              children: <Widget>[
+                helloContainer,
+                helloSizedBox,
+                helloContainer,
+                helloSizedBox,
+                helloContainer,
+              ],
+            ),
+            invisableeSnackContainer,
+            Row(
+              children: <Widget>[
+                helloContainer,
+                helloSizedBox,
+                helloContainer,
+                helloSizedBox,
+                helloContainer,
+              ],
+            ),
+            
+          ],
+        ),
       ),
     );
   }
