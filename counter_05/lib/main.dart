@@ -31,12 +31,12 @@ class MyCustomCard extends StatelessWidget {
       width: allHeight / 10,
       decoration: new BoxDecoration(
         color: colors.shade800,
-        borderRadius: BorderRadius.circular(10),
+        borderRadius: BorderRadius.circular(15),
         border: new Border.all(color: Colors.transparent),
       ),
       child: Material(
         color: colors.shade800,
-        borderRadius: BorderRadius.circular(10),
+        borderRadius: BorderRadius.circular(15),
         elevation: 5,
       ),
     );
