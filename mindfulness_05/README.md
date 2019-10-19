@@ -12,5 +12,6 @@ Miracle happens. <a href="https://dribbble.com/shots/7424303-Mobile-App-Mindfuln
 
 <img src ="process/day1.gif" width ="500">
 
-    -Appbar
-    Need to use:Custom Font and Icon
+    - Appbar
+    To do:
+    - Custom Font and Icon
