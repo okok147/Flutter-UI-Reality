@@ -18,7 +18,7 @@ Miracle happens. <a href="https://dribbble.com/shots/7424303-Mobile-App-Mindfuln
 # Reference:
 - <a href="https://pub.dev/packages/bubble_tab_indicator"> Bubble tab indicator</a>
 
-- <a href="https://youtu.be/lrMCjIYpnjg?t=178">Hero</a>
+- <a href="https://youtu.be/lrMCjIYpnjg?t=178">Hero Example</a>
 
 
 # Discovery
