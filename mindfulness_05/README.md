@@ -22,4 +22,4 @@ Miracle happens. <a href="https://dribbble.com/shots/7424303-Mobile-App-Mindfuln
 
 
 # Discovery
-<a href="https://pub.dev/packages/direct_select_flutter">direct_select_flutter</a>
+- <a href="https://pub.dev/packages/direct_select_flutter">direct_select_flutter</a>
