@@ -36,4 +36,5 @@ class MindfullNessIcon {
   static const IconData heart = const IconData(0xe801, fontFamily: _kFontFam);
   static const IconData shuffle = const IconData(0xe802, fontFamily: _kFontFam);
   static const IconData queue_music = const IconData(0xe803, fontFamily: _kFontFam);
+  static const IconData search = const IconData(0xe804, fontFamily: _kFontFam);
 }
