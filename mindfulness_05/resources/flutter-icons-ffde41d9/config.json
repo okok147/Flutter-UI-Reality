@@ -1,0 +1,34 @@
+{
+  "name": "MindfullNessIcon",
+  "css_prefix_text": "",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "c10b3b42421b13bbcabdbb957fb5eadd",
+      "css": "short_text",
+      "code": 59392,
+      "src": "material"
+    },
+    {
+      "uid": "d73eceadda1f594cec0536087539afbf",
+      "css": "heart",
+      "code": 59393,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "3d349daaea304032a7669b4f24931b6c",
+      "css": "shuffle",
+      "code": 59394,
+      "src": "entypo"
+    },
+    {
+      "uid": "aaf9c6987fe2849a3df0df34ce7a1750",
+      "css": "queue_music",
+      "code": 59395,
+      "src": "material"
+    }
+  ]
+}
