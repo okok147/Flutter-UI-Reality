@@ -12,5 +12,16 @@ Miracle happens. <a href="https://dribbble.com/shots/7424303-Mobile-App-Mindfuln
 
 <img src ="process/day1.gif" width ="500">
 
-    -Appbar
-    Need to use:Custom Font and Icon
+    - Appbar
+    To do:
+    - Custom Font and Icon
+# Reference:
+- <a href="https://pub.dev/packages/bubble_tab_indicator"> Bubble tab indicator</a>
+
+- <a href="https://youtu.be/lrMCjIYpnjg?t=178">Hero Example</a>
+
+- <a href="https://pub.dev/packages/sleek_circular_slider">Sleek_circular_clider</a>
+
+
+# Discovery
+- <a href="https://pub.dev/packages/direct_select_flutter">Direct_select_flutter</a>

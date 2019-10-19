@@ -40,7 +40,7 @@ Explore to the unknown.
 
   <a href="https://github.com/kelvin147789/Flutter-UI-Reality/tree/master/mindfulness_05">Mindfulness_05 </a>
   
-  <img src="/mindfulness_05/design/mindfulness_05.png" width="500" > 
+  <img src="mindfulness_05/design/mindfulness_05.png" width="500" > 
   
 
   
