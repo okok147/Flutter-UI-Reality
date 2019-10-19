@@ -20,6 +20,8 @@ Miracle happens. <a href="https://dribbble.com/shots/7424303-Mobile-App-Mindfuln
 
 - <a href="https://youtu.be/lrMCjIYpnjg?t=178">Hero Example</a>
 
+- <a href="https://pub.dev/packages/sleek_circular_slider">sleek_circular_clider</a>
+
 
 # Discovery
 - <a href="https://pub.dev/packages/direct_select_flutter">direct_select_flutter</a>
