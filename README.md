@@ -30,11 +30,17 @@ Explore to the unknown.
   <img src="market_app_03/process/work.gif" width="500" > 
   
   
-  <h2> Project 04  </h2> 
+  <h2> Project 04 ✅  </h2> 
 
   <a href="https://github.com/kelvin147789/Flutter_UI_Reality/tree/master/mobile_application_activity_04">Application_Activity_04 </a>
   
   <img src="mobile_application_activity_04/process/day12.gif" width="500" > 
+  
+  <h2> Project 05  </h2> 
+
+  <a href="https://github.com/kelvin147789/Flutter-UI-Reality/tree/master/mindfulness_05">Mindfulness_05 </a>
+  
+  <img src="/mindfulness_05/design/mindfulness_05.png" width="500" > 
   
 
   
