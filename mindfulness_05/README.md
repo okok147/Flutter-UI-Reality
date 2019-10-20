@@ -16,7 +16,7 @@ Miracle happens. <a href="https://dribbble.com/shots/7424303-Mobile-App-Mindfuln
     To do:
     - Custom Font and Icon
 # Reference:
-- <a href="https://pub.dev/packages/bubble_tab_indicator"> Bubble tab indicator</a>
+- <a href="https://github.com/kelvin147789/Flutter-UI-Resources/blob/5e0622493cccb4e7d52b095b0a72d11b5a548469/Example/flutter_ghana_ui_challenge_week-1_master/lib/views/home.dart#L113-L138"> Tab indicator</a>
 
 - <a href="https://youtu.be/lrMCjIYpnjg?t=178">Hero Example</a>
 
