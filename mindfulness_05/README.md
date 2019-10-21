@@ -31,3 +31,5 @@ Miracle happens. <a href="https://dribbble.com/shots/7424303-Mobile-App-Mindfuln
 - <a href="https://github.com/mtcliatt/Flarts">Flart</a>
 
 - <a href="https://pub.dev/packages/flutter_candlesticks">Flutter_candlesticks</a>
+
+<a href="https://www.filledstacks.com/post/building-a-responsive-ui-architecture-in-flutter/">Responsive UI</a>
