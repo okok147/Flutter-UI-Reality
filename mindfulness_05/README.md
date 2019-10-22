@@ -15,6 +15,14 @@ Miracle happens. <a href="https://dribbble.com/shots/7424303-Mobile-App-Mindfuln
     - Appbar
     To do:
     - Custom Font and Icon
+    
+ # Day 2
+
+<img src ="process/day2.gif" width ="500">
+
+    - Tab Indicator
+    
+    
 # Reference:
 - <a href="https://github.com/kelvin147789/Flutter-UI-Resources/blob/5e0622493cccb4e7d52b095b0a72d11b5a548469/Example/flutter_ghana_ui_challenge_week-1_master/lib/views/home.dart#L113-L138"> Tab indicator</a>
 
