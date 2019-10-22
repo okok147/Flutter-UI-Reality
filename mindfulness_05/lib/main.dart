@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'utils.dart';
 
 void main() => runApp(MyApp());
 
@@ -26,11 +27,64 @@ class MyHomePage extends StatefulWidget {
   _MyHomePageState createState() => _MyHomePageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _MyHomePageState extends State<MyHomePage>
+    with SingleTickerProviderStateMixin {
+  TabController tabController;
+  int selectedTabIndex = 0;
+  final List<String> _tabs = [
+    'Sleep ',
+    'Inner Peace ',
+    ' Stress  ',
+    '   Anxiety  ',
+    ' Peace  ',
+    '  Magic  '
+  ];
+
+  @override
+  void initState() {
+    super.initState();
+    tabController = TabController(vsync: this, length: _tabs.length);
+  }
+
   @override
   Widget build(BuildContext context) {
+    TextStyle switchColor(index) {
+      return selectedTabIndex == index
+          ? AppTextStyles.selectedTabTextStyle
+          : AppTextStyles.unselectedTabTextStyle;
+    }
+
     var screenHeight = MediaQuery.of(context).size.height;
     var screenWidth = MediaQuery.of(context).size.width;
+
+    final _tabSection = Container(
+      margin: const EdgeInsets.only(right: 16.0),
+      padding: EdgeInsets.only(top: 30.0),
+      child: TabBar(
+        indicatorPadding: EdgeInsets.only(right: 16.0),
+        onTap: (index) {
+          setState(() {
+            selectedTabIndex = index;
+          });
+        },
+        controller: tabController,
+        unselectedLabelColor: Colors.grey.withOpacity(0.6),
+        isScrollable: true,
+        indicator: BoxDecoration(
+          color: Color(0xff24095A).withOpacity(0.8),
+          borderRadius: BorderRadius.circular(20.0),
+        ),
+        tabs: _tabs.map((tab) {
+          var index = _tabs.indexOf(tab);
+          return Tab(
+            child: Text(
+              tab,
+              style: switchColor(index),
+            ),
+          );
+        }).toList(),
+      ),
+    );
 
     return Scaffold(
       backgroundColor: Colors.white,
@@ -73,11 +127,15 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
             SizedBox(
-              height: screenHeight / 40,
+              height: screenHeight / 2000,
             ),
             Container(
-              height: screenHeight / 15,
-              color: Colors.greenAccent.withOpacity(0.1),
+              height: screenHeight / 13.6,
+              color: Colors.greenAccent.withOpacity(0.0),
+              child: Padding(
+                padding: const EdgeInsets.only(left: 16),
+                child: _tabSection,
+              ),
             ),
             Container(
               height: screenHeight / 1.2,
