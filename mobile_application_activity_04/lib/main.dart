@@ -9,7 +9,7 @@ import 'package:mobile_application_activity_03/Pages/challenges.dart';
 import 'package:mobile_application_activity_03/utils.dart';
 import 'package:dio/dio.dart';
 
-/* Launch simulator with flutter in a quick way:
+/* Launch simulator with flutter in a quick way(iOS):
 
 open -a simulator
 flutter run
