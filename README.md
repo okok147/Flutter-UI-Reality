@@ -44,8 +44,6 @@ Explore to the unknown.
 
 
 
-<p><a href="https://github.com/kelvin147789/Flutter_UI_Reality/stargazers"><img src="https://camo.githubusercontent.com/eec0dc4bbf2ff4398966f75835e5e9803912cbb9/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f73746172732f7a696e6f2d6170702f6772617068716c2d666c75747465722e7376673f7374796c653d666c61742d737175617265266c6f676f3d676974687562266c6f676f436f6c6f723d666666666666" alt="Star on GitHub" data-canonical-src="https://img.shields.io/github/stars/kelvin147789/Flutter_UI_Reality.svg?style=flat-square&amp;logo=github&amp;logoColor=ffffff" style="max-width:100%;"></a></p> 
-        
    
 
 
