@@ -36,13 +36,6 @@ Explore to the unknown.
   
   <img src="mobile_application_activity_04/process/day12.gif" width="500" > 
   
-  <h2> Project 05  </h2> 
-
-  <a href="https://github.com/kelvin147789/Flutter-UI-Reality/tree/master/mindfulness_05">Mindfulness_05 </a>
-  
-  <img src="mindfulness_05/design/mindfulness_05.png" width="500" > 
-  
-
   
   
 
