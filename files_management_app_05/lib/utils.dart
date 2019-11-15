@@ -1,4 +1,23 @@
 import 'package:flutter/material.dart';
+/*  
+
+
+How to change the layout ?
+
+: use Wrap for changing the view of item,when onclick,change the size of item,
+  so that Wrap can help to adjust the position of item instead of exceed the layout.
+
+
+How to build ListView with JSON?
+
+: use ListView.builder,and with JSON file.Figure out how to use it.
+Good example: 
+
+https://github.com/emrade/flutter-watch-shop-ui
+
+https://github.com/kelvin147789/Resources/tree/master/Example/FlutterSocialAppUIKit-master
+
+ */
 
 var addIcon = Container(
   height: 42,
