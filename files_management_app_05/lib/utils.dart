@@ -13,9 +13,8 @@ How to build ListView with JSON?
 : use ListView.builder,and with JSON file.Figure out how to use it.
 Good example: 
 
-https://github.com/emrade/flutter-watch-shop-ui
+  https://youtu.be/_10i7_xsthM?t=768
 
-https://github.com/kelvin147789/Resources/tree/master/Example/FlutterSocialAppUIKit-master
 
  */
 
