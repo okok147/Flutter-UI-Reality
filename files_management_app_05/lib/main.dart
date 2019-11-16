@@ -8,11 +8,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'files_managemnet_app_05',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: MyHomePage(title: 'Category'),
     );
   }
 }
@@ -39,6 +39,7 @@ class _MyHomePageState extends State<MyHomePage> {
               children: <Widget>[
                 Text('Find your files'),
                 Spacer(),
+                //'Command + Click' to inspect the following widget
                 addIcon,
                 emailIcon,
               ],

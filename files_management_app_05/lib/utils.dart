@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 /*  
 
-
 How to change the layout ?
 
 : use Wrap for changing the view of item,when onclick,change the size of item,
@@ -11,10 +10,13 @@ How to change the layout ?
 How to build ListView with JSON?
 
 : use ListView.builder,and with JSON file.Figure out how to use it.
+
 Good example: 
+  https://youtu.be/_10i7_xsthM?t=768(Not a JSON,but show how to handle with data and build item)
 
-  https://youtu.be/_10i7_xsthM?t=768
+How can I inspect the widget?
 
+: if in VSCODE,use 'command + click' to look through the code!
 
  */
 
