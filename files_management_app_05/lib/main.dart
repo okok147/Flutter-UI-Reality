@@ -57,9 +57,9 @@ class _MyHomePageState extends State<MyHomePage> {
               Padding(
                 padding: const EdgeInsets.fromLTRB(32, 32, 32, 16),
                 child: Container(
-                  height: 55,
+                  height: 52,
                   decoration: BoxDecoration(
-                    color: Colors.black.withOpacity(0.8),
+                    color: Colors.grey.withOpacity(0.10),
                     borderRadius: BorderRadius.circular(15),
                   ),
                   child: Padding(

@@ -63,7 +63,7 @@ var emailIcon = Padding(
 var searchBarDecoration = InputDecoration(
   border: InputBorder.none,
   hintText: 'Search a files',
-  contentPadding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 5.0),
-  hintStyle: TextStyle(color: Colors.black.withOpacity(0.85)),
+  contentPadding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 2.0),
+  hintStyle: TextStyle(color: Colors.black.withOpacity(0.95)),
   suffixIcon: Icon(Icons.search),
 );
