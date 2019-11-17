@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 /*  
 
 How to change the layout ?
@@ -12,7 +13,9 @@ How to build ListView with JSON?
 : use ListView.builder,and with JSON file.Figure out how to use it.
 
 Good example: 
-  https://youtu.be/_10i7_xsthM?t=768(Not a JSON,but show how to handle with data and build item)
+  https://youtu.be/_10i7_xsthM?t=768
+  
+  (Not a JSON,but show how to handle with data and build item)
 
 How can I inspect the widget?
 
@@ -55,4 +58,12 @@ var emailIcon = Padding(
       onPressed: () {},
     ),
   ),
+);
+
+var searchBarDecoration = InputDecoration(
+  border: InputBorder.none,
+  hintText: 'Search a files',
+  contentPadding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 5.0),
+  hintStyle: TextStyle(color: Colors.black.withOpacity(0.85)),
+  suffixIcon: Icon(Icons.search),
 );
