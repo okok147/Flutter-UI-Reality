@@ -15,7 +15,7 @@ class Challenges extends StatelessWidget {
         children: <Widget>[
           Container(
             height: 315,
-            width: 150,
+           
             margin: EdgeInsets.fromLTRB(24, 12, 24, 12),
             padding: EdgeInsets.all(16),
             decoration: BoxDecoration(
