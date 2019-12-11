@@ -15,7 +15,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final title = 'Schedule';
-     
 
     return new MaterialApp(
       title: title,
@@ -23,14 +22,23 @@ class MyApp extends StatelessWidget {
           appBar: new AppBar(
             title: new Text(title),
           ),
-          body: _buildRow(context, 'greeting')),
+          body: TicketCard()),
     );
   }
 }
 
+class TicketCard extends StatefulWidget {
+  @override
+  _TicketCardState createState() => _TicketCardState();
+}
+
+
+
+class _TicketCardState extends State<TicketCard> {
+
+var clicked = false;
 Widget _buildRow(BuildContext context, String greeting) {
-  var clicked = false;
- 
+  
 
   return Padding(
     padding: const EdgeInsets.all(24.0),
@@ -172,7 +180,7 @@ Widget _buildRow(BuildContext context, String greeting) {
                       Padding(
                         padding: const EdgeInsets.only(left: 24.0),
                         child: clicked
-                            ? Text('data')
+                            ? Text('123')
                             : RichText(
                                 text: TextSpan(
                                   text: 'HK\$ 24 ',
@@ -199,6 +207,9 @@ Widget _buildRow(BuildContext context, String greeting) {
                           child: Image.asset('assets/down_array.png'),
                           onTap: () {
                             clicked = !clicked;
+                            setState(() {
+                              
+                            });
                             print(clicked);
                           },
                         ),
@@ -214,3 +225,12 @@ Widget _buildRow(BuildContext context, String greeting) {
     ),
   );
 }
+
+  @override
+  Widget build(BuildContext context) {
+    return _buildRow(context, 'greeting');
+  }
+}
+
+
+
