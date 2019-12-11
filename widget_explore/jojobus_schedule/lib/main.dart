@@ -154,7 +154,7 @@ Widget _buildRow(BuildContext context, String greeting) {
                               ),
                             ),
                             Text(
-                              'AM 10:00',
+                              'PM 22:00',
                               style: TextStyle(
                                 fontSize: 24.0,
                                 fontFamily: 'Helvetica Neue',
