@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:listview_builder_01/bzWidget.dart';
 import 'package:listview_builder_01/main.dart';
 import 'package:auto_size_text/auto_size_text.dart';
+import 'package:listview_builder_01/TicketPage.dart';
 
 import 'package:flutter/material.dart';
 import 'package:pretty_qr_code/pretty_qr_code.dart';
@@ -242,43 +243,58 @@ class SecondScreen extends StatelessWidget {
   }
 }
 
-class TicketPage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("Second Screen"),
-      ),
-      body: Hero(
-          tag: 'ticketPage',
-          child: Center(
-            child: Column(
-              
-            
-              children: <Widget>[
-                RaisedButton(
-                  onPressed: () {
-                    // Navigate back to the first screen by popping the current route
-                    // off the stack.
+// class TicketPage extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(
+//         title: Text("Second Screen"),
+//         leading: IconButton(
+//           icon: Icon(Icons.chevron_left),
+//           onPressed: () {
+//             Navigator.pushReplacement(context,
+//                 MaterialPageRoute(builder: (context) => new TicketPage()));
+//           },
+//         ),
+//       ),
+//       body: Hero(
+//           tag: 'ticketPage',
+//           child: Center(
+//             child: Column(
+//               children: <Widget>[
 
-                    //solve the problem of black screen when navigate.pop
-                    Navigator.pushReplacement(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => new TicketRecord()));
+                
+                
+//                 Padding(
+//                   padding: const EdgeInsets.symmetric(horizontal:24.0,vertical: 16.0),
+//                   child: Container(
+//                     width: MediaQuery.of(context).size.width,
+//                     height: 44,
+//                     child: RaisedButton(
+//                       color: Color(0xff0CBC83),
+//                       onPressed: () {
+//                         // Navigate back to the first screen by popping the current route
+//                         // off the stack.
 
-                    //           Navigator.push(
-                    //   context,
-                    //   MaterialPageRoute(
-                    //     builder: (context) => new SecondScreen(),
-                    //   ),
-                    // );
-                  },
-                  child: Text('Go back!'),
-                ),
-              ],
-            ),
-          )),
-    );
-  }
-}
+//                         //solve the problem of black screen when navigate.pop
+
+//                         //           Navigator.push(
+//                         //   context,
+//                         //   MaterialPageRoute(
+//                         //     builder: (context) => new SecondScreen(),
+//                         //   ),
+//                         // );
+//                       },
+//                       child: Text('Done!',style: TextStyle(
+//                         color: Colors.white,
+//                         fontSize: 17.0
+//                       ),),
+//                     ),
+//                   ),
+//                 ),
+//               ],
+//             ),
+//           )),
+//     );
+//   }
+// }

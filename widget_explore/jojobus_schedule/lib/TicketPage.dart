@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:listview_builder_01/ticketRecord.dart';
 import 'package:pretty_qr_code/pretty_qr_code.dart';
-
-// import 'package:pretty_qr_code/pretty_qr_code.dart';
+import 'main.dart';
+import 'package:qr_flutter/qr_flutter.dart';
 
 class ClipShadowPath extends StatelessWidget {
   final Shadow shadow;
@@ -45,73 +46,102 @@ class _ClipShadowShadowPainter extends CustomPainter {
   }
 }
 
- 
-
 class TicketPage extends StatefulWidget {
   @override
   _TicketPageState createState() => _TicketPageState();
 }
 
-
-
 class _TicketPageState extends State<TicketPage> {
   @override
   Widget build(BuildContext context) {
     ThemeData(fontFamily: 'noto');
-    return  Stack(
+    return Scaffold(
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(80.0),
+        child: AppBar(
+        backgroundColor: Color(0xff0CBC83).withOpacity(0.45),
+        
+        title: Text('Bill'),
+        leading: IconButton(
+          icon: Icon(
+            Icons.chevron_left,
+            color: Colors.white,
+          ),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => new TicketRecord(),
+              ),
+            );
+          },
+        ),
+      ),
+      ),
+      body: Stack(
         children: <Widget>[
-          Image(
-            // hidden
-              // image: Images.bgMap,
-              width: MediaQuery.of(context).size.width,
-              height: MediaQuery.of(context).size.height),
-          Scaffold(
-              backgroundColor: Colors.transparent,
-              appBar: AppBar(
-                backgroundColor: Colors.transparent,
-                elevation: 0.0,
+          Image.asset('assets/bgMap.png'),
+
+          Column(
+            children: <Widget>[
+              Padding(
+                padding: const EdgeInsets.all(32.0),
+                child: ticket(context),
               ),
-              body: Column(
-                children: <Widget>[
-                  Padding(
-                    padding: const EdgeInsets.all(32.0),
-                    child: ticket(context),
+
+              Container(
+                height: 84.0,
+                width: MediaQuery.of(context).size.width,
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(
+                      horizontal: 24.0, vertical: 16.0),
+                  child: RaisedButton(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: new BorderRadius.circular(8.0),
+                    ),
+                    color: Color(0xff0CBC83),
+                    child: Text(
+                      'DONE!',
+                      style: TextStyle(color: Colors.white, fontSize: 17.0),
+                    ),
+                    onPressed: () {},
                   ),
-                  //        Container(
-                  //   height: 40.0,
-                  //   width: MediaQuery.of(context).size.width,
-                  //   padding: EdgeInsets.symmetric(horizontal: 16.0),
-                  //   child: RaisedButton(
-                  //     onPressed: () async {
-
-                  //     },
-                  //     color: Cor.mainColor,
-                  //     child: Text(
-                  //       "下一步",
-                  //       style: TextStyle(color: Colors.white, fontSize: 14.0),
-                  //     ),
-                  //   ),
-                  // )
-                ],
-              )
-              // body: ListView.builder(
-              //        itemBuilder: (_,i){
-              //         return ListTile(title: Text(i.toString()),);
-              //       },
-
-              // ),
-              // body: SingleChildScrollView(
-              //   child: ColumnBuilder(r
-              //       itemBuilder: (_,i){
-              //         return ListTile(title: Text(i.toString()),);
-              //       },
-              //       itemCount: 199,
-              //   )
-              // ),
+                ),
               ),
+              //        Container(
+              //   height: 40.0,
+              //   width: MediaQuery.of(context).size.width,
+              //   padding: EdgeInsets.symmetric(horizontal: 16.0),
+              //   child: RaisedButton(
+              //     onPressed: () async {
+
+              //     },
+              //     color: Cor.mainColor,
+              //     child: Text(
+              //       "下一步",
+              //       style: TextStyle(color: Colors.white, fontSize: 14.0),
+              //     ),
+              //   ),
+              // )
+            ],
+          )
+          // body: ListView.builder(
+          //        itemBuilder: (_,i){
+          //         return ListTile(title: Text(i.toString()),);
+          //       },
+
+          // ),
+          // body: SingleChildScrollView(
+          //   child: ColumnBuilder(r
+          //       itemBuilder: (_,i){
+          //         return ListTile(title: Text(i.toString()),);
+          //       },
+          //       itemCount: 199,
+          //   )
+          // ),
         ],
-      );
-    
+      ),
+    );
   }
 
   Widget ticket(BuildContext context) {
@@ -123,9 +153,9 @@ class _TicketPageState extends State<TicketPage> {
       ),
       clipper: TicketClipper(),
       child: Container(
-        padding: EdgeInsets.symmetric(horizontal: 36.0, vertical: 24.0),
+        padding: EdgeInsets.symmetric(horizontal: 36.0, vertical: 40.0),
         width: MediaQuery.of(context).size.width,
-        height: 540,
+        height: MediaQuery.of(context).size.height - 300,
         decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(16.0),
@@ -135,39 +165,6 @@ class _TicketPageState extends State<TicketPage> {
         ),
         child: Column(
           children: <Widget>[
-            Text(
-              'ABC123',
-              style: TextStyle(fontSize: 24.0, color: Color(0xff5c5c5c)),
-            ),
-            SizedBox(height: 19.0),
-            Container(
-              child: PrettyQr(
-                // hidden
-                // image: Images.Bus,
-                typeNumber: 3,
-                size: 180,
-                data: 'https://www.google.com',
-                roundEdges: true,
-              ),
-            ),
-            SizedBox(
-              height: 16,
-            ),
-            Text(
-              '*必須準時，需依指定時間',
-              style: TextStyle(color: Color(0xff919191), fontSize: 12.0),
-            ),
-            SizedBox(
-              height: 31.0,
-            ),
-            Container(
-              color: Color(0xffF0F0F0),
-              height: 1,
-              width: MediaQuery.of(context).size.width,
-            ),
-            SizedBox(
-              height: 31.0,
-            ),
             Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -179,6 +176,7 @@ class _TicketPageState extends State<TicketPage> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
+                         
                           Text(
                             '西灣河',
                             style: TextStyle(
@@ -197,12 +195,8 @@ class _TicketPageState extends State<TicketPage> {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(16),
-                  child: Image(
-                    // hidden
-                    // image: Images.twowayarrow,
-                  ),
-                ),
+                    padding: const EdgeInsets.all(16),
+                    child: Image.asset('assets/twowayarrow.png')),
                 // Container(
                 //   child: Column(children: <Widget>[
                 //    Icon(Icons.arrow_right),
@@ -243,6 +237,21 @@ class _TicketPageState extends State<TicketPage> {
                 ),
               ],
             ),
+            SizedBox(height: 19.0),
+            Container(
+              color: Color(0xffF0F0F0),
+              height: 1,
+              width: MediaQuery.of(context).size.width,
+            ),
+            SizedBox(
+              height: 16,
+            ),
+            SizedBox(
+              height: 31.0,
+            ),
+            SizedBox(
+              height: 31.0,
+            ),
             SizedBox(
               height: 16.0,
             ),
@@ -250,7 +259,7 @@ class _TicketPageState extends State<TicketPage> {
               child: Container(
                 width: MediaQuery.of(context).size.width,
                 child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: <Widget>[
                     Text(
                       '出發日期:  周五,11月29日 2019.  20:00',
@@ -272,6 +281,12 @@ class _TicketPageState extends State<TicketPage> {
                     SizedBox(
                       height: 16.0,
                     ),
+                    QrImage(
+                      data: 'https://www.google.com',
+                      version: QrVersions.auto,
+                      size: 150,
+                      gapless: false,
+                    ),
                     Text(
                       '*必須準時，需依指定時間',
                       style:
@@ -280,7 +295,7 @@ class _TicketPageState extends State<TicketPage> {
                   ],
                 ),
               ),
-            )
+            ),
           ],
         ),
       ),

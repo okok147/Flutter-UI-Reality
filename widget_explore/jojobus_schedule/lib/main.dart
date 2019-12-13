@@ -3,21 +3,24 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:listview_builder_01/bzWidget.dart';
 import 'package:listview_builder_01/ticketRecord.dart';
+import 'package:listview_builder_01/passengerList.dart';
+
+
 
 const mainColor = Color(0xFFECB201);
 const normalSpeed = 150;
 void main() {
-  //change iniital App from MyApp to TicketRecord
-  runApp(new TicketRecord(
+  //change iniital App from Schedule to TicketRecord
+  runApp(new PassengerList(
     // items: new List<String>.generate(10000, (i) => '$i'),
      
   ));
 }
 
-class MyApp extends StatelessWidget {
+class Schedule extends StatelessWidget {
   final List<String> items;
 
-  MyApp({Key key, @required this.items}) : super(key: key);
+  Schedule({Key key, @required this.items}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
