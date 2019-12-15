@@ -212,7 +212,7 @@ class _ActivityState extends State<Activity> {
 
           //another page
           Scaffold(
-            backgroundColor: Colors.grey.withOpacity(0.03),
+            backgroundColor: Colors.white,
             body: Padding(
               padding: const EdgeInsets.fromLTRB(8, 0, 0, 16),
               child: ListView(

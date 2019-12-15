@@ -163,8 +163,6 @@ class _MyHomePageState extends State<MyHomePage> {
               _selectedIndex = index;
               //pause the loop
               periodicSub.cancel();
-              
-            
             },
           ),
           items: [

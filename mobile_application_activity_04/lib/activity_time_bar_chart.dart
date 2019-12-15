@@ -61,9 +61,10 @@ class BarChartSample1State extends State<BarChartSample1> {
     return AspectRatio(
       aspectRatio: 1.55,
       child: Card(
+
         elevation: 0,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(18)),
-        color: Colors.grey.withOpacity(0.02),
+        color: Colors.white,
         child: Stack(
           children: <Widget>[
             Padding(
