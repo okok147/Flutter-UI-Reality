@@ -1,0 +1,1 @@
+../../../../.symlinks/plugins/firebase_database/ios/Classes/FirebaseDatabasePlugin.h

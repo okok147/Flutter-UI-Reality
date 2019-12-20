@@ -1,0 +1,1 @@
+../../../../.symlinks/plugins/firebase_auth/ios/Classes/FirebaseAuthPlugin.h
