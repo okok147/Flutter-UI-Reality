@@ -1,0 +1,1 @@
+../../../../.symlinks/plugins/firebase_core/ios/Classes/FirebaseCorePlugin.h
