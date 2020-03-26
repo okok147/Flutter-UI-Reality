@@ -7,8 +7,8 @@
  <br> <br> <br>
  <p>
                      
-                     Simple Code
-                                 Awesome UI.
+            Simple Code
+                             Awesome UI.
  
  </p>
  
