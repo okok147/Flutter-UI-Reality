@@ -1,9 +1,5 @@
 # Flutter_UI_Reality
 
-<style>
- p {
- color: grey;
- }
 
 
 </style>
@@ -13,8 +9,8 @@
  <br> <br> <br>
  <p>
                      
-                                          Simple Code
-                                                               Awesome UI
+                                                 Simple Code
+                                                                 Awesome UI
 
  </p>
  
