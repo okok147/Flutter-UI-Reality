@@ -6,7 +6,7 @@
  
  <br> <br> <br>
  
- <b>Easy Code,Awesome UI.</b>
+ <h2><b>Simple Code,Awesome UI.</b></h2>
  
  
  <br> <br> <br>
