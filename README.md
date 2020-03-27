@@ -1,11 +1,21 @@
 # Flutter_UI_Reality
 
-Explore to the unknown.
-
-<img src="https://github.com/kelvin147789/Machine_Learning_Path/blob/master/Lessons/02_Cube%20Wave%20by%20Bees%20and%20Bombs/02_Cube_Wave_by_Bees_and_Bombs.gif">
 
 
+ 
 
+ 
+ <br> <br> <br>
+ <p>
+                                                                                                                              
+                                                 Simple Code
+                                                            Awesome UI
+                                                                                                                                                                     
+ </p>
+ 
+ 
+ <br> <br> <br>
+ 
 
 <h2> Project 01 ✅   </h2> 
 
@@ -36,6 +46,7 @@ Explore to the unknown.
   
   <img src="mobile_application_activity_04/process/day12.gif" width="500" > 
   
+
    
 
 
