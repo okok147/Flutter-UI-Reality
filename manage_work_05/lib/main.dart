@@ -5,15 +5,13 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
- 
         primarySwatch: Colors.blue,
-
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: MyHomePage(title: 'Flutter Demo Home Page'),
@@ -35,40 +33,58 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void _incrementCounter() {
     setState(() {
-
       _counter++;
     });
   }
 
   @override
   Widget build(BuildContext context) {
+    var deviceHeight = MediaQuery.of(context).copyWith().size.height;
+    var deviceWidth = MediaQuery.of(context).copyWith().size.height;
+
+    var firstRowTabBoxStyle = Container(
+      height: deviceHeight / 4.3,
+      width: deviceWidth,
+      decoration: new BoxDecoration(
+        color: Colors.grey.withOpacity(0.1),
+        borderRadius: BorderRadius.only(
+            topRight: const Radius.circular(12.0),
+            bottomRight: const Radius.circular(12.0)),
+      ),
+    );
+
+    var rowTabBoxStyle = Container(
+      height: deviceHeight / 4.0,
+      decoration: new BoxDecoration(
+        color: Colors.black,
+        borderRadius: BorderRadius.all(Radius.circular(12.0)),
+      ),
+    );
 
     return Scaffold(
-      appBar: AppBar(
- 
-        title: Text(widget.title),
-      ),
-      body: Center(
-
-        child: Column(
-
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headline4,
-            ),
-          ],
+      backgroundColor: Colors.white,
+      body: SafeArea(
+        child: Center(
+          child: Row(
+            children: <Widget>[
+              Container(
+                height: deviceHeight,
+                width: deviceWidth / 13,
+                color: Colors.white,
+                child: Column(
+                  children: <Widget>[
+                    firstRowTabBoxStyle,
+                    SizedBox(
+                      height: 5.0,
+                    ),
+                    rowTabBoxStyle,
+                  ],
+                ),
+              ),
+            ],
+          ),
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
