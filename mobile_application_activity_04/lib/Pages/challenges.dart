@@ -242,7 +242,7 @@ class Challenges extends StatelessWidget {
                                   color: Colors.amber.withOpacity(1),
                                 ),
                                 height: 110,
-                                width: 110,
+                               
                                 child: Padding(
                                   padding:
                                       const EdgeInsets.fromLTRB(0, 22, 0, 0),

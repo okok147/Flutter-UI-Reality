@@ -33,7 +33,7 @@ class _ActivityState extends State<Activity> {
         controller: _pageController,
         children: [
           Padding(
-            padding: const EdgeInsets.fromLTRB(24, 36, 16, 16),
+            padding: const EdgeInsets.fromLTRB(6, 36, 16, 16),
             child: ListView(
               children: <Widget>[
                 Row(
@@ -91,7 +91,7 @@ class _ActivityState extends State<Activity> {
                   height: 28,
                 ),
                 Padding(
-                  padding: const EdgeInsets.fromLTRB(0, 16, 8, 12),
+                  padding: const EdgeInsets.fromLTRB(0, 16, 0, 12),
                   child: Container(
                     height: 600,
                     color: Colors.blueAccent.withOpacity(0.01),
@@ -214,7 +214,7 @@ class _ActivityState extends State<Activity> {
           Scaffold(
             backgroundColor: Colors.white,
             body: Padding(
-              padding: const EdgeInsets.fromLTRB(8, 0, 0, 16),
+              padding: const EdgeInsets.fromLTRB(8, 0, 8, 16),
               child: ListView(
                 children: <Widget>[
                   Row(
@@ -255,7 +255,7 @@ class _ActivityState extends State<Activity> {
                       children: <Widget>[
                         Positioned(
                           top: 0,
-                          left: 50,
+                          left: 30,
                           child: CustomPaint(
                             painter: StepDetailsPainter(),
                             size: Size(200, 200),
@@ -337,7 +337,7 @@ class _ActivityState extends State<Activity> {
                       FadeAnimation(
                         3,
                         Padding(
-                          padding: const EdgeInsets.fromLTRB(32, 5, 16, 8),
+                          padding: const EdgeInsets.fromLTRB(32, 5, 32, 8),
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(10),
                             child: Container(
