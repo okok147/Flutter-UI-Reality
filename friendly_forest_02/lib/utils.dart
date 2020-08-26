@@ -1,7 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:friendly_forest_02/social_media_icon_icons.dart';
 
 class SizeConfig {
   static MediaQueryData _mediaQueryData;
@@ -198,7 +197,7 @@ var digestDismissable = Dismissible(
         children: <Widget>[
           Container(
             height: 120,
-            width: 120,
+          
             decoration: BoxDecoration(
                 image: DecorationImage(
                     image: ExactAssetImage('assets/peacock.png'))),
@@ -254,12 +253,12 @@ var allDismissable = Dismissible(
     height: 130,
     child: Container(
       decoration: allRoundedBoxDecoration,
-      padding: EdgeInsets.fromLTRB(0, 20, 0, 30),
+      padding: EdgeInsets.fromLTRB(0, 20, 0, 0),
       child: Row(
         children: <Widget>[
           Container(
             height: 130,
-            width: 130,
+            width: 100,
             decoration: BoxDecoration(
                 image: DecorationImage(
                     image: ExactAssetImage('assets/cartoon_bird.png'))),
@@ -268,28 +267,24 @@ var allDismissable = Dismissible(
             width: 5,
           ),
           Container(
-            height: 120,
-            width: 200,
+            height: 100,
+            width: 120,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 Padding(
-                  padding: const EdgeInsets.fromLTRB(0, 15, 0, 0),
+                  padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
                   child: Text(
                     'Wolf',
                     style: cardTextStyle,
                   ),
                 ),
-                SizedBox(
-                  height: 8,
-                ),
+                
                 Text(
                   'Vulnerable to extinction due ',
                   style: cardContextTextStyle,
                 ),
-                SizedBox(
-                  height: 5,
-                ),
+              
                 Text(
                   'to habitat loss & hunting',
                   style: cardContextTextStyle,
@@ -339,8 +334,8 @@ var othersCard = Padding(
 );
 
 var facebookCard = Container(
-  width: 50,
-  height: 50,
+  width: 40,
+  height: 40,
   decoration: BoxDecoration(
     color: Colors.grey.withOpacity(0.1),
     borderRadius: BorderRadius.all(Radius.circular(8)),
@@ -356,8 +351,8 @@ var facebookCard = Container(
 );
 
 var twitterCard = Container(
-  width: 50,
-  height: 50,
+  width: 40,
+  height: 40,
   decoration: BoxDecoration(
     color: Colors.grey.withOpacity(0.1),
     borderRadius: BorderRadius.all(Radius.circular(8)),
@@ -374,8 +369,8 @@ var twitterCard = Container(
 );
 
 var githubCard = Container(
-  width: 50,
-  height: 50,
+  width: 40,
+  height: 40,
   decoration: BoxDecoration(
     color: Colors.grey.withOpacity(0.1),
     borderRadius: BorderRadius.all(Radius.circular(8)),

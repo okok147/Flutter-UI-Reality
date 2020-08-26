@@ -55,7 +55,7 @@ class _SearchPageState extends State<SearchPage> {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(top: 35.0, left: 28),
+            padding: const EdgeInsets.only(top: 35.0, left: 10),
             child: Row(
               children: <Widget>[
                 Container(

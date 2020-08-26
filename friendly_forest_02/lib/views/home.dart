@@ -6,7 +6,6 @@ import 'package:friendly_forest_02/DismissCardView/News.dart';
 import 'package:friendly_forest_02/DismissCardView/Contact.dart';
 import 'package:friendly_forest_02/router.dart';
 import 'package:friendly_forest_02/utils.dart';
-import 'package:friendly_forest_02/social_media_icon_icons.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({Key key, this.title}) : super(key: key);
@@ -187,7 +186,7 @@ class _HomePageState extends State<HomePage>
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
+                  padding: const EdgeInsets.fromLTRB(0, 0, 0, 16),
                   child: Row(
                     children: <Widget>[
                       othersCard,
@@ -195,7 +194,6 @@ class _HomePageState extends State<HomePage>
                         padding: const EdgeInsets.only(left: 32.0),
                         child: Container(
                           height: 55,
-                          width: 150,
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: <Widget>[
@@ -250,7 +248,7 @@ class _HomePageState extends State<HomePage>
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(top: 8.0, left: 16.0),
+                  padding: const EdgeInsets.only(top: 8.0, left: 0.0),
                   child: Container(
                     height: 75,
                     child: Row(
@@ -264,7 +262,7 @@ class _HomePageState extends State<HomePage>
                           height: 55,
                           width: 190,
                           child: Padding(
-                            padding: const EdgeInsets.only(right: 24.0),
+                            padding: const EdgeInsets.only(right: 0.0),
                             child: RaisedButton(
                               color: Colors.orange.withOpacity(1),
                               onPressed: () {

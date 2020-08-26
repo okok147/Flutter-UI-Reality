@@ -120,10 +120,10 @@ class _MyHomePageState extends State<MyHomePage> {
                             Container(
                               decoration: myBoxDecoration(),
                               height: 62.0,
-                              width: 230.0,
+                              width: 200.0,
                               child: MaterialButton(
                                 child: Padding(
-                                  padding: const EdgeInsets.only(right: 50.0),
+                                  padding: const EdgeInsets.only(right: 30.0),
                                   child: Text(
                                     'Search for gardeners',
                                     style: TextStyle(
