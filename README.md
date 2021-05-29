@@ -58,9 +58,7 @@
 
 # Support My work 🦄:
 
- <img src= "images/bitcoin.png" width="18">    BTC Address:
- 
-    
+  
     
  <img src= "images/ethereum.png" width="18">    ETH Address:
  
