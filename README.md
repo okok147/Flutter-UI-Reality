@@ -60,7 +60,7 @@
 
  <img src= "images/bitcoin.png" width="18">    BTC Address:
  
-    3Eqg2Wm9978CmcDJp4z3yM2CqjUu19Vuru
+    
     
  <img src= "images/ethereum.png" width="18">    ETH Address:
  
