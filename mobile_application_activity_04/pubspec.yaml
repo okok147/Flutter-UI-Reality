@@ -22,7 +22,7 @@ dependencies:
   bottom_navy_bar:
   intl:
   http:
-  dio:
+  dio: any
   fl_chart:
   simple_animations:
 
