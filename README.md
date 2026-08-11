@@ -1,5 +1,6 @@
 # Flutter UI Reality
 
+[![Flutter CI](https://github.com/okok147/Flutter-UI-Reality/actions/workflows/flutter.yml/badge.svg?branch=master)](https://github.com/okok147/Flutter-UI-Reality/actions/workflows/flutter.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 Practical Flutter UI implementations preserved and modernized as an open-source learning and reference collection.
