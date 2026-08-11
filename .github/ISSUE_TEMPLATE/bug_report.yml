@@ -1,0 +1,71 @@
+name: Bug report
+description: Report a reproducible problem in a Flutter UI Reality example
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: dropdown
+    id: example
+    attributes:
+      label: Affected example
+      options:
+        - gardener_01 (maintained)
+        - friendly_forest_02 (legacy)
+        - market_app_03 (legacy)
+        - mobile_application_activity_04 (legacy)
+        - testing (legacy)
+        - Repository documentation or automation
+    validations:
+      required: true
+  - type: input
+    id: flutter
+    attributes:
+      label: Flutter and Dart versions
+      description: Paste the first lines of `flutter --version`.
+      placeholder: Flutter 3.x, Dart 3.x
+    validations:
+      required: true
+  - type: input
+    id: platform
+    attributes:
+      label: Platform
+      placeholder: Chrome 140 on macOS, Android 16, iOS 19, and so on
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+      description: Provide the smallest reliable sequence that shows the problem.
+      placeholder: |
+        1. Run ...
+        2. Open ...
+        3. Select ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Logs, screenshots, or recordings
+      description: Remove secrets and personal information before attaching evidence.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I searched existing issues and pull requests.
+          required: true
+        - label: This is not a private security report.
+          required: true

@@ -1,0 +1,51 @@
+name: Feature request
+description: Propose a focused improvement or migration
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or opportunity
+      description: Explain the user or maintainer need before describing a solution.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: Describe a focused, testable result.
+    validations:
+      required: true
+  - type: dropdown
+    id: example
+    attributes:
+      label: Affected example
+      options:
+        - gardener_01
+        - friendly_forest_02
+        - market_app_03
+        - mobile_application_activity_04
+        - testing
+        - Repository-wide
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context or mockups
+      description: Include asset sources and license terms for any proposed visual material.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I searched existing issues and pull requests.
+          required: true
+        - label: I can document the source and reuse terms of any assets I propose.
+          required: true

@@ -1,5 +1,7 @@
 # friendly_forest_02
 
+> **Legacy compatibility notice:** This historical example uses a Dart 2, pre-null-safety dependency set and does not currently resolve on stable Dart 3. Its screenshots and implementation journal are retained for learning and provenance. A coordinated migration is planned; see the root [maintenance policy](../MAINTENANCE.md).
+
 That would be amazing.<a href ="https://dribbble.com/shots/7080175-Mobile-app-Friendly-Forest?fbclid=IwAR2P8GKmfEbdhKcuM3MsbNxrc2F82s3nQOsXXfJvtoNmbqtRoC98azuMIUM"> Design</a>
 
 # Day 1

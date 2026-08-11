@@ -1,22 +1,11 @@
-# Market-app-UI
+# Market App UI
 
-Simplicity and Beauty.<a href ="https://dribbble.com/shots/6525264-UI-Market-app" target= "_blank">Design </a>
-   
-  <img src="design/welcomepage.png" width="250">  <img src="design/homepage.png" width="250">   
+> **Legacy compatibility notice:** This historical example uses a Dart 2, pre-null-safety dependency set and does not currently resolve on stable Dart 3. Its visuals are retained as a learning reference. A coordinated migration is planned; see the root [maintenance policy](../MAINTENANCE.md).
 
+Simplicity and beauty. Based on this historical [design reference](https://dribbble.com/shots/6525264-UI-Market-app).
 
+<img src="design/welcomepage.png" alt="Market App welcome screen" width="250"> <img src="design/homepage.png" alt="Market App home screen" width="250">
 
+Historical process preview:
 
-
-
-# Support My work 🦄:
-
- <img src= "https://github.com/kelvin147789/Flutter_UI_Reality/blob/master/images/bitcoin.png" width="18"> BTC Address:
- 
-    3Eqg2Wm9978CmcDJp4z3yM2CqjUu19Vuru
-    
- <img src= "https://github.com/kelvin147789/Flutter_UI_Reality/blob/master/images/ethereum.png" width="18"> ETH Address:
- 
-    0x463d1d31eEEC94952D852046cF15913d02F627b8
-
-    
+<img src="process/work.gif" alt="Market App interaction preview" width="500">
