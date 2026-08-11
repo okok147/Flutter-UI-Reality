@@ -1,16 +1,51 @@
 import 'package:gardener_01/utils.dart';
 
 class AppNotification {
-  String image, name, distance, time;
+  const AppNotification({
+    required this.image,
+    required this.name,
+    required this.distanceKm,
+    required this.availability,
+    required this.startHour,
+  });
 
-  AppNotification(this.image, this.name, this.distance, this.time);
+  final String image;
+  final String name;
+  final double distanceKm;
+  final String availability;
+  final int startHour;
 
-
+  String get distanceLabel =>
+      '${distanceKm.toStringAsFixed(distanceKm % 1 == 0 ? 0 : 1)} km';
 }
 
-List<AppNotification> notifications = [
-  AppNotification(AvailableImages.girl, 'Megan Watkins', '2 km', '10 -12 am'),
-  AppNotification(AvailableImages.men, 'Bobby Vargas', '2.5 km', '12 -03 pm'),
-  AppNotification(AvailableImages.men, 'Lori Freeman', '4 km', '03-06 Pm'),
-  AppNotification(AvailableImages.girl, 'Pamela Holmes', '4 km', '06 -09 Pm'),
+const notifications = <AppNotification>[
+  AppNotification(
+    image: AvailableImages.girl,
+    name: 'Megan Watkins',
+    distanceKm: 2,
+    availability: '10 am–12 pm',
+    startHour: 10,
+  ),
+  AppNotification(
+    image: AvailableImages.men,
+    name: 'Bobby Vargas',
+    distanceKm: 2.5,
+    availability: '12–3 pm',
+    startHour: 12,
+  ),
+  AppNotification(
+    image: AvailableImages.men,
+    name: 'Lori Freeman',
+    distanceKm: 4,
+    availability: '3–6 pm',
+    startHour: 15,
+  ),
+  AppNotification(
+    image: AvailableImages.girl,
+    name: 'Pamela Holmes',
+    distanceKm: 4,
+    availability: '6–9 pm',
+    startHour: 18,
+  ),
 ];

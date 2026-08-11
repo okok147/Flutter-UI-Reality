@@ -1,0 +1,35 @@
+{
+    "name": "Gardener",
+    "short_name": "Gardener",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#E3F6FF",
+    "theme_color": "#5F40D4",
+    "description": "A responsive Flutter UI for finding nearby gardeners.",
+    "orientation": "portrait-primary",
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "icons/Icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-maskable-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "icons/Icon-maskable-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}

@@ -1,177 +1,171 @@
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:gardener_01/search.dart';
+import 'package:gardener_01/utils.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(const GardenerApp());
 
-class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
+class GardenerApp extends StatelessWidget {
+  const GardenerApp({super.key});
+
   @override
   Widget build(BuildContext context) {
+    final colorScheme =
+        ColorScheme.fromSeed(
+          seedColor: AppPalette.purple,
+          brightness: Brightness.light,
+        ).copyWith(
+          primary: AppPalette.purple,
+          secondary: AppPalette.orange,
+          surface: Colors.white,
+        );
+
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'Gardener',
       theme: ThemeData(
-        //backgroundColor: Color(0xffE3F6FF),
-        primarySwatch: Colors.blue,
+        useMaterial3: true,
+        colorScheme: colorScheme,
+        scaffoldBackgroundColor: AppPalette.sky,
+        appBarTheme: const AppBarTheme(
+          backgroundColor: AppPalette.sky,
+          foregroundColor: AppPalette.purple,
+          elevation: 0,
+          scrolledUnderElevation: 0,
+        ),
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const GardenerHomePage(),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
+class GardenerHomePage extends StatelessWidget {
+  const GardenerHomePage({super.key});
 
-  final String title;
-
-  @override
-  _MyHomePageState createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  BoxDecoration myBoxDecoration() {
-    return BoxDecoration(
-      border: Border.all(
-        width: 1,
-        color: Color(0xff5F40D4).withOpacity(0.19),
-      ),
-      borderRadius: BorderRadius.all(Radius.circular(20.0)),
-    );
+  void _openSearch(BuildContext context) {
+    Navigator.of(
+      context,
+    ).push(MaterialPageRoute<void>(builder: (_) => const SearchPage()));
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Color(0xffE3F6FF),
-        body: ListView(
-          dragStartBehavior: DragStartBehavior.start,
-          children: <Widget>[
-            Container(
-              //color: Color(0xffE3F6FF),
-              alignment: Alignment.topCenter,
-              height: 450.0,
-              width: 1000.0,
-              child: Stack(
-                children: <Widget>[
-                  Padding(
-                    padding: const EdgeInsets.all(20.0),
-                    child: Container(
-                      alignment: Alignment.center,
-                      decoration: new BoxDecoration(
-                          image: DecorationImage(
-                              image: AssetImage('assets/gardener.png'))),
+      body: SafeArea(
+        bottom: false,
+        child: LayoutBuilder(
+          builder: (context, constraints) {
+            final heroHeight = (constraints.maxHeight * 0.44).clamp(
+              280.0,
+              430.0,
+            );
+
+            return CustomScrollView(
+              slivers: [
+                SliverToBoxAdapter(
+                  child: SizedBox(
+                    height: heroHeight,
+                    child: Padding(
+                      padding: const EdgeInsets.fromLTRB(24, 16, 24, 20),
+                      child: Image.asset(
+                        AvailableImages.gardener,
+                        fit: BoxFit.contain,
+                        semanticLabel: 'Illustration of a gardener and plants',
+                      ),
                     ),
                   ),
-                ],
-              ),
-            ),
-            new Container(
-              height: 500.0,
-              decoration: new BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: new BorderRadius.only(
-                    topLeft: const Radius.circular(20.0),
-                    topRight: const Radius.circular(20.0),
-                  )),
-              child: Padding(
-                padding: const EdgeInsets.only(left: 20.0, right: 20.0),
-                child: Padding(
-                  padding: const EdgeInsets.only(left: 8.0, right: 0.0),
-                  child: Column(
-                    children: <Widget>[
-                      Spacer(flex: 2),
-                      Container(
-                          height: 120.0,
-                          width: 1000.0,
-                          child: Padding(
-                            padding: const EdgeInsets.all(0.0),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: <Widget>[
-                                Padding(
-                                  padding: const EdgeInsets.only(top: 16.0),
-                                  child: Text(
-                                    'Find a',
-                                    style: new TextStyle(
-                                      fontSize: 40.0,
-                                      color:
-                                          Color(0xffFFA800).withOpacity(0.85),
-                                      fontWeight: FontWeight.bold,
+                ),
+                SliverFillRemaining(
+                  hasScrollBody: false,
+                  child: DecoratedBox(
+                    decoration: const BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.vertical(
+                        top: Radius.circular(28),
+                      ),
+                    ),
+                    child: Center(
+                      child: ConstrainedBox(
+                        constraints: const BoxConstraints(maxWidth: 720),
+                        child: Padding(
+                          padding: const EdgeInsets.fromLTRB(28, 40, 28, 48),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'Find a',
+                                style: Theme.of(context).textTheme.displaySmall
+                                    ?.copyWith(
+                                      color: AppPalette.orange.withValues(
+                                        alpha: 0.88,
+                                      ),
+                                      fontWeight: FontWeight.w800,
+                                      height: 1,
+                                    ),
+                              ),
+                              const SizedBox(height: 4),
+                              Text(
+                                'Gardener',
+                                style: Theme.of(context).textTheme.displaySmall
+                                    ?.copyWith(
+                                      color: AppPalette.purple.withValues(
+                                        alpha: 0.88,
+                                      ),
+                                      fontWeight: FontWeight.w800,
+                                      height: 1,
+                                    ),
+                              ),
+                              const SizedBox(height: 48),
+                              Wrap(
+                                spacing: 12,
+                                runSpacing: 12,
+                                crossAxisAlignment: WrapCrossAlignment.center,
+                                children: [
+                                  SizedBox(
+                                    width: 250,
+                                    height: 56,
+                                    child: OutlinedButton.icon(
+                                      key: const Key('open-search-button'),
+                                      onPressed: () => _openSearch(context),
+                                      icon: const Icon(Icons.search_rounded),
+                                      label: const Text('Search for gardeners'),
+                                      style: OutlinedButton.styleFrom(
+                                        foregroundColor: AppPalette.purple,
+                                        side: BorderSide(
+                                          color: AppPalette.purple.withValues(
+                                            alpha: 0.28,
+                                          ),
+                                        ),
+                                        shape: RoundedRectangleBorder(
+                                          borderRadius: BorderRadius.circular(
+                                            20,
+                                          ),
+                                        ),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Text(
-                                  'Gardener',
-                                  style: TextStyle(
-                                    fontSize: 40.0,
-                                    fontWeight: FontWeight.bold,
-                                    color: Color(0xff5F40D4).withOpacity(0.85),
-                                  ),
-                                )
-                              ],
-                            ),
-                          )),
-                      Padding(
-                        padding: const EdgeInsets.only(top: 55.0, bottom: 50.0),
-                        child: Row(
-                          children: <Widget>[
-                            Container(
-                              decoration: myBoxDecoration(),
-                              height: 62.0,
-                              width: 200.0,
-                              child: MaterialButton(
-                                child: Padding(
-                                  padding: const EdgeInsets.only(right: 30.0),
-                                  child: Text(
-                                    'Search for gardeners',
-                                    style: TextStyle(
-                                      fontSize: 14.0,
-                                      fontWeight: FontWeight.w500,
-                                      color: Color(0xff5F40D4).withOpacity(0.5),
+                                  TextButton.icon(
+                                    onPressed: () => _openSearch(context),
+                                    icon: const Icon(Icons.tune_rounded),
+                                    label: const Text('Filters'),
+                                    style: TextButton.styleFrom(
+                                      foregroundColor: AppPalette.orange,
+                                      minimumSize: const Size(112, 56),
                                     ),
                                   ),
-                                ),
-                                onPressed: () {
-                                  Navigator.push(
-                                      context,
-                                      new MaterialPageRoute(
-                                          builder: (BuildContext context) =>
-                                              new SearchPage()));
-                                },
+                                ],
                               ),
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.only(left: 15.0),
-                              child: IconButton(
-                                color: Color(0xffFFA800),
-                                icon: Icon(
-                                  FontAwesomeIcons.slidersH,
-                                  size: 18.0,
-                                ),
-                                tooltip: 'Fliters',
-                                onPressed: () {},
-                              ),
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.only(left: 0.0),
-                              child: Container(
-                                  child: Text(
-                                'Fliters',
-                                style: TextStyle(color: Color(0xffFFA800)),
-                              )),
-                            )
-                          ],
+                            ],
+                          ),
                         ),
                       ),
-                      Spacer(flex: 11),
-                    ],
+                    ),
                   ),
                 ),
-              ),
-            ),
-          ],
-        ));
+              ],
+            );
+          },
+        ),
+      ),
+    );
   }
 }

@@ -1,30 +1,48 @@
-// This is a basic Flutter widget test.
-//
-// To perform an interaction with a widget in your test, use the WidgetTester
-// utility that Flutter provides. For example, you can send tap and scroll
-// gestures. You can also use WidgetTester to find child widgets in the widget
-// tree, read text, and verify that the values of widget properties are correct.
-
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-
 import 'package:gardener_01/main.dart';
 
 void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
-    await tester.pumpWidget(MyApp());
+  testWidgets('renders the Gardener landing page', (tester) async {
+    await tester.pumpWidget(const GardenerApp());
 
-    // Verify that our counter starts at 0.
-    expect(find.text('0'), findsOneWidget);
-    expect(find.text('1'), findsNothing);
+    expect(find.text('Find a'), findsOneWidget);
+    expect(find.text('Gardener'), findsOneWidget);
+    expect(find.text('Search for gardeners'), findsOneWidget);
+    expect(find.text('Filters'), findsOneWidget);
+  });
 
-    // Tap the '+' icon and trigger a frame.
-    await tester.tap(find.byIcon(Icons.add));
-    await tester.pump();
+  testWidgets('opens search results with every gardener', (tester) async {
+    await tester.pumpWidget(const GardenerApp());
+    await tester.ensureVisible(find.byKey(const Key('open-search-button')));
+    await tester.tap(find.byKey(const Key('open-search-button')));
+    await tester.pumpAndSettle();
 
-    // Verify that our counter has incremented.
-    expect(find.text('0'), findsNothing);
-    expect(find.text('1'), findsOneWidget);
+    expect(find.text('Search'), findsOneWidget);
+    expect(find.text('Results'), findsOneWidget);
+    expect(find.text('Megan Watkins'), findsOneWidget);
+    expect(find.text('Bobby Vargas'), findsOneWidget);
+    expect(find.text('Lori Freeman'), findsOneWidget);
+    await tester.scrollUntilVisible(find.text('Pamela Holmes'), 160);
+    expect(find.text('Pamela Holmes'), findsOneWidget);
+    expect(find.text('All gardeners · 4 results'), findsOneWidget);
+  });
+
+  testWidgets('filters results by distance', (tester) async {
+    await tester.pumpWidget(const GardenerApp());
+    await tester.ensureVisible(find.byKey(const Key('open-search-button')));
+    await tester.tap(find.byKey(const Key('open-search-button')));
+    await tester.pumpAndSettle();
+
+    await tester.tap(find.byTooltip('Filter gardeners'));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Within 3 km').last);
+    await tester.pumpAndSettle();
+
+    expect(find.text('Within 3 km · 2 results'), findsOneWidget);
+    expect(find.text('Megan Watkins'), findsOneWidget);
+    expect(find.text('Bobby Vargas'), findsOneWidget);
+    expect(find.text('Lori Freeman'), findsNothing);
+    expect(find.text('Pamela Holmes'), findsNothing);
   });
 }
