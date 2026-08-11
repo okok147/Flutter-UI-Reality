@@ -1,6 +1,8 @@
 # hello_01
 
-A new Flutter project.
+> **Legacy compatibility notice:** This early sandbox uses a Dart 2, pre-null-safety project setup and does not currently resolve on stable Dart 3. It is preserved for historical context while its future scope is decided; see the root [maintenance policy](../MAINTENANCE.md).
+
+An early Flutter experimentation project.
 
 ## Getting Started
 

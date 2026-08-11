@@ -1,5 +1,6 @@
 # mobile_application_activity_04
 
+> **Legacy compatibility notice:** This historical example uses a Dart 2, pre-null-safety dependency set and does not currently resolve on stable Dart 3. Its implementation journal is retained for learning. A coordinated migration is planned; see the root [maintenance policy](../MAINTENANCE.md).
 
 Let's draw some line. <a href= "https://dribbble.com/shots/7119123-Mobile-application-Activity">Design</a>
 
@@ -144,7 +145,6 @@ Example:
 <a href="https://dart.dev/codelabs/async-await">Asynchronous programming: futures, async, await</a>
 
 <a href="https://www.youtube.com/watch?v=EwHMSxSWIvQ&t=513s">Future builder - Building Lists with JSON Data</a>
-
 
 
 
